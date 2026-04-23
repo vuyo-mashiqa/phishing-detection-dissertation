@@ -1,0 +1,15 @@
+# Enforce LF line endings for all text files in this repository.
+# This matches the encoding policy in SCHEMA_CANONICAL.md and prevents
+# false-dirty working tree states on Windows machines.
+* text=auto eol=lf
+
+# Explicitly mark binary files to prevent any line ending conversion.
+*.gz    binary
+*.tar   binary
+*.zip   binary
+*.mbox  binary
+*.json  text eol=lf
+*.csv   text eol=lf
+*.py    text eol=lf
+*.md    text eol=lf
+*.txt   text eol=lf
