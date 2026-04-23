@@ -1,0 +1,79 @@
+{
+  "generated_at": "2026-04-23T11:22:09.278376+00:00",
+  "purpose": "SHA-256 integrity hashes for all raw corpus files. Supersedes MD5 acquisition log as authoritative provenance record. Any reviewer may re-download files and verify hashes to confirm byte-for-byte identity with the files used in this study.",
+  "hash_algorithm": "SHA-256",
+  "files": {
+    "stratum_i_enron_tarball": {
+      "path": "data/raw/stratum_i/enron_mail_20150507.tar.gz",
+      "sha256": "b3da1b3fe0369ec3140bb4fbce94702c33b7da810ec15d718b3fadf5cd748ca7",
+      "size_bytes": 443254787,
+      "size_mb": 422.72,
+      "status": "OK"
+    },
+    "stratum_i_nazario_20051114": {
+      "path": "data/raw/stratum_i/20051114.mbox",
+      "sha256": "928cbf1c394d01d0b398ded8dc7cbd94dd4ce9cb0d4efdecd12696338c247926",
+      "size_bytes": 4071556,
+      "size_mb": 3.88,
+      "status": "OK"
+    },
+    "stratum_i_nazario_phishing0": {
+      "path": "data/raw/stratum_i/phishing0.mbox",
+      "sha256": "6184b0a34ed8cbbb252676e21c1eab9eac5fa4be89c61e30cc9954ebbb25d848",
+      "size_bytes": 3119972,
+      "size_mb": 2.98,
+      "status": "OK"
+    },
+    "stratum_i_nazario_phishing1": {
+      "path": "data/raw/stratum_i/phishing1.mbox",
+      "sha256": "99f02474a11086408a5ce6d11ef38823f003c6611a4312c31fbee96773eeba28",
+      "size_bytes": 4191770,
+      "size_mb": 4.0,
+      "status": "OK"
+    },
+    "stratum_i_nazario_phishing2": {
+      "path": "data/raw/stratum_i/phishing2.mbox",
+      "sha256": "5113277984eae759a5ff958ccf408b542441ce033a49b923ab3b0f324075e6bd",
+      "size_bytes": 10420294,
+      "size_mb": 9.94,
+      "status": "OK"
+    },
+    "stratum_i_nazario_phishing3": {
+      "path": "data/raw/stratum_i/phishing3.mbox",
+      "sha256": "b29336d2e31c2dff19639415e98ed2aced5b4d63675ea5e29bea1a7d4e452841",
+      "size_bytes": 20067215,
+      "size_mb": 19.14,
+      "status": "OK"
+    },
+    "stratum_iii_phishfuzzer_variants_USED": {
+      "path": "data/raw/stratum_iii/PhishFuzzer/PhishFuzzer_emails_entity_rephrased_v1.json",
+      "sha256": "2e2a4da749b38de5869d3e1901222a0cf000c18a910d13faf4f1b0054d70b38d",
+      "size_bytes": 48092464,
+      "size_mb": 45.86,
+      "status": "OK"
+    },
+    "stratum_iii_phishfuzzer_seeds_EXCLUDED_NEVER_READ": {
+      "path": "data/raw/stratum_iii/PhishFuzzer/PhishFuzzer_emails_original_seed_v1.json",
+      "sha256": "afc88e4dbc000d9b45a9f3d65a82064b956ab677d1c2874526b0ca179e003765",
+      "size_bytes": 8200550,
+      "size_mb": 7.82,
+      "status": "OK"
+    }
+  },
+  "directories": {
+    "stratum_ii_phishing_pot": {
+      "path": "data/raw/stratum_ii/phishing_pot",
+      "status": "OK",
+      "count": 7911,
+      "total_bytes": 313754988,
+      "note": "Individual EML files not hashed; aggregate count and size used for integrity verification."
+    },
+    "stratum_ii_csdmc2010": {
+      "path": "data/raw/stratum_ii/csdmc2010",
+      "status": "OK",
+      "file_count_excl_macosx": 2955,
+      "total_bytes_excl_macosx": 10526242,
+      "note": "__MACOSX artefact directory excluded from count (macOS ZIP extraction artefact; contains no email data)"
+    }
+  }
+}
