@@ -1,0 +1,47 @@
+{
+  "run_id": "6935b3d6-b7cd-423f-b1ea-87fd10dc392a",
+  "timestamp": "2026-04-24T18:51:23.242097+00:00",
+  "script_name": "parse_csdmc2010",
+  "git_commit_sha": "c02d1059e0477c147e8622ca9c0f75a9228ffc70",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": null,
+  "parameters": {
+    "input_dir": "data\\raw\\stratum_ii\\csdmc2010",
+    "file_pattern": "*.eml.txt",
+    "label": 0,
+    "stratum": "II",
+    "source": "csdmc2010",
+    "exclude_macosx": true
+  },
+  "notes": "CSDMC2010 ham corpus. Files are TRAIN_XXXXX.eml.txt format. Excludes __MACOSX artefact directory. Drops emails with empty body after cleaning. Drops exact duplicates by body_sha256.",
+  "counts": {
+    "files_discovered": 2949,
+    "parse_errors": 0,
+    "dropped_empty": 0,
+    "dropped_duplicate": 186,
+    "retained": 2763,
+    "label_0_count": 2763,
+    "label_1_count": 0
+  },
+  "inputs": [
+    {
+      "path": "data\\raw\\stratum_ii\\csdmc2010",
+      "label": "data\\raw\\stratum_ii\\csdmc2010",
+      "type": "directory",
+      "status": "OK",
+      "count": 2957,
+      "total_bytes": 10741406
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data\\processed\\stratum_ii\\csdmc2010_ham.csv",
+      "label": "data\\processed\\stratum_ii\\csdmc2010_ham.csv",
+      "type": "file",
+      "sha256": "69e35efed9b86b5421072ef803ddfecb97b6fb8620e302da2c56886075889309",
+      "size_bytes": 5094271,
+      "row_count": 2763
+    }
+  ]
+}

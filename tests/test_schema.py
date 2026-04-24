@@ -49,7 +49,8 @@ def load_or_skip(filepath):
     """Load CSV or skip test if file does not yet exist."""
     if not Path(filepath).exists():
         pytest.skip(f"File not yet produced: {filepath}")
-    return pd.read_csv(filepath, low_memory=False)
+    return pd.read_csv(filepath, low_memory=False,
+                       keep_default_na=False, na_values=[])
 
 
 # ------------------------------------------------------------------ #

@@ -146,7 +146,20 @@ Metadata file (Stratum III only):
 
 ---
 
-## 8. Encoding and Format
+## 8. Mandatory CSV Read Convention
+
+All canonical CSV files in this project MUST be read with pandas using:
+
+    pd.read_csv(path, keep_default_na=False, na_values=[])
+
+Rationale: pandas converts empty strings to NaN by default. Subject and
+sender fields are legitimately empty for many emails. Without this
+parameter, a schema-compliant file with empty strings will appear to
+contain nulls when read, causing false test failures and incorrect null
+counts. Every script, test, and notebook in this project that reads a
+canonical CSV must use these two parameters.
+
+## 9. Encoding and Format
 
 - File encoding: UTF-8 (no BOM)
 - Line endings: LF (Unix-style). Windows CRLF line endings are not used.
@@ -158,7 +171,7 @@ Metadata file (Stratum III only):
 
 ---
 
-## 9. Validation
+## 10. Validation
 
 The file tests/test_schema.py enforces this schema automatically.
 Run it after every parser execution:
@@ -170,7 +183,7 @@ be committed.
 
 ---
 
-## 10. What Happens When Tests Fail
+## 11. What Happens When Tests Fail
 
 If pytest reports a failure:
 
