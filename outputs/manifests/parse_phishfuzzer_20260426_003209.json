@@ -1,0 +1,58 @@
+{
+  "run_id": "cd006177-d2a2-4f2a-b8d8-d2a58f62b372",
+  "timestamp": "2026-04-25T22:32:08.437538+00:00",
+  "script_name": "parse_phishfuzzer",
+  "git_commit_sha": "e7c4d881e5814c75f40f488d5fb3a3325e06e032",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": null,
+  "parameters": {
+    "input_file": "data\\raw\\stratum_iii\\PhishFuzzer\\PhishFuzzer_emails_entity_rephrased_v1.json",
+    "included_types": [
+      "Phishing",
+      "Valid"
+    ],
+    "excluded_types": [
+      "Spam"
+    ],
+    "created_by_filter": "LLM",
+    "seed_file": "PhishFuzzer_emails_original_seed_v1.json -- excluded"
+  },
+  "notes": "PhishFuzzer LLM-generated corpus. Includes Type=Phishing and Type=Valid only. Excludes Type=Spam entirely. PhishFuzzer metadata fields stored in separate stratum_iii_metadata.csv joined by message_id. Canonical combined CSV contains 10-column schema only.",
+  "counts": {
+    "total_records": 19800,
+    "excluded_spam": 6444,
+    "dropped_empty": 0,
+    "dropped_duplicate": 0,
+    "retained": 13356,
+    "label_0_valid": 6600,
+    "label_1_phishing": 6756
+  },
+  "inputs": [
+    {
+      "path": "data\\raw\\stratum_iii\\PhishFuzzer\\PhishFuzzer_emails_entity_rephrased_v1.json",
+      "label": "data\\raw\\stratum_iii\\PhishFuzzer\\PhishFuzzer_emails_entity_rephrased_v1.json",
+      "type": "file",
+      "sha256": "2e2a4da749b38de5869d3e1901222a0cf000c18a910d13faf4f1b0054d70b38d",
+      "size_bytes": 48092464
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data\\processed\\stratum_iii\\stratum_iii_combined.csv",
+      "label": "data\\processed\\stratum_iii\\stratum_iii_combined.csv",
+      "type": "file",
+      "sha256": "c8b8684dfec60c4f9aaece5c42c4dba30fbc23b92207891b4cd58d9ee8a56bea",
+      "size_bytes": 26971737,
+      "row_count": 13356
+    },
+    {
+      "path": "data\\processed\\stratum_iii\\stratum_iii_metadata.csv",
+      "label": "data\\processed\\stratum_iii\\stratum_iii_metadata.csv",
+      "type": "file",
+      "sha256": "919dd53b678681d2b58cd35b44e9ecb6073dcbeaba0e93456bf1bd1fda2284f6",
+      "size_bytes": 1822319,
+      "row_count": 13356
+    }
+  ]
+}

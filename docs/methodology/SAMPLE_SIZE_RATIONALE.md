@@ -57,14 +57,51 @@ Source CSVs:
 
 ---
 
-## Stratum III — PENDING (Phase 3)
+## Stratum III — CONFIRMED AND LOCKED
 
-Stratum III figures will be recorded here after Phase 3 completes.
-Expected phishing records: 6,756 (from DATA_CARD filter logic)
-Expected legitimate records: 6,600 (from DATA_CARD filter logic)
-These are pre-parser estimates based on PhishFuzzer JSON schema
-inspection. The authoritative figures will replace these upon
-completion of the Stratum III parser.
+Stratum III processing completed: 2026-04-26
+Source files:
+  data/raw/stratum_iii/PhishFuzzer/PhishFuzzer_emails_entity_rephrased_v1.json
+  data/processed/stratum_iii/stratum_iii_combined.csv
+  data/processed/stratum_iii/stratum_iii_metadata.csv
+
+### Inclusion / Exclusion
+
+| Type | Count | Decision | Reason |
+|------|-------|----------|--------|
+| Phishing | 6,756 | INCLUDED | label=1 |
+| Valid | 6,600 | INCLUDED | label=0 |
+| Spam | 6,444 | EXCLUDED | Spam is not phishing and not legitimate enterprise mail |
+| **Total in file** | **19,800** | | |
+
+### Retained Counts
+
+| Stage | Count | Notes |
+|-------|-------|-------|
+| Records after type filter | 13,356 | Phishing + Valid only |
+| Dropped — empty body | 0 | All LLM-generated records have non-empty body |
+| Dropped — exact duplicate | 0 | All bodies are unique |
+| **Retained** | **13,356** | **Authoritative figure** |
+
+### Class Distribution
+
+| Class | Count |
+|-------|-------|
+| Phishing (label=1) | 6,756 |
+| Valid (label=0) | 6,600 |
+| **Total** | **13,356** |
+| Phishing:Valid ratio | 1.02:1 (near-balanced) |
+
+### Metadata Distribution (stratum_iii_metadata.csv)
+
+| Field | Values | Distribution |
+|-------|--------|-------------|
+| entity_type | well_known, fabricated | 6,678 each (exactly balanced) |
+| length_type | short, medium, long | 4,452 each (exactly balanced) |
+
+Note: The perfect balance across entity_type and length_type reflects
+PhishFuzzer's designed factorial structure. This is documented as a
+characteristic of the synthetic corpus in the Methods chapter.
 
 ---
 
@@ -81,12 +118,12 @@ Stratum I requires:
 
 ## Grand Total — PENDING COMPLETION OF ALL STRATA
 
-| Stratum | Ham | Phishing | Total | Status |
-|---------|-----|----------|-------|--------|
+| Stratum | Legitimate (0) | Phishing (1) | Total | Status |
+|---------|----------------|--------------|-------|--------|
 | I | TBD | TBD | TBD | Pending Phase 4 |
 | II | 2,763 | 5,085 | 7,848 | CONFIRMED |
-| III | TBD | TBD | TBD | Pending Phase 3 |
-| **Grand Total** | **TBD** | **TBD** | **TBD** | |
+| III | 6,600 | 6,756 | 13,356 | CONFIRMED |
+| **Grand Total** | **TBD** | **TBD** | **TBD** | Pending Phase 4 (Stratum I) |
 
 This table will be completed and the document status changed to
 FULLY LOCKED upon completion of Phases 3 and 4.
