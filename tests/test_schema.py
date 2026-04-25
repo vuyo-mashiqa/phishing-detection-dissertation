@@ -50,7 +50,8 @@ def load_or_skip(filepath):
     if not Path(filepath).exists():
         pytest.skip(f"File not yet produced: {filepath}")
     return pd.read_csv(filepath, low_memory=False,
-                       keep_default_na=False, na_values=[])
+                       keep_default_na=False, na_values=[],
+                       encoding="utf-8", encoding_errors="replace")
 
 
 # ------------------------------------------------------------------ #

@@ -1,0 +1,46 @@
+{
+  "run_id": "23dbbfcb-9497-4ce8-80e3-3c709f285a61",
+  "timestamp": "2026-04-25T21:07:11.976361+00:00",
+  "script_name": "parse_phishing_pot",
+  "git_commit_sha": "0ab7777dbdbb7350503efb2922fed0e50df005db",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": null,
+  "parameters": {
+    "input_dir": "data\\raw\\stratum_ii\\phishing_pot",
+    "file_pattern": "**/*.eml",
+    "label": 1,
+    "stratum": "II",
+    "source": "phishing_pot"
+  },
+  "notes": "phishing_pot corpus. Recursively discovers all .eml files. Drops emails with empty body after HTML stripping and cleaning. Drops exact duplicates by body_sha256.",
+  "counts": {
+    "files_discovered": 7911,
+    "parse_errors": 0,
+    "dropped_empty": 225,
+    "dropped_duplicate": 2601,
+    "retained": 5085,
+    "label_0_count": 0,
+    "label_1_count": 5085
+  },
+  "inputs": [
+    {
+      "path": "data\\raw\\stratum_ii\\phishing_pot",
+      "label": "data\\raw\\stratum_ii\\phishing_pot",
+      "type": "directory",
+      "status": "OK",
+      "count": 7912,
+      "total_bytes": 313834606
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data\\processed\\stratum_ii\\phishing_pot_phishing.csv",
+      "label": "data\\processed\\stratum_ii\\phishing_pot_phishing.csv",
+      "type": "file",
+      "sha256": "2b4172349ce30a74755811072dcd11bc8a511a06cd54959aa478af5b19c40316",
+      "size_bytes": 14648627,
+      "row_count": 7090
+    }
+  ]
+}

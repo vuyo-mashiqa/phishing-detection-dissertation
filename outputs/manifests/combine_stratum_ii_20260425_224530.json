@@ -1,0 +1,48 @@
+{
+  "run_id": "8578b930-f2ab-463c-b5cb-95e900d4f451",
+  "timestamp": "2026-04-25T20:45:29.852859+00:00",
+  "script_name": "combine_stratum_ii",
+  "git_commit_sha": "0ab7777dbdbb7350503efb2922fed0e50df005db",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": null,
+  "parameters": {
+    "ham_source": "data\\processed\\stratum_ii\\csdmc2010_ham.csv",
+    "phish_source": "data\\processed\\stratum_ii\\phishing_pot_phishing.csv",
+    "imbalance_policy": "natural -- handled at modelling time"
+  },
+  "notes": "Combines CSDMC2010 ham (label=0) and phishing_pot phishing (label=1) into stratum_ii_combined.csv. Natural class imbalance preserved. No resampling applied at this stage.",
+  "counts": {
+    "ham_rows": 2763,
+    "phishing_rows": 5085,
+    "total_rows": 7848,
+    "phish_ham_ratio": 1.84,
+    "cross_dupes_removed": 0
+  },
+  "inputs": [
+    {
+      "path": "data\\processed\\stratum_ii\\csdmc2010_ham.csv",
+      "label": "data\\processed\\stratum_ii\\csdmc2010_ham.csv",
+      "type": "file",
+      "sha256": "3c61171719a8f57de20f092c8eb9db6c845a2e3a6c68fea97b20d9435a46ec79",
+      "size_bytes": 4844111
+    },
+    {
+      "path": "data\\processed\\stratum_ii\\phishing_pot_phishing.csv",
+      "label": "data\\processed\\stratum_ii\\phishing_pot_phishing.csv",
+      "type": "file",
+      "sha256": "9f9764ac372b111fb7d57d5d12ba7cb92396d9dfb014fb386680b271fef2f12e",
+      "size_bytes": 10480857
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data\\processed\\stratum_ii\\stratum_ii_combined.csv",
+      "label": "data\\processed\\stratum_ii\\stratum_ii_combined.csv",
+      "type": "file",
+      "sha256": "2540c4c5c02e89d2b334359153c45f7e0b0dcf4f6f5193330b0227af4feedb4c",
+      "size_bytes": 15317022,
+      "row_count": 8548
+    }
+  ]
+}

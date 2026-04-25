@@ -241,7 +241,20 @@ def main():
             f"Null values remain before write:\n{null_counts[null_counts > 0]}"
         )
 
-    df.to_csv(OUTPUT_PATH, index=False, encoding="utf-8", lineterminator="\n")
+    # Sanitise all string columns to clean UTF-8 before writing.
+    # Some email bodies contain bytes that decoded to non-UTF-8 characters.
+    # Round-tripping through UTF-8 with replace removes any such characters.
+    for col in ["message_id", "subject", "body", "sender", "source",
+                "original_file", "stratum", "body_sha256"]:
+        df[col] = df[col].apply(
+            lambda x: x.encode("utf-8", errors="replace").decode("utf-8", errors="replace")
+            if isinstance(x, str) else x
+        )
+
+    # Write with errors=replace to guarantee clean UTF-8 output
+    # even if any residual non-UTF-8 bytes survived sanitisation.
+    with open(OUTPUT_PATH, "w", encoding="utf-8", errors="replace", newline="\n") as fh:
+        df.to_csv(fh, index=False, lineterminator="\n")
 
     print(f"\n  Output written -> {OUTPUT_PATH}")
     print(f"  Shape: {df.shape}  |  Columns: {list(df.columns)}")
