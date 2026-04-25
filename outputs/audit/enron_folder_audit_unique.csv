@@ -1,0 +1,1426 @@
+subfolder,users,decision,rationale
+05_saved,1,SYSTEM,Numbered archive dump — duplicates
+06_saved,1,SYSTEM,Numbered archive dump — duplicates
+07_saved,1,SYSTEM,Numbered archive dump — duplicates
+08_saved,1,SYSTEM,Numbered archive dump — duplicates
+09_saved,1,SYSTEM,Numbered archive dump — duplicates
+10_fantasy,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+10_saved,1,SYSTEM,Numbered archive dump — duplicates
+12_fantasy,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+2000_conference,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+2000_goals_and_objectives,1,INCLUDED,Business goals and objectives
+2001_budget,1,PII/LEGAL,Budget records — financially sensitive
+2001_budget__cost_cutting,1,PII/LEGAL,Budget/cost records — financially sensitive
+2001_goals_and_objectives,1,INCLUDED,Business goals and objectives
+2001_mid_year_prc,1,PII/LEGAL,PRC midyear — HR sensitive
+2001_objectives,1,PII/LEGAL,Individual performance objectives — sensitive PII
+2001_plan,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+2001_prc__midyear,1,PII/LEGAL,PRC midyear review — sensitive HR data
+2001_witchunt,1,PII/LEGAL,Internal investigation reference — litigation sensitive
+2002_budget,1,PII/LEGAL,Budget records — financially sensitive
+24_hr_power,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+2_trash,1,SYSTEM,Trash bin — system artefact
+6day,1,SYSTEM,Numbered operational view — system artefact
+_americas,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+_exchange,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+_exchange_info,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+_exchange_pos,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+_hedgefunds,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+_sent,3,SYSTEM,Lotus Notes sent artefact variant — duplicates sent_items
+_sent_mail,78,SYSTEM,Lotus Notes sent-mail artefact — duplicates sent_items
+aadepartment,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ab_1890_group,1,INCLUDED,AB 1890 regulatory group — public policy
+abramo,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+abraxas,1,INCLUDED,Abraxas counterparty — business
+accomplish,1,INCLUDED,Accomplishments reporting — business
+accomplishments,1,PII/LEGAL,Individual performance records — sensitive PII
+account_assignments,1,INCLUDED,Account assignments — business
+accounting,2,PII/LEGAL,Accounting records — financially sensitive
+accounting_issues,1,PII/LEGAL,Accounting issues — financially sensitive
+acctg___2001_new_accctg_sys,1,PII/LEGAL,Accounting system records — financially sensitive
+acctg___customer_issues_on_billing,1,PII/LEGAL,Billing records — financially sensitive
+acctg___invoicing_info,1,PII/LEGAL,Invoicing records — financially sensitive
+acctg___measurement_issues,1,PII/LEGAL,Measurement/billing records — financially sensitive
+accting,1,PII/LEGAL,Accounting records — financially sensitive
+ace,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+action_items_in,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+active_international,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ad_gas,1,INCLUDED,AD gas operations — business
+administrative,3,INCLUDED,Administrative correspondence
+administrivia,1,INCLUDED,Administrative correspondence
+advertising,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+advisory_board_on_electricity_and_the_environment,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+aec,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+affiliate_codes_of_conduct,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+affiliate_rules,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+africa,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+aga_storage_report,1,INCLUDED,AGA storage report — business
+agave,1,INCLUDED,Agave project — business
+agency_com,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+akzo_nobel___filtrol,1,INCLUDED,Akzo Nobel counterparty — business
+alberta,1,INCLUDED,Alberta operations — business
+albertappas,1,PII/LEGAL,Named individual — PII
+all_documents,110,SYSTEM,Lotus Notes all-documents view — duplicates every other folder
+alliance,1,INCLUDED,Alliance project — business
+alliance_rto,1,INCLUDED,Alliance RTO — regulatory
+alternate_delivery_by_price,1,INCLUDED,Alternate delivery pricing — business
+amerex,1,INCLUDED,Amerex broker — business correspondence
+analyst_assoc_program,1,PII/LEGAL,Analyst programme records — sensitive PII
+analyst_associate,1,INCLUDED,Analyst associate programme — business
+analyst_associate_program,1,PII/LEGAL,Analyst programme records — sensitive PII
+analyst_meeting_2001,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+andersen_requests,1,PII/LEGAL,Arthur Andersen audit requests — litigation sensitive
+annex_5,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+announcements,1,INCLUDED,Business announcements
+annual_report,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+antitrust,2,PII/LEGAL,Antitrust legal matter — litigation sensitive
+apollo__beth,1,PII/LEGAL,Named individual folder — personal PII
+appala,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+approval_authorizations,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+aquila,1,INCLUDED,Aquila counterparty — business
+aquila_red_lake_storage,1,INCLUDED,Aquila Red Lake storage — business
+archive,1,SYSTEM,Archive dump — likely duplicates other folders
+archiving,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+arco,1,INCLUDED,ARCO counterparty — business
+arcor,1,INCLUDED,Arcor counterparty — business
+arena,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+arg__deriv__assn_,1,INCLUDED,Argentina Derivatives Association
+argen__local_form,1,INCLUDED,Argentina local forms — operations
+argentina,2,INCLUDED,Argentina operations
+argentina___financial_trading,1,INCLUDED,Argentina financial trading
+argentina___holidays,1,INCLUDED,Argentina holiday schedule — operations
+argentina___phone_list,1,INCLUDED,Argentina phone list — operations
+argentina_duke_dispute,1,INCLUDED,Argentina Duke dispute — business
+argentina_isda,1,INCLUDED,Argentina ISDA — business
+argentina_legal_report,1,INCLUDED,Argentina legal report — business
+argentina_tax,1,INCLUDED,Argentina tax — business
+arizona,1,INCLUDED,Arizona operations — business
+art,2,INCLUDED,Art committee — corporate
+art_committee,1,INCLUDED,Art committee — corporate
+articles,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ase,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+asset_management_documents,1,INCLUDED,Asset management — business
+asset_sales,1,PII/LEGAL,Asset sale records — M&A legally sensitive
+associate,1,PII/LEGAL,Associate programme records — sensitive PII
+associate_prc,1,PII/LEGAL,Associate PRC records — sensitive HR data
+associations,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+atlantis,1,INCLUDED,Atlantis project — business
+atoka_3_c_s,1,INCLUDED,Atoka compressor station — operations
+attachments,1,CONTENT-MISMATCH,Attachments folder — not email text
+audit,1,PII/LEGAL,Internal/external audit files — litigation sensitive
+austin_energy,1,INCLUDED,Austin Energy counterparty — business
+australia,3,INCLUDED,Australia operations business correspondence
+australia_trading,1,INCLUDED,Australia trading — business
+avaya,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+aviation,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+azurix,2,INCLUDED,Azurix subsidiary operations
+bailey__s_,1,PII/LEGAL,Named individual folder — personal PII
+bammel_stg,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+bancone,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+bankrupt,1,PII/LEGAL,Bankruptcy proceedings — litigation sensitive
+bankruptcy,4,PII/LEGAL,Bankruptcy proceedings — litigation sensitive
+basin_electric,1,INCLUDED,Basin Electric counterparty — business
+bastos,1,PII/LEGAL,Named individual — PII
+bear,1,PII/LEGAL,Ambiguous — too brief to confirm business context; excluded
+belden,2,INCLUDED,Belden counterparty — business
+benefits,3,PII/LEGAL,HR benefits records — sensitive PII
+bergseiker,1,INCLUDED,Bergseiker counterparty — business
+bernhardt,1,PII/LEGAL,Named individual — PII
+bhp,1,INCLUDED,BHP counterparty — business
+bids___offers,1,INCLUDED,Trading bids and offers — business
+big_sandy___caithness,1,INCLUDED,Big Sandy/Caithness — business
+bill,1,PII/LEGAL,Named individual (first name only) — personal PII
+bill_williams_iii,1,PII/LEGAL,Named individual folder — personal PII
+billing_issues,2,INCLUDED,Customer billing correspondence — business
+bks,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+black_hills,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+blackbird,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+bloomfield_c_s,1,INCLUDED,Bloomfield compressor station — operations
+blotter,1,INCLUDED,Trading blotter operations
+blue_dog,1,INCLUDED,Blue Dog project — business
+bmc,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+bmr,1,INCLUDED,BMR operations — business
+boat,1,PII/LEGAL,Personal asset correspondence — PII
+body_shop,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+book_administrators,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+book_issues,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+boomerang,1,INCLUDED,Boomerang project — business
+boyd,1,PII/LEGAL,Named individual (surname) — personal PII
+bpa,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+brazil,1,INCLUDED,Brazil operations
+brazil___derivatives,1,INCLUDED,Brazil derivatives trading
+brazil___esa_reports,1,INCLUDED,Brazil ESA reports — operations
+brazil___holidays,1,INCLUDED,Brazil holiday schedule — operations
+brazil___weekly_reports,1,INCLUDED,Brazil weekly reports — operations
+brazil__champion,1,INCLUDED,Brazil Champion project — business
+brazil_directory,1,INCLUDED,Brazil directory — operations
+brazil_news,1,INCLUDED,Brazil market news — business
+brazil_trading,1,INCLUDED,Brazil trading — business
+brazil_trips,1,INCLUDED,Brazil business trips — operations
+brazilian_arbitration,1,INCLUDED,Brazil arbitration — business
+brazos_tenaska,1,INCLUDED,Brazos Tenaska — business
+bridge,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+bridgeline,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+bristol_babcock,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+brm,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+broadband_services,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+broker_client,1,INCLUDED,Broker client — business
+broker_quotes,1,INCLUDED,Broker quote correspondence
+brokerage_accounts,1,PII/LEGAL,Personal financial accounts — sensitive PII
+brokerage_agreements,1,INCLUDED,Brokerage agreements — business
+budget,3,PII/LEGAL,Budget records — financially sensitive
+budget___2001,1,PII/LEGAL,Budget records — financially sensitive
+budget___2002,1,PII/LEGAL,Budget records — financially sensitive
+bug,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+bush,1,INCLUDED,Bush administration public affairs
+bush_administration,1,INCLUDED,Bush administration affairs — public affairs
+bush_transition,2,INCLUDED,Bush administration transition — public affairs
+business,1,INCLUDED,General business correspondence
+business_council,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+business_objects,1,INCLUDED,Business Objects reporting — business
+c,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+c_s_no__6_remediation,1,INCLUDED,Compressor station operations
+c_s_no__9_remediation,1,INCLUDED,Compressor station operations
+ca_data_sheet_checks,1,INCLUDED,CA data checks — operations
+cabot,1,INCLUDED,Cabot counterparty — business
+caem,2,INCLUDED,CAEM market
+cal_articles,1,INCLUDED,California articles — business
+caledonia,1,INCLUDED,Caledonia project — business
+calendar,71,CONTENT-MISMATCH,Calendar entries — not email
+california,7,INCLUDED,California energy market business correspondence
+california___demand_buydown,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+california___emergency_authority,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+california___excess_profits_tax,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+california___working_group,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+california_campaign,1,INCLUDED,California campaign — public affairs
+california_coverup,1,PII/LEGAL,California crisis coverup — litigation sensitive
+california_crisis,1,INCLUDED,California energy crisis business correspondence
+california_crisis__press,1,INCLUDED,California crisis press correspondence
+california_humor,1,INCLUDED,California-themed humour — legitimate ham
+california_issues,1,INCLUDED,California issues — business
+california_legal_issues,1,PII/LEGAL,California legal matters — litigation sensitive
+california_messages,1,INCLUDED,California messages — business
+california_pg_e_bankruptcy,1,PII/LEGAL,PG&E bankruptcy — litigation sensitive
+caliornia___investigations,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+calp_hopewell,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+campaign_2000,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+canada,7,INCLUDED,Canada operations business correspondence
+canada_business,1,INCLUDED,Canada business operations
+capacity,1,INCLUDED,Pipeline capacity — business
+capacity_release,1,INCLUDED,Capacity release — regulatory/business
+capx,1,INCLUDED,Capital expenditure — business
+carlton_resolution,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+carol_stclair,1,PII/LEGAL,Named individual folder — personal PII
+carr,1,PII/LEGAL,Named individual — personal PII
+cas,1,INCLUDED,CAS operations — business
+catalytica,1,INCLUDED,Catalytica counterparty — business
+causey__rick,1,PII/LEGAL,Named executive folder — sensitive PII
+cdwr,1,INCLUDED,CDWR counterparty — business
+cec_conference,1,INCLUDED,CEC conference — business
+central,2,INCLUDED,Central operations
+central_desk_class_regis_,1,PII/LEGAL,Training registration records — HR sensitive
+cera,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ces,3,INCLUDED,CES business correspondence
+ces_pending,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ces_resolved,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+cfee,1,INCLUDED,CFEE — business
+cfp,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+cftc,5,PII/LEGAL,CFTC regulatory correspondence — litigation sensitive
+charges,1,INCLUDED,Charges — business
+chase_mah_stone,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+chicago,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+chinesewallspolicy,1,PII/LEGAL,Information barrier policy — regulatory sensitive
+chris_stokley,1,INCLUDED,Counterparty/colleague correspondence
+christmas_cards_list,1,PII/LEGAL,Personal contact list — PII
+church,1,PII/LEGAL,Personal religious correspondence — PII
+citibank,1,PII/LEGAL,Personal banking — sensitive PII
+citizens,2,INCLUDED,Citizens counterparty
+citizens_utilities,1,INCLUDED,Citizens Utilities counterparty — business
+clean_fuels,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+cleburne_plant____cornhusker_,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+click_at_home,1,INCLUDED,Click-at-home — business
+clickathome,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+clickpaper,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+clinton_energy,1,INCLUDED,Clinton energy policy — public affairs
+co_op_city,1,INCLUDED,Co-Op City counterparty — business
+coal,3,INCLUDED,Coal trading correspondence
+collateral_issues,1,PII/LEGAL,Collateral records — financially sensitive
+colleen_koenig,1,PII/LEGAL,Named individual folder — personal PII
+commercial_opportunities_task_force,1,INCLUDED,Business task force correspondence
+commercialization,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+commoditylogic,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+communications,1,INCLUDED,Business communications
+comp,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+company_options,1,INCLUDED,Company options — business
+compaq,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+compensation,2,PII/LEGAL,Salary/compensation data — sensitive PII
+compensation_and_benefits,1,PII/LEGAL,Salary and benefits data — sensitive PII
+competition_messages,1,INCLUDED,Competition messages — business
+compliments,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+compression_services,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+computer,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+computer_associates,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+computers,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+con_ed,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+conferences,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+confirm_desk,1,INCLUDED,Trading confirmations — business
+confirms,1,INCLUDED,Trade confirmations — business
+confirms___argentina,1,INCLUDED,Argentina confirmations — business
+confirms___equity,1,INCLUDED,Equity confirmations — business
+confirms___hickerson,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+confirms___interest_rate,1,INCLUDED,Interest rate confirmations — business
+confirms___london_paper___pulp,1,INCLUDED,London paper/pulp confirmations
+confirms___paper___pulp,1,INCLUDED,Paper/pulp confirmations
+confirms___sample,1,INCLUDED,Sample confirmations — business
+confirms___weather,1,INCLUDED,Weather confirmations — business
+confirms_power,1,INCLUDED,Power trade confirmations — business
+congrats,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+congratulations,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+congress,1,INCLUDED,Congress — public affairs
+connect_deletes,5,SYSTEM,Connector delete log — system artefact
+consultants,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+consulting_ag,1,INCLUDED,Consulting agreement — business
+contact_emp__list,1,CONTENT-MISMATCH,Employee contact list — PII risk
+contact_list,1,CONTENT-MISMATCH,Contact directory — not email
+contacts,46,CONTENT-MISMATCH,Address book — not email
+continental,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+continental_airlines,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+contract,1,INCLUDED,Contract correspondence — business
+contract_bids,1,INCLUDED,Contract bids — business
+contracts,1,INCLUDED,Contracts correspondence — business
+contributions,2,INCLUDED,Corporate contributions/public affairs
+controls,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+coop_city,1,INCLUDED,Co-Op City — business
+cooper_cameron,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+coral,1,INCLUDED,Coral counterparty — business
+corestaff,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+cornhusker,2,INCLUDED,Cornhusker pipeline operations
+corp_memos,1,INCLUDED,Corporate memos — business
+corpgen,1,INCLUDED,Corp general — business
+corporate,2,INCLUDED,Corporate correspondence
+corporate_comm,1,INCLUDED,Corporate communications
+corporate_communications,1,INCLUDED,Corporate communications
+corporate_responsibility,1,INCLUDED,Corporate responsibility
+correspondence,1,INCLUDED,General correspondence — business
+cost_controls,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+councilforeignrelations,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+counterparty_names,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+course_info,1,INCLUDED,Course information — business
+cousino__lisa,1,PII/LEGAL,Named individual folder — personal PII
+cousins,1,PII/LEGAL,Personal family correspondence — PII
+cqg,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+credit,4,PII/LEGAL,Credit records — financially sensitive
+credit_issues,2,INCLUDED,Credit issues — business
+credit_rings,1,PII/LEGAL,Credit ring trading — legally sensitive
+credit_union,1,PII/LEGAL,Personal banking — sensitive PII
+credit_watch,1,PII/LEGAL,Credit watch list — financially sensitive
+credit_watch_list,1,INCLUDED,Credit watch list — business
+credit_worksheets,1,PII/LEGAL,Credit worksheets — financially sensitive
+creditworthiness,1,INCLUDED,Creditworthiness — business
+crestone,1,INCLUDED,Crestone counterparty — business
+crisis,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+cross_border_task_force,1,INCLUDED,Cross-border task force
+crude_and_products,1,INCLUDED,Crude and products trading
+csu_fresno,1,INCLUDED,CSU Fresno — university relations
+ct_corporation,1,INCLUDED,CT Corporation legal services — business
+ctg_deals,1,INCLUDED,CTG deals — business
+ctpy_contacts,1,INCLUDED,Counterparty contacts — business
+cuiaba,2,INCLUDED,Cuiaba project — business
+cuiba,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+current_estimate,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+curve_validation,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+curves,1,INCLUDED,Market curves — business
+customer___alliant,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+customer___ena,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+customer___midam,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+customer___oneok,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+customer___reliant_retail_energy_minneapolis,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+customer___uses,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+customer___virginia_power_dominion,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+customer_list,1,CONTENT-MISMATCH,Customer contact list — not email
+cya,1,INCLUDED,CYA correspondence — business
+dabhol,2,INCLUDED,Dabhol project — business
+dabhol___cond__of_use,1,INCLUDED,Dabhol conditions of use — business
+daily_balancing_report,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+daily_blessings,1,PII/LEGAL,Personal devotional — PII
+daily_updates___12_1_01,1,INCLUDED,Daily operational updates
+daishowa,1,INCLUDED,Daishowa counterparty — business
+dana_s_extras,1,PII/LEGAL,Named individual extras — PII
+data,2,INCLUDED,Business data correspondence
+data_protection,1,PII/LEGAL,Data protection records — legally sensitive
+datek,1,PII/LEGAL,Personal brokerage — sensitive PII
+day_rate,1,INCLUDED,Day rate trading correspondence
+deal_communication,1,INCLUDED,Deal communications — business
+deals,1,INCLUDED,Business deal correspondence
+default_service__opportunities,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+delainey__dave,1,PII/LEGAL,Named executive folder — sensitive PII
+deleted_items,135,SYSTEM,Lotus Notes deleted-items bin — not authored email
+dell,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+delmarva,1,INCLUDED,Delmarva Power counterparty
+demand_information,1,INCLUDED,Demand information — business
+demarc_allocation,1,INCLUDED,Demarc allocation — operations
+democrats,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+deseret,1,INCLUDED,Deseret counterparty — business
+desert_crossing_storage,1,INCLUDED,Desert Crossing storage — business
+desert_power,1,INCLUDED,Desert Power counterparty — business
+design,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+desk_matters,1,INCLUDED,Desk matters — operations
+diamonds,1,INCLUDED,Business project codename
+diana_scholtes,1,PII/LEGAL,Named individual — personal PII
+direct_rpts,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+disclosure_rules,1,INCLUDED,Disclosure rules — regulatory
+discussion_threads,93,SYSTEM,Lotus Notes threading index — duplicates inbox content
+distributed_generation,1,INCLUDED,Energy distributed generation — business
+dj_articles,1,INCLUDED,DJ articles — business
+dod,1,INCLUDED,DOD counterparty — business
+doe,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+doj__grynberg__quinque,1,PII/LEGAL,DOJ legal case — litigation sensitive
+donna,1,PII/LEGAL,Named individual folder — personal PII
+doorstep,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+dpc_lng,1,INCLUDED,DPC LNG project — business
+dpr,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+dra,1,INCLUDED,DRA — regulatory
+dra_info,1,INCLUDED,DRA information — regulatory
+drafts,3,SYSTEM,Draft emails — not delivered
+drafts__lotus_notes_,1,SYSTEM,Lotus Notes drafts — not delivered email
+dsc,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+dublin,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+duffie,1,PII/LEGAL,Named individual — PII
+duke,2,INCLUDED,Duke Energy counterparty
+dynegy_transaction,1,INCLUDED,Dynegy transaction — business
+e_mail,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+e_mail_bin,1,SYSTEM,Email bin/trash — deleted content
+earnings_releases,1,INCLUDED,Earnings releases — business
+east_coast_power,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+east_desk,1,INCLUDED,East desk trading operations
+eastern_new_mexico_gas_co_,1,INCLUDED,Eastern New Mexico Gas counterparty
+ebay,1,PII/LEGAL,Personal commerce — PII
+ebr,1,INCLUDED,EBR operations
+ebs,2,INCLUDED,EBS broadband operations
+ebs_redeployment,1,PII/LEGAL,EBS redeployment — legally sensitive
+eci,2,INCLUDED,ECI counterparty correspondence
+eco___cond__of_use,1,INCLUDED,ECO conditions of use — business
+ecoelectrica,1,INCLUDED,EcoElectrica — business
+ecogas,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ecommerce,1,INCLUDED,E-commerce — business
+econ_201,1,INCLUDED,Economics studies — business/research
+economics,1,INCLUDED,Economics analysis — business
+ecr,1,INCLUDED,ECR operations — business
+ect_admin,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ed,1,PII/LEGAL,Named individual — personal PII
+edson,1,PII/LEGAL,Named individual — PII
+edwards_air_force,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+eecc,1,INCLUDED,EECC operations — business
+eei_collateral_annex,1,INCLUDED,EEI collateral annex — business
+ees,7,INCLUDED,Enron Energy Services operational correspondence
+ees_matters,2,INCLUDED,EES business matters correspondence
+ees_mgmt,1,INCLUDED,EES management — business
+ees_neg_ctc,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+eesi_deleted_documents,1,SYSTEM,EESI deleted documents — system artefact
+eesidealsgsaregion1,1,INCLUDED,EES deals GSA Region 1 — business
+eesiisonewengland,1,INCLUDED,EES ISO New England — business
+eesiisonewyork,1,INCLUDED,EES ISO New York — business
+eesiisopjm,1,INCLUDED,EES ISO PJM — business
+eesimarketstexas,1,INCLUDED,EES Texas markets — business
+eesiphysicalpowerdelivery,1,INCLUDED,EES physical power delivery — business
+eesirenewableenergy,1,INCLUDED,EES renewable energy — business
+egm,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ei,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ei_execs,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+eim,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+eisb_ubr,1,INCLUDED,EISB UBR — business
+el_paso,1,INCLUDED,El Paso counterparty — business
+el_paso_electric,1,INCLUDED,El Paso Electric counterparty
+electric_reports,1,INCLUDED,Electric reports — business
+electricity_restructuring_advisory_group,1,INCLUDED,Advisory group — public policy
+elizabeth,1,PII/LEGAL,Named individual (first name only) — personal PII
+elizabeth_sager,1,PII/LEGAL,Named individual folder — personal PII
+elpaso_pipeline,1,INCLUDED,El Paso pipeline counterparty
+ema_s,1,INCLUDED,EMA operations — business
+email,1,CONTENT-MISMATCH,"Generic folder named 'email' — ambiguous, excluded for safety"
+emailaddresses,1,CONTENT-MISMATCH,Email address list — not email
+emerson,1,INCLUDED,Emerson counterparty — business
+emetra,1,INCLUDED,Emetra — business
+ena_cal,1,INCLUDED,ENA California — business
+energymarketplace,1,INCLUDED,Energy marketplace — business
+engage_e_mails,1,INCLUDED,Engage system emails — business
+enhome,1,INCLUDED,EnHome operations — business
+enovate,1,INCLUDED,Enovate — business
+enron,2,INCLUDED,General Enron correspondence
+enron___general,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+enron_advisonry_council,1,INCLUDED,Advisory council — business
+enron_bike_club,1,INCLUDED,Enron Bike Club — corporate community
+enron_communications,1,INCLUDED,Enron communications — business
+enron_corp__board,1,INCLUDED,Enron board correspondence
+enron_credit,1,INCLUDED,Enron Credit — business
+enron_dynegy,1,PII/LEGAL,Dynegy merger — M&A legally sensitive
+enron_europe,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+enron_global_markets,1,INCLUDED,Enron Global Markets — business
+enron_kids,1,INCLUDED,Enron Kids programme — corporate community
+enron_litigation,1,PII/LEGAL,Enron litigation files — litigation sensitive
+enron_lng,1,INCLUDED,Enron LNG operations
+enron_mentions,1,INCLUDED,Enron press mentions
+enron_messages,1,INCLUDED,Enron messages — business
+enron_net_works,1,INCLUDED,Enron networks operations
+enron_networks,1,INCLUDED,Enron Networks operations
+enron_news,2,INCLUDED,Enron corporate news distribution
+enron_online,2,INCLUDED,EnronOnline system — business
+enron_online_summary,1,INCLUDED,EOL summary — business
+enron_power,1,INCLUDED,Enron Power operations
+enron_property_services,1,INCLUDED,Property services — business
+enron_t_s,1,INCLUDED,Enron T&S operations
+enron_travel_club,1,INCLUDED,Enron travel club — corporate
+enron_updates,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+enroncredit_com,1,INCLUDED,EnronCredit.com — business
+enrononline,1,INCLUDED,EnronOnline — business
+entelligence,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+entex,2,INCLUDED,Entex operations correspondence
+enviromental,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+environment___montreal,1,INCLUDED,Montreal environment — regulatory
+environmental,1,INCLUDED,Environmental affairs — business
+environmental_issues,1,INCLUDED,Environmental affairs — business
+eol,11,INCLUDED,EOL trading platform — business
+eol___tagg,1,INCLUDED,EOL TAGG — business
+eol_access,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+eol_rqsts,1,INCLUDED,EOL requests — business
+eolml7,1,INCLUDED,EOL ML7 product — business
+eott,3,INCLUDED,EOTT operations — business
+eott_due_diligence,1,INCLUDED,EOTT due diligence — business
+eott_midland,1,INCLUDED,EOTT Midland operations
+epmi___power,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+epsa,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+erc,1,INCLUDED,ERC operations
+ercot,1,INCLUDED,ERCOT market operations
+ernie,1,INCLUDED,ERNIE system correspondence
+ernie_training,1,PII/LEGAL,Named system training — HR artefact
+esai,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+espeed,1,INCLUDED,eSpeed trading — business
+estate,1,INCLUDED,Estate/facilities — business
+et,1,INCLUDED,ET counterparty — business
+et_contacts,1,INCLUDED,ET contacts — business
+et_s,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ethics_ljm_notre_dame,1,PII/LEGAL,LJM ethics matter — litigation sensitive
+ethink,1,INCLUDED,eThink — business
+etol,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+euncie_texaco_remediation,1,INCLUDED,Environmental operations
+europe,3,INCLUDED,European operations
+europe_july,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+europe_june,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+europe_october,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+evaluation,1,PII/LEGAL,Performance evaluation — sensitive PII
+evaluations,1,PII/LEGAL,Performance evaluations — sensitive PII
+expense_reports,2,PII/LEGAL,Personal expense reports — financial PII
+expense_rpts__1997,1,PII/LEGAL,Personal expense reports — financial PII
+expense_system,1,PII/LEGAL,Expense system records — financial PII
+expenses,1,PII/LEGAL,Expense records — financially sensitive
+experience_enron,1,INCLUDED,Enron brand/culture — business
+facilities_services,1,INCLUDED,Facilities management — business
+family,1,PII/LEGAL,Personal family correspondence — PII
+fasb133,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+favorites,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+fed_legis_2001,1,INCLUDED,Federal legislation 2001 — public affairs
+federal_emergency,1,INCLUDED,Federal emergency — public affairs
+federal_gov_t_affairs,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+federal_legis_,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+federal_legislation,1,INCLUDED,Federal legislation — public affairs
+fedex,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+felecia_fitzgerald,1,PII/LEGAL,Named individual folder — personal PII
+ferc,6,INCLUDED,FERC regulatory correspondence
+ferc_reporting_reqts,1,INCLUDED,FERC reporting requirements
+ffl,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+file,1,SYSTEM,"Generic file folder — ambiguous, non-specific"
+file_space,1,INCLUDED,File space administration — business
+fin_desk,1,INCLUDED,Financial desk operations
+finanial_operations,1,INCLUDED,Financial operations — business
+fire_chief,1,INCLUDED,Fire chief correspondence — operations
+first_delivery,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+first_gas,1,INCLUDED,First Gas — business
+fisher__kristina,1,PII/LEGAL,Named individual folder — personal PII
+flash,1,INCLUDED,Flash reports — business
+floorspace,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+florida,4,INCLUDED,Florida operations correspondence
+forest_and_paper_products,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+forms,1,CONTENT-MISMATCH,Form templates — not email
+forney,1,INCLUDED,Forney counterparty — business
+fpl,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+fpl_genco,1,INCLUDED,FPL Genco — business
+freestone,1,INCLUDED,Freestone project — business
+freight,1,INCLUDED,Freight operations — business
+frevert__mark,1,PII/LEGAL,Named executive folder — sensitive PII
+friends,3,PII/LEGAL,Personal friends correspondence — PII
+frito_lay,1,INCLUDED,Frito-Lay counterparty — business
+frontera,1,INCLUDED,Frontera pipeline — operations
+ft__pierce,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+fuel,1,INCLUDED,Fuel operations — business
+fuel_cells,3,INCLUDED,Fuel cell technology business correspondence
+fun,1,INCLUDED,Fun/humour emails — legitimate ham
+fun_emails,1,INCLUDED,Fun emails — legitimate ham
+fundamentals,4,INCLUDED,Energy fundamentals analysis
+fundementals,1,INCLUDED,Fundamentals — business
+fundies,1,INCLUDED,Energy fundamentals — business
+funny,4,INCLUDED,Humour emails — legitimate ham
+fyi,1,INCLUDED,FYI distribution — business
+g__robinson,1,INCLUDED,Counterparty correspondence
+ga_fundamentals,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+garcia_munte,1,PII/LEGAL,Named individual — PII
+garden_state_paper,1,INCLUDED,Garden State Paper — counterparty
+gas,3,INCLUDED,Natural gas trading correspondence
+gas_accord,1,INCLUDED,Gas Accord regulatory matter
+gas_customers___chris_foster,1,INCLUDED,Gas customers — business
+gas_deals,1,INCLUDED,Gas deal correspondence
+gas_issues,2,INCLUDED,Natural gas issues — business
+gaza,1,INCLUDED,Gaza project — business
+gbn,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ge,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ge_general,1,INCLUDED,GE counterparty — business
+genco,1,INCLUDED,Genco operations
+genco_jv_ipo,1,INCLUDED,Genco JV/IPO — business
+genco_plant_misc,1,INCLUDED,Genco plant — business
+general_rate_case_s_,1,INCLUDED,General rate case — regulatory
+general_research,1,INCLUDED,Business research correspondence
+general_stuff,1,INCLUDED,General business correspondence
+generation,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+gir,1,INCLUDED,GIR operations — business
+girls,1,INCLUDED,Ambiguous — retained as likely business group
+gleason__sound,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+glen_hass,1,PII/LEGAL,Named individual folder — personal PII
+glendale,1,INCLUDED,Glendale operations — business
+global,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+global_markets,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+global_mkts,1,INCLUDED,Global markets — business
+global_standards,1,INCLUDED,Global standards — business
+globalassets,1,INCLUDED,Global assets — business
+glover,1,PII/LEGAL,Named individual — PII
+glover__sheila,1,PII/LEGAL,Named individual folder — personal PII
+goals_2000,1,PII/LEGAL,Individual goals records — sensitive PII
+goals_and_objectives_1999,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+golf,1,PII/LEGAL,Personal leisure — PII
+gomez_remediation,1,INCLUDED,Environmental operations
+gore,1,INCLUDED,Gore public affairs
+gossett,1,PII/LEGAL,Named individual folder — personal PII
+gossett__jeff,1,PII/LEGAL,Named individual folder — personal PII
+government_affairs,1,INCLUDED,Government affairs — public policy
+government_affairs_group_reports,1,INCLUDED,Government affairs reports
+governor_davis_meeting,1,INCLUDED,Governor Davis meeting — public affairs
+govt,1,INCLUDED,Government affairs — business
+gpg,2,INCLUDED,GPG operations correspondence
+gpg_ops,1,INCLUDED,GPG operations
+granite__2_,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+granite_ii,1,INCLUDED,Granite II project — business
+greenhouse_gas_business,1,INCLUDED,Greenhouse gas — business
+greg_couch,1,PII/LEGAL,Named individual folder — personal PII
+gri_jan_1996,1,INCLUDED,GRI January 1996 — business
+grupo_chihuahua,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+gspp_conference,1,INCLUDED,Conference/speaking engagement
+gu_recruiting,1,PII/LEGAL,University recruiting — sensitive PII
+guaranties,1,PII/LEGAL,Guaranty contracts — legally sensitive
+gwolfe,1,INCLUDED,GWolfe correspondence — business
+hall__bob,1,PII/LEGAL,Named individual folder — personal PII
+hall__todd,1,PII/LEGAL,Named individual folder — personal PII
+haywood,1,INCLUDED,Haywood counterparty — business
+hea_nesa,1,INCLUDED,HEA/NESA market — business
+heat_wave,1,INCLUDED,Heat wave — operations/public affairs
+hedging,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+hedstrom__peggy,1,PII/LEGAL,Named individual folder — personal PII
+helsinki,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+henwood,1,INCLUDED,Henwood counterparty — business
+heof_intrust,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+herod__brenda,1,PII/LEGAL,Named individual folder — personal PII
+hesco,1,INCLUDED,HESCO counterparty — business
+hickerson,1,PII/LEGAL,Named individual folder — PII
+hickerson___ag_trading,1,PII/LEGAL,Named individual trading folder — PII
+highland,1,INCLUDED,Highland counterparty — business
+hoegh_galleon,1,INCLUDED,Hoegh Galleon LNG vessel — business
+hold,1,SYSTEM,Temporary hold folder — ambiguous provenance
+holden_s,1,PII/LEGAL,Named individual folder — personal PII
+holidays,1,INCLUDED,Holiday schedule — business operations
+hopwood__tom,1,PII/LEGAL,Named individual folder — personal PII
+house,1,PII/LEGAL,Personal real estate correspondence — PII
+house___new,1,PII/LEGAL,Personal real estate — PII
+houston,1,INCLUDED,Houston operations — business
+houstonfundamentals,1,INCLUDED,Houston energy fundamentals
+hp,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+hpl,2,INCLUDED,HPL pipeline operations
+hpl_sale,1,INCLUDED,HPL sale transaction — business
+hpl_sell,1,INCLUDED,HPL sale transaction — business
+hr,3,PII/LEGAL,HR records — sensitive PII
+hr_data,1,PII/LEGAL,HR data records — sensitive PII
+hr_info,1,PII/LEGAL,HR information — sensitive PII
+hr_risk_management,1,INCLUDED,Risk management — business operations
+hr_stats,1,PII/LEGAL,HR statistics — sensitive PII
+hs,1,INCLUDED,HS operations — business
+human_resources,3,PII/LEGAL,HR department records — sensitive PII
+humor,3,INCLUDED,Humour/forward emails — legitimate ham class
+hydro,1,INCLUDED,Hydro operations — business
+i2,1,INCLUDED,i2 technology — business
+ibuyit,1,INCLUDED,iBuyIt procurement — business
+ibuyit_information,1,INCLUDED,iBuyIt information — business
+icap_policy,1,INCLUDED,ICAP policy — regulatory
+ice,1,INCLUDED,ICE exchange correspondence
+illinois,2,INCLUDED,Illinois operations correspondence
+immediate_response,1,INCLUDED,Immediate response correspondence — business
+important_e_mails,1,INCLUDED,Important email archive — business
+important_info,1,INCLUDED,Important info — business
+important_information,1,INCLUDED,Important information — business
+importantstuff,1,INCLUDED,Important business correspondence
+ina,1,INCLUDED,INA counterparty — business
+inbox,137,INCLUDED,Primary received mail — standard business email
+inclement_weather_list,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+indeck_corinth,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+india,6,INCLUDED,India operations business correspondence
+india___derivatives,1,INCLUDED,India derivatives — business
+indian_trading,1,INCLUDED,Indian trading — business
+industrial_cust__solutions,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+industrials,1,INCLUDED,Industrial customers — business
+industry_mentions,1,INCLUDED,Industry mentions — business
+infineum,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+info,2,INCLUDED,Information distribution correspondence
+info2,1,INCLUDED,Information distribution — business
+info3,1,INCLUDED,Information distribution — business
+infrastructure,1,INCLUDED,Infrastructure — business
+ingaastudy,1,INCLUDED,INGAA study — regulatory research
+inland,1,INCLUDED,Inland operations — business
+insideferc,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+insurance_call_spread,1,PII/LEGAL,Structured insurance product — legally sensitive
+insurance_risk,1,INCLUDED,Insurance risk management — business
+integration,1,INCLUDED,Integration project — business
+interconnect_agreement_sample,1,INCLUDED,Interconnect agreement — business
+interconnection,2,INCLUDED,Grid interconnection correspondence
+interconnection_issues,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+internal_communications,1,INCLUDED,Internal communications — business
+international,2,INCLUDED,International operations correspondence
+internet,1,CONTENT-MISMATCH,Internet bookmarks — not email
+internet_sites,1,CONTENT-MISMATCH,Bookmarks/URL list — not email
+investing,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+investments,1,INCLUDED,Business investments
+iowa,1,INCLUDED,Iowa operations — business
+ipayit_information,1,INCLUDED,iPayIt system — business
+isda,2,PII/LEGAL,ISDA master agreements — legally sensitive
+isda_matters,1,PII/LEGAL,ISDA matters — legally sensitive
+iso,1,INCLUDED,ISO market operations
+iso__pricecaps,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+israel_estrada,1,PII/LEGAL,Named individual folder — personal PII
+it,4,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+it___misc_,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+italy,1,INCLUDED,Italy operations — business
+itinerary_off_duty,1,PII/LEGAL,Off-duty itinerary — personal PII
+itinerary_receipt,1,INCLUDED,Business travel itinerary
+janie,1,PII/LEGAL,Named individual — personal PII
+japan,6,INCLUDED,Japan operations business correspondence
+jay_s_saved_stuff,1,PII/LEGAL,Named individual folder — personal PII
+jblock,1,INCLUDED,J-Block project — business
+jdf,1,INCLUDED,JDF operations — business
+jean,1,PII/LEGAL,Named individual (first name only) — personal PII
+jeff_nogid,1,PII/LEGAL,Named individual folder — personal PII
+jennifer,1,PII/LEGAL,Named individual (first name) — PII
+john_memos,1,INCLUDED,Business memos
+john_shafer,1,PII/LEGAL,Named individual folder — personal PII
+jrhernandez,1,PII/LEGAL,Named individual — personal PII
+julie_ferrara,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+junk,1,SYSTEM,Junk mail folder — unreliable ham label
+junk_e_mail,1,SYSTEM,Junk folder variant — unreliable ham label
+junk_mail,1,SYSTEM,Junk folder — unreliable ham label
+kafus,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+kcs,1,INCLUDED,KCS counterparty — business
+keep_all_e_mail___,1,INCLUDED,Flagged business emails — included
+kelly,1,PII/LEGAL,Named individual — personal PII
+ken_lay,1,INCLUDED,Ken Lay — CEO business correspondence
+kern,1,INCLUDED,Kern operations — business
+keyex_1997,1,INCLUDED,Keyex 1997 operations — business
+kim_s_files,1,PII/LEGAL,Named individual folder — personal PII
+kingman_heat_recovery,1,INCLUDED,Kingman heat recovery — business
+kinko_s,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+kiodex,2,INCLUDED,Kiodex system — business
+kitchen__louise,1,PII/LEGAL,Named individual folder — personal PII
+kn_energy,1,INCLUDED,KN Energy — business
+knauf,1,INCLUDED,Knauf counterparty — business
+knowledge_management,1,INCLUDED,Knowledge management — business
+koch,1,INCLUDED,Koch Industries — counterparty correspondence
+korea,1,INCLUDED,Korea operations — business
+la_plata_c_s,1,INCLUDED,Operations
+laptop,1,INCLUDED,Laptop/IT operations — business
+las_cruces,1,INCLUDED,Las Cruces operations — business
+lavorato__john,1,PII/LEGAL,Named executive folder — sensitive PII
+ldwp,1,INCLUDED,LDWP counterparty — business
+leadership_development,1,PII/LEGAL,Leadership programme — HR sensitive
+leg_conf_topics,1,INCLUDED,Legislative conference topics — business
+legal,4,PII/LEGAL,Legal correspondence — litigation sensitive
+legislation,1,INCLUDED,Energy legislation affairs
+lexisid,1,PII/LEGAL,Legal system credentials — PII/security risk
+ljm,1,PII/LEGAL,LJM SPE — Enron fraud — legally sensitive
+lm6000,1,INCLUDED,LM6000 turbine — operations
+lng,5,INCLUDED,LNG trading and operations correspondence
+lockridge_remediation,1,INCLUDED,Environmental operations
+logistics,1,INCLUDED,Logistics operations
+london,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+long_beach,1,INCLUDED,Long Beach operations — business
+lorraine_s_files,1,PII/LEGAL,Named individual folder — personal PII
+lost_creek,1,INCLUDED,Lost Creek project — business
+lotus_notes_link,1,CONTENT-MISMATCH,Lotus Notes link artefact — not email
+lrc_bridgeline,1,INCLUDED,LRC Bridgeline — operations
+lt_contracts,1,INCLUDED,Long-term contracts — business
+magruder,1,PII/LEGAL,Named individual — PII
+mahonia,1,PII/LEGAL,Mahonia prepay deal — Enron fraud context
+management_conference,1,INCLUDED,Management conference — business
+marc_phillips,1,PII/LEGAL,Named individual folder — personal PII
+mariner,1,INCLUDED,Mariner counterparty — business
+mark,1,PII/LEGAL,Named individual (first name only) — personal PII
+mark_whitt,1,PII/LEGAL,Named individual folder — personal PII
+market,1,INCLUDED,Market operations correspondence
+market_intel,1,INCLUDED,Market intelligence — business
+market_structure,1,INCLUDED,Market structure — business
+market_structure__seabron_adamson_,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+market_structure__task_force,1,INCLUDED,Market structure task force
+marketing_affiliate,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+marketing_affiliate_matters,1,INCLUDED,Marketing affiliate matters — business
+marketingaffiliate,1,INCLUDED,Marketing affiliate — business
+markets,1,INCLUDED,Markets — business
+marks,1,INCLUDED,Marks/valuation — business
+marsh_usa,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+master_notice,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+master_swap_issues,1,PII/LEGAL,Master swap agreements — legally sensitive
+mba__accounting,1,PII/LEGAL,Individual education records — PII
+mba__advanced_finance,1,PII/LEGAL,Individual education records — PII
+mba__analysis_of_financial_information,1,PII/LEGAL,Individual education — PII
+mba__e_commerce,1,PII/LEGAL,Individual education — PII
+mba__finance,1,PII/LEGAL,Individual education — PII
+mba__finance_study_group,1,PII/LEGAL,Individual education — PII
+mba__financial_reporting,1,PII/LEGAL,Individual education — PII
+mba__macroeconomics,1,PII/LEGAL,Individual education — PII
+mba__managerial_accting,1,PII/LEGAL,Individual education — PII
+mba__marketing,1,PII/LEGAL,Individual education — PII
+mba__mpar,1,PII/LEGAL,Individual education — PII
+mba__quant,1,PII/LEGAL,Individual education — PII
+mba_program,1,PII/LEGAL,Individual education records — PII
+mbr___market_power,1,INCLUDED,MBR market power — regulatory
+mckinsey_project,1,INCLUDED,McKinsey project — business
+media,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+meeting_invites_confirms,1,INCLUDED,Meeting invitations — business
+meetings,3,INCLUDED,Meeting coordination correspondence
+meetings___general,1,INCLUDED,General meeting coordination
+meetings___nng_customer_mtg,1,INCLUDED,NNG customer meeting — business
+meetings___tw_customer,1,INCLUDED,TW customer meeting — business
+mega_morgan_assignment,1,INCLUDED,Mega Morgan assignment — business
+meh_new_projects,1,INCLUDED,New projects — business
+mehpictures,1,INCLUDED,Business photos/media — corporate
+melodick__kim,1,PII/LEGAL,Named individual folder — personal PII
+memo_s,1,INCLUDED,Business memos
+memos,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+merced,1,INCLUDED,Merced counterparty — business
+merchant_function_group,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+merchant_investments,1,INCLUDED,Merchant investments — business
+merger_with_dynegy,1,INCLUDED,Dynegy merger — business correspondence
+mergers,1,PII/LEGAL,M&A records — legally sensitive
+merit,1,PII/LEGAL,Merit/salary review — sensitive PII
+merrill_lynch,1,PII/LEGAL,Personal brokerage — sensitive PII
+mesa,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+messages,1,INCLUDED,General business messages
+metals,3,INCLUDED,Metals trading correspondence
+mexico,4,INCLUDED,Mexico operations business correspondence
+mg,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+mgmt_summary,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+michcon,1,INCLUDED,Michigan Consolidated Gas — counterparty
+michigan,2,INCLUDED,Michigan operations correspondence
+mid_atlantic,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+mid_columbia,1,INCLUDED,Mid Columbia — business
+mid_market,1,INCLUDED,Mid-market operations
+middle_east,1,INCLUDED,Middle East operations — business
+midesto,1,INCLUDED,Midesto counterparty — business
+midway,2,INCLUDED,Midway operations
+midwest,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+midwest_retail_delivery,1,INCLUDED,Midwest retail delivery — business
+mike_reynolds,1,PII/LEGAL,Named individual folder — personal PII
+military_privatizations,1,INCLUDED,Military privatisation — business
+misc,6,INCLUDED,Miscellaneous business correspondence
+misc_,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+misc__gas_issues,1,INCLUDED,Miscellaneous gas issues — business
+misc_tw,1,INCLUDED,Miscellaneous TW — business
+miscellaneous,3,INCLUDED,Miscellaneous business correspondence
+mit,1,INCLUDED,MIT — institutional/research relations
+mkt_affiliate,1,INCLUDED,Marketing affiliate — business
+ml7_eol_product,1,INCLUDED,ML7 EOL product — business
+monetization_el_paso,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+monmouth,1,INCLUDED,Monmouth project — business
+monterrey_office,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+monthly_pma_s,1,INCLUDED,Monthly PMA reports — business
+moosehead,1,INCLUDED,Moosehead project — business
+moscoso__mike,1,PII/LEGAL,Named individual folder — personal PII
+motley_fool_e_mails,1,INCLUDED,Motley Fool market news — business
+move,3,SYSTEM,Migration staging — system artefact
+move_stuff,1,SYSTEM,Temporary staging folder — system artefact
+mpr,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+msa_revisions,1,INCLUDED,MSA revision correspondence — business
+msap_info,1,INCLUDED,MSAP information — business
+mtbe,1,INCLUDED,MTBE fuel operations
+municipalities,1,INCLUDED,Municipal customer relations
+murphy__ted,1,PII/LEGAL,Named individual folder — personal PII
+my_personal,1,PII/LEGAL,Self-labelled personal — explicit personal correspondence
+myfriends,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+n_form,1,INCLUDED,N-form regulatory filing — business
+nacec,1,INCLUDED,NACEC — regulatory
+name_change_merger,1,INCLUDED,Name change/merger — business
+naruc,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+nat_gas,1,INCLUDED,Natural gas — business
+national_campaign,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+national_fuel,1,INCLUDED,National Fuel counterparty — business
+national_steel,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+natsource,1,INCLUDED,Natsource counterparty — business
+natural_gas_strategy,1,INCLUDED,Natural gas strategy correspondence
+nbpl,1,INCLUDED,NBPL operations
+nbpl_information,1,INCLUDED,NBPL information
+ncpa,1,INCLUDED,NCPA counterparty — business
+ne_development,1,INCLUDED,NE development — business
+need_to_read,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+negotiated_rates,1,INCLUDED,Negotiated rates — regulatory
+nelson,1,PII/LEGAL,Named individual folder — personal PII
+nepco,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+nepco_europe,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+nerc,3,INCLUDED,NERC reliability organisation correspondence
+netco,1,INCLUDED,Netco operations — business
+networks,3,INCLUDED,Networks operations — business
+neumin,1,INCLUDED,Neumin counterparty — business
+nevada,1,INCLUDED,Nevada operations — business
+new_england_ny,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+new_hires,1,PII/LEGAL,New hire records — sensitive PII
+new_items,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+new_jersey_natural,1,INCLUDED,New Jersey Natural — counterparty
+new_normal_dot,1,CONTENT-MISMATCH,Word template artefact — not email
+new_power,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+new_york,2,INCLUDED,New York operations correspondence
+newpower,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+newpowernoncompete,1,INCLUDED,New Power non-compete — business
+newsletter,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ngo_s,1,INCLUDED,NGO relations — business/public affairs
+ngpl,1,INCLUDED,NGPL pipeline — operations
+nimo,1,INCLUDED,NIMO counterparty — business
+njn,1,INCLUDED,NJN operations — business
+nng,2,INCLUDED,NNG pipeline operations
+nng___sba,1,INCLUDED,NNG SBA agreement — business
+nng___sla_settlement,1,INCLUDED,NNG SLA settlement — business
+non_us_offices,1,INCLUDED,Non-US offices — business
+noresco,1,INCLUDED,Noresco counterparty — business
+north_crawar_remediation,1,INCLUDED,Environmental operations
+notes,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+notes_inbox,82,SYSTEM,Lotus Notes internal inbox mirror — duplicates inbox
+notre_dame,2,INCLUDED,Notre Dame conference/speaking engagement
+nov00_mar01_deals,1,INCLUDED,Deals Nov 2000–Mar 2001 — business
+npdes_stormwater,1,INCLUDED,Environmental compliance operations
+nrg,1,INCLUDED,NRG Energy counterparty — business
+nsm,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+nsps_for_turbines,1,INCLUDED,Environmental compliance operations
+nyiso,1,INCLUDED,NYISO market operations
+nymex,2,INCLUDED,NYMEX exchange correspondence
+nymex_hedge_exemptions,1,PII/LEGAL,Regulatory hedge exemptions — sensitive
+nymex_prices,1,INCLUDED,NYMEX prices — business
+ocd,1,INCLUDED,OCD operations — business
+oec,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ofccp_audit,1,PII/LEGAL,OFCCP employment audit — litigation sensitive
+off_balance_sheet_form_contracts,1,PII/LEGAL,Off-balance-sheet contracts — Enron fraud context — legally sensitive
+off_site,1,INCLUDED,Off-site meetings — business
+office_of_the_chair,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+offline,1,SYSTEM,Offline sync folder — system artefact
+offshore_processing,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+offsite,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ofos,1,INCLUDED,OFOS market operations
+ogelthorpe,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ohio,1,INCLUDED,Ohio operations — business
+old,2,SYSTEM,Undifferentiated archive dump — provenance unclear
+old_email,1,SYSTEM,Undifferentiated old-email archive — provenance unclear
+old_inbox,1,SYSTEM,Archived inbox copy — duplicates inbox content
+old_messages,1,SYSTEM,Archived messages — provenance unclear
+older_than_30,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+oman_lng,1,INCLUDED,Oman LNG — business
+on_call_schedule,1,INCLUDED,On-call schedule — business operations
+online_trading,2,INCLUDED,Online trading operations
+ontario,1,INCLUDED,Ontario market — business
+ontario_nug,1,INCLUDED,Ontario NUG — regulatory
+ontario_oa,1,INCLUDED,Ontario open access — regulatory
+operating_rpts,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+operational_sales,1,INCLUDED,Operational sales — business
+operations_committee_isas,1,INCLUDED,Operations committee ISAs — business
+opic,1,INCLUDED,OPIC — international operations
+options,1,INCLUDED,Options trading — business
+order_637,2,INCLUDED,Order 637 — regulatory
+org__announc_,1,INCLUDED,Org announcements — business
+org_announc____chrts,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+organization,1,INCLUDED,Organisational correspondence
+organizational_announcements,1,INCLUDED,Org announcements — business
+organizational_changes,1,INCLUDED,Org changes — business
+organizational_issues,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+organizationalchanges,1,INCLUDED,Org changes — business
+origination,2,INCLUDED,Deal origination correspondence
+osha,1,INCLUDED,OSHA compliance operations
+oslo,1,INCLUDED,Oslo operations — business
+other,1,INCLUDED,Other business correspondence
+ou,1,INCLUDED,OU operations — business
+outages,1,INCLUDED,Pipeline/plant outage operations
+outbox,6,SYSTEM,Unsent drafts queue — not delivered email
+outlook_instructions,1,CONTENT-MISMATCH,Client instructions document — not email
+outlook_migration,1,INCLUDED,Outlook migration project correspondence
+oyster_creek,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+p_1_c_s_nov,1,INCLUDED,Compressor station operations
+pac,1,INCLUDED,PAC — political action/public affairs
+pacific_valour,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+pacific_virgo,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+palo_alto,1,INCLUDED,Palo Alto operations — business
+pan_energy_swap,1,INCLUDED,Pan Energy swap transaction — business
+panda,1,INCLUDED,Panda Energy counterparty — business
+paris,1,INCLUDED,Paris operations — business
+park__n_ride,1,PII/LEGAL,Personal commute records — PII
+parking,2,INCLUDED,Corporate parking administration
+pasadena,1,INCLUDED,Pasadena operations — business
+passwords,2,PII/LEGAL,Credential storage — critical PII/security risk
+patriotism,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+pats,1,PII/LEGAL,Named individual (nickname) — PII
+payroll_electronic_directions,1,PII/LEGAL,Payroll/banking details — sensitive PII
+pba_s,1,INCLUDED,PBAs — business
+pca,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+pcb_modeling_study,1,PII/LEGAL,PCB environmental study — legally sensitive
+pcb_s,1,INCLUDED,Environmental operations
+pcc_values,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+pearce__barry,1,PII/LEGAL,Named individual folder — personal PII
+pemex_trans_pecos,1,INCLUDED,Pemex Trans Pecos — business
+pending,2,SYSTEM,Holding folder — likely incomplete emails
+pennsylvania,2,INCLUDED,Pennsylvania operations correspondence
+peoples_hedges,1,INCLUDED,Peoples hedges — business
+perez__eugenio,1,PII/LEGAL,Named individual — PII
+perfmgmt,1,INCLUDED,Performance management — business
+perfomance_evaluation,1,PII/LEGAL,Performance evaluation — sensitive PII
+performance,3,PII/LEGAL,Performance review records — sensitive PII
+performance_management,2,INCLUDED,Performance management — business
+performance_mgmt_,1,PII/LEGAL,Performance management — sensitive PII
+performance_review,1,PII/LEGAL,Performance review — HR sensitive
+performancematters,1,PII/LEGAL,Performance matters — sensitive PII
+personal,39,PII/LEGAL,Self-labelled personal folder — explicit personal correspondence
+personal_addresses,1,PII/LEGAL,Personal address book — PII
+personal_contacts,1,PII/LEGAL,Personal address book — PII
+personal_travel,1,PII/LEGAL,Personal travel itineraries — PII
+personalfolder,1,PII/LEGAL,Self-labelled personal — explicit personal correspondence
+personnal,1,PII/LEGAL,Personnel records (misspelled) — sensitive PII
+personnel,3,PII/LEGAL,Personnel records — sensitive PII
+personnel___advance_hire_assoc,1,PII/LEGAL,Personnel hiring records — sensitive PII
+personnel___ava_s_duties,1,PII/LEGAL,Named individual duties — sensitive PII
+personnel___paa,1,PII/LEGAL,Personnel records — sensitive PII
+personnel___prc_2001_mid_yr,1,PII/LEGAL,PRC records — sensitive HR data
+personnel___prc_2001_year_end,1,PII/LEGAL,PRC records — sensitive HR data
+personnel___promotions,1,PII/LEGAL,Promotions records — sensitive PII
+personnel___shift_differential,1,PII/LEGAL,Pay records — sensitive PII
+personnel___working_from_home,1,PII/LEGAL,HR policy records — sensitive PII
+personnel_issues,1,PII/LEGAL,Personnel issues — sensitive PII
+pfg,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+pg_e_bankruptcy,1,PII/LEGAL,PG&E bankruptcy — litigation sensitive
+pg_e_hydro_sale,1,INCLUDED,PG&E hydro sale — business transaction
+pg_e_meetings_and_notes,1,INCLUDED,PG&E meetings — business
+pg_e_pbr,1,INCLUDED,PG&E performance-based rate — regulatory
+pg_e_pcbs,1,PII/LEGAL,PG&E PCB environmental litigation — legally sensitive
+pge,1,INCLUDED,PGE counterparty — business
+pge_sale,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+phffu,1,INCLUDED,PHFFU operations — business
+philippines,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+phone_lists,1,CONTENT-MISMATCH,"Phone directory — not email, PII risk"
+phone_numbers,1,CONTENT-MISMATCH,"Phone directory — not email, PII risk"
+pictures,2,CONTENT-MISMATCH,Image attachments folder — not email text
+pipeinfo,1,INCLUDED,Pipeline information
+pipeline,1,INCLUDED,Pipeline operations correspondence
+pipeline_info,1,INCLUDED,Pipeline information correspondence
+pipeline_issues,1,INCLUDED,Pipeline issues — operations
+pipeline_matters,1,INCLUDED,Pipeline matters — operations
+pipelines,1,INCLUDED,Pipeline operations
+piper__greg,1,PII/LEGAL,Named individual folder — personal PII
+pjm,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+planning,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+play_group,1,INCLUDED,Business playgroup / team coordination
+pnm,1,INCLUDED,PNM counterparty — business
+poland,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+policies,1,INCLUDED,Corporate policies — business
+policy,2,INCLUDED,Corporate policy correspondence
+policy_manual_and_united_way,1,INCLUDED,Policy manual/United Way — business
+policy_papers,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+portcalc_requests,1,INCLUDED,Portfolio calculation requests — business
+portuguese,1,INCLUDED,Portuguese language business correspondence
+position,1,INCLUDED,Trading position correspondence
+position_papers,1,INCLUDED,Position papers — public affairs
+post_bankruptcy,1,INCLUDED,Post-bankruptcy operations — business
+power,1,INCLUDED,Power trading and operations
+power_conf,1,INCLUDED,Power conference — business
+power_e_mails,1,INCLUDED,Power emails — business
+power_marketer,1,INCLUDED,Power marketer — business
+power_projects,1,INCLUDED,Power projects — business
+power_purchase_eei,1,INCLUDED,Power purchase EEI — business
+powercontracts,1,INCLUDED,Power contracts — business
+powereast,1,INCLUDED,Power East desk operations
+powersystems,1,INCLUDED,Power systems — business
+powerwest,1,INCLUDED,Power West desk operations
+pr___notre_dame,1,INCLUDED,PR Notre Dame — business
+pr_crisis_management,1,INCLUDED,PR crisis management — business
+prc,10,INCLUDED,Performance Review Committee — business correspondence
+prc_ass_mid00,1,PII/LEGAL,PRC assessment records — sensitive HR data
+prepays_structured_deals,1,PII/LEGAL,Structured finance deals — Enron fraud context — legally sensitive
+preschedule,1,INCLUDED,Pre-schedule operations
+presentations,7,INCLUDED,Business presentations
+press,2,INCLUDED,Press/media relations correspondence
+press_releases,4,INCLUDED,Press releases — business
+presto_files,1,SYSTEM,Application working files — not email
+presto_working_files,1,SYSTEM,Application working files — not email
+preston_vpp,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+price__brent,1,PII/LEGAL,Named individual folder — personal PII
+price_risk_management_,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+print,1,CONTENT-MISMATCH,Print queue folder — not email
+private_folders,9,PII/LEGAL,Self-labelled private folder — explicit personal/sensitive content
+procaribe,1,INCLUDED,ProCaribe — business
+producer_services,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+project_50,1,INCLUDED,Project 50 — business project
+project_california,1,INCLUDED,Project California — business
+project_dolphin,1,INCLUDED,Project Dolphin — business
+project_grandslam,1,INCLUDED,Project Grand Slam — business
+project_jose,1,INCLUDED,Project Jose — business
+project_orange,1,INCLUDED,Project Orange — business
+project_sato,1,INCLUDED,Project Sato — business
+project_springbok,1,INCLUDED,Project Springbok — business
+project_stanley,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+project_summer,1,INCLUDED,Project Summer — business
+projects,2,INCLUDED,Business projects correspondence
+promotions,1,PII/LEGAL,Promotions records — sensitive PII
+pros,1,INCLUDED,PROS system — business
+prudency,1,PII/LEGAL,Regulatory prudency proceeding — litigation sensitive
+psco,1,INCLUDED,PSCO counterparty — business
+pseg,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+public_water_systems,1,INCLUDED,Water systems environmental operations
+publications,2,INCLUDED,Business publications correspondence
+puckett_plant,1,INCLUDED,Puckett plant operations
+puerto_rico,1,INCLUDED,Puerto Rico operations — business
+puhca,1,INCLUDED,PUHCA regulatory — business
+pulp,1,INCLUDED,Pulp trading — business
+pulp_paper_lumber,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+purchasing,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+px,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+qf_s___risk_analysis,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+qse,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+questar,1,INCLUDED,Questar counterparty — business
+quotes,1,CONTENT-MISMATCH,Price quote data — not email text
+r,1,INCLUDED,R project folder — business
+rac,3,INCLUDED,Risk and compliance correspondence
+radack,1,PII/LEGAL,Named legal matter — litigation sensitive
+rail,2,INCLUDED,Rail trading/operations correspondence
+rainy_day,1,INCLUDED,Rainy day fund/reserve — business
+rc_0946,1,INCLUDED,Rate case operations
+read,1,SYSTEM,Lotus Notes 'read' view marker — system artefact
+real_time,1,INCLUDED,Real-time operations correspondence
+recruiting,3,PII/LEGAL,Recruiting correspondence — sensitive PII
+recuriting,1,PII/LEGAL,Recruiting (misspelled) — sensitive PII
+red_rock,1,INCLUDED,Red Rock operations — business
+redeployment,1,INCLUDED,Staff redeployment — business
+redrock_mainline_expansion,1,INCLUDED,Redrock pipeline expansion — business
+reeves__leslie,1,PII/LEGAL,Named individual folder — personal PII
+refund_cases,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+reg_risk,1,INCLUDED,Regulatory risk — business
+regulatory,2,INCLUDED,Regulatory affairs correspondence
+reliant_energy,1,INCLUDED,Reliant Energy counterparty — business
+renewable_power,1,INCLUDED,Renewable power — business
+renewables,1,INCLUDED,Renewables energy business
+reports,1,INCLUDED,Business reports
+reports___scheduled_quantity_report,1,INCLUDED,Scheduled quantity reports — operations
+republican_leadership,1,INCLUDED,Republican leadership — public affairs
+requisite,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+resco,2,INCLUDED,RESCO counterparty correspondence
+research,2,INCLUDED,Business research correspondence
+resource_committment_req_s,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+resource_management,1,INCLUDED,Resource management — business
+restricted_list,3,PII/LEGAL,Securities restricted trading list — regulatory sensitive
+resume,2,PII/LEGAL,CVs — sensitive PII
+resumes,4,PII/LEGAL,Third-party CVs — sensitive PII (third-party)
+resumes_for_recruiting,1,PII/LEGAL,Recruiting CVs — sensitive third-party PII
+retail,1,INCLUDED,Retail operations — business
+retail_markets,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+retail_operations,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+reuters,1,INCLUDED,Reuters market data — business
+rice,2,INCLUDED,Rice University/counterparty correspondence
+richardson_s,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ring_trades,1,PII/LEGAL,Ring trades — regulatory/legally sensitive
+risk,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+risk_analytics,2,INCLUDED,Risk analytics business correspondence
+risk_management,1,INCLUDED,Risk management — business
+riskmemos,1,INCLUDED,Risk memos — business
+riskratings,1,INCLUDED,Risk ratings — business
+rm_science_review,1,INCLUDED,RM science review — business
+rm_work_order,1,INCLUDED,RM work order — business
+rmt,1,INCLUDED,RMT operations — business
+rocky_mountain_elk_foundation,1,INCLUDED,Corporate community/charity correspondence
+roseman_creek,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+roseville,1,INCLUDED,Roseville operations — business
+rotation,1,PII/LEGAL,Staff rotation records — sensitive PII
+rotation_1,1,PII/LEGAL,Staff rotation records — sensitive PII
+rt_cuts,1,INCLUDED,Real-time cuts — operations
+rt_strat,1,INCLUDED,Real-time strategy — operations
+rto,2,INCLUDED,RTO policy correspondence
+rto_campaign,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+rto_filings__order_2000,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+s_a__trading,1,INCLUDED,South America trading — business
+s_america,1,INCLUDED,South America operations
+sager___general,1,PII/LEGAL,Named individual folder — personal PII
+sample_forms,1,CONTENT-MISMATCH,Form templates — not email
+san_diego_gas___electric,1,INCLUDED,SDG&E counterparty — business
+san_juan_expansion,1,INCLUDED,San Juan expansion — business
+sandy,1,PII/LEGAL,Named individual — personal PII
+sap,6,INCLUDED,SAP enterprise system — business
+sarah_joy_hunter,1,PII/LEGAL,Named individual folder — personal PII
+saudi_arabia_project,1,INCLUDED,Saudi Arabia project — business
+save_the_date,1,INCLUDED,Event coordination — business
+saved,1,SYSTEM,Generic saved folder — duplicates
+saved_01,1,SYSTEM,Numbered archive dump — duplicates
+saved_02,1,SYSTEM,Numbered archive dump — duplicates
+saved_03,1,SYSTEM,Numbered archive dump — duplicates
+saved_04,1,SYSTEM,Numbered archive dump — duplicates
+saved_11,1,SYSTEM,Numbered archive dump — duplicates
+saved_12,1,SYSTEM,Numbered archive dump — duplicates
+saved_mail,2,SYSTEM,"Generic saved-mail dump — non-specific, likely duplicates"
+savedmail,1,SYSTEM,Saved mail artefact — duplicates
+sce_deal,1,INCLUDED,SCE deal — business
+schedule_c,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+schedule_crawler,1,INCLUDED,Schedule crawler — operations
+scheduling,3,INCLUDED,Operational scheduling correspondence
+scribner__james,1,PII/LEGAL,Named individual — PII
+sec,2,PII/LEGAL,SEC regulatory correspondence — litigation sensitive
+sec_panel,1,INCLUDED,SEC panel — regulatory
+security,1,INCLUDED,Corporate security — business
+security___collateral,1,INCLUDED,Security/collateral — business
+security_request,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+sempra,3,INCLUDED,Sempra counterparty — business
+sempre,1,INCLUDED,Sempre counterparty — business
+senate_testimony_re_california,1,INCLUDED,Senate testimony — public affairs
+senator_dunn_inv_,1,PII/LEGAL,Senate investigation — litigation sensitive
+sent,89,INCLUDED,Sent mail variant — standard business email
+sent_items,136,INCLUDED,Primary sent mail — standard business email
+services,2,INCLUDED,Business services
+settlements,2,INCLUDED,Trading settlements operations
+settlements_issues,1,INCLUDED,Settlements issues — business
+shankman__jeff,1,PII/LEGAL,Named individual folder — personal PII
+shipper_list,1,INCLUDED,Pipeline shipper list — business
+shopping,1,PII/LEGAL,Personal commerce — PII
+show_cause,1,PII/LEGAL,Regulatory show-cause proceeding — litigation sensitive
+showstopper_rpt,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+singapore_trading,1,INCLUDED,Singapore trading — business
+sitara,1,INCLUDED,Sitara trading system — business
+sites,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+sithe,1,INCLUDED,Sithe counterparty — business
+skew,1,INCLUDED,Options skew analysis — trading
+smith_barney,1,INCLUDED,Smith Barney counterparty — business
+smud,1,INCLUDED,SMUD counterparty — business
+smud_e_mails,1,INCLUDED,SMUD emails — business
+smurfit,1,INCLUDED,Smurfit counterparty — business
+so2___nox,1,INCLUDED,SO2/NOx emissions trading — business
+socal_gas,1,INCLUDED,SoCal Gas counterparty — business
+socal_pcb_s,1,INCLUDED,Environmental operations
+socalgas,1,INCLUDED,SoCal Gas — business
+software,1,INCLUDED,Software operations — business
+solmonson__mary,1,PII/LEGAL,Named individual folder — personal PII
+sonoco,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+sony,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+south_america,2,INCLUDED,South American operations
+southamerica,2,INCLUDED,South American operations
+southeast,2,INCLUDED,Southeast US operations
+southern_cone,3,INCLUDED,South American operations correspondence
+southern_cone_financial_masters,1,INCLUDED,Southern Cone financial operations
+southern_lng,1,INCLUDED,Southern LNG — business
+southwest_environmental_team,1,INCLUDED,Environmental team operations
+southwest_gas_pcb_s,1,INCLUDED,Environmental operations
+sparefinders_com,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+speaking_engagements,1,INCLUDED,Speaking engagements — business
+special,1,INCLUDED,Special correspondence — business
+speeches,2,INCLUDED,Speech drafts — public business communication
+spp,1,INCLUDED,SPP market — business
+srp,1,INCLUDED,SRP counterparty — business
+stack__shari,1,PII/LEGAL,Named individual folder — personal PII
+staff_meeting,1,INCLUDED,Staff meeting — business
+staff_meetings,1,INCLUDED,Staff meetings — business
+stagecoach,1,INCLUDED,Stagecoach operations — business
+stanford,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+stanley,1,PII/LEGAL,Named individual (first name) — personal PII
+star_wars,1,INCLUDED,Star Wars project codename — business
+stationery,1,SYSTEM,Email stationery template folder — not email
+steel,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+stf,1,INCLUDED,STF operations — business
+stock_options,1,PII/LEGAL,Personal financial records — sensitive PII
+storage,2,INCLUDED,Gas storage operations correspondence
+storage___alloc_process,1,INCLUDED,Storage allocation process — operations
+storage___third_party_storage_info,1,INCLUDED,Third-party storage — operations
+stored_messages,1,SYSTEM,Stored messages archive — likely duplicates
+strategic_model,1,INCLUDED,Strategic model — business
+straw,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+structured_supply,1,INCLUDED,Structured supply — business
+stuff,1,INCLUDED,General business correspondence
+sun_devil_expansion,1,INCLUDED,Sun Devil expansion — business
+sundevil_pipeline_project,1,INCLUDED,Sundvil pipeline project
+supply_chain,1,INCLUDED,Supply chain — business
+survey,1,PII/LEGAL,HR survey data — sensitive PII
+surveys,1,PII/LEGAL,HR surveys — sensitive PII
+swap,1,INCLUDED,Swap trading — business
+swap_group,1,INCLUDED,Swap group operations — business
+swap_group_project_lists,1,INCLUDED,Swap group — business
+symesees,1,INCLUDED,Symes EES — business
+synfuel,1,INCLUDED,Synfuel operations — business
+synfuel_tax_crredits,1,INCLUDED,Synfuel tax credits — business
+system_wip,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+systems,3,INCLUDED,IT/systems business correspondence
+systems_problems,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+takeover,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+tasks,35,CONTENT-MISMATCH,Task list entries — not email
+tax,1,PII/LEGAL,Tax records — sensitive PII
+tax_issues,1,PII/LEGAL,Tax records — sensitive PII
+taxes,1,PII/LEGAL,Personal tax records — sensitive PII
+tcpl,1,INCLUDED,TCPL pipeline — business
+technical,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+technologyplan,1,INCLUDED,Technology plan — business
+teco,2,INCLUDED,TECO Energy counterparty
+telecom,1,INCLUDED,Telecommunications business
+temporary_export_certificates,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+tenaska,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+tep,1,INCLUDED,TEP counterparty — business
+term_proposals,1,INCLUDED,Term proposals — business
+test,1,SYSTEM,Test folder — not production email
+texas,3,INCLUDED,Texas operations correspondence
+texas_b_school,1,INCLUDED,Texas business school — institutional
+thank_yous,1,INCLUDED,Thank-you correspondence — business
+tie_meter_multipliers,1,INCLUDED,Tie meter — operations
+timbelden,1,INCLUDED,Tim Belden — business correspondence
+time_off,1,PII/LEGAL,Personal time-off records — PII
+to_do,34,CONTENT-MISMATCH,To-do list — not email
+to_do_list,1,CONTENT-MISMATCH,To-do list — not email
+tom_s_docs,1,PII/LEGAL,Named individual folder — personal PII
+top_10_issues_6_1_01,1,INCLUDED,Top 10 issues — business
+top_shippers,1,INCLUDED,Top shippers — business
+toptenrisks,1,INCLUDED,Top-ten risks — business
+tq,1,INCLUDED,TQ trading — business
+tracy,1,PII/LEGAL,Named individual — personal PII
+trade_issues,1,INCLUDED,Trade issues — business
+tradecounts,1,INCLUDED,Trade counts — business
+trader_guidelines,1,INCLUDED,Trader guidelines — business
+traderr_tools,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+trading,1,INCLUDED,Trading operations correspondence
+trading_info,1,INCLUDED,Trading information — business
+trading_issues,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+trading_quotes,1,CONTENT-MISMATCH,Trading price data — not email text
+training,3,PII/LEGAL,Training records — HR sensitive
+training___2001,1,PII/LEGAL,Training records — HR sensitive
+training___business_objects,1,PII/LEGAL,Training records — HR sensitive
+training__gov_t__affairs,1,PII/LEGAL,Training records — HR sensitive
+transamonia,1,INCLUDED,Trans Amonia — business
+transco,1,INCLUDED,Transco pipeline — business
+transition_guide,1,INCLUDED,Transition guide — business
+transmission,1,INCLUDED,Transmission operations correspondence
+transport,5,INCLUDED,Pipeline transport business correspondence
+transportation,1,INCLUDED,Transportation operations — business
+transportation_market,1,INCLUDED,Transportation market — business
+transredes,1,INCLUDED,Transredes operations — business
+transwestern,1,INCLUDED,Transwestern pipeline — business
+travel,4,PII/LEGAL,Mixed personal/business travel — PII risk
+tropical_storm_allison,1,INCLUDED,Tropical storm Allison — business contingency
+trs,1,INCLUDED,TRS trading — business
+tss,1,INCLUDED,TSS operations — business
+tufco,1,INCLUDED,Tufco counterparty — business
+turkey,1,INCLUDED,Turkey operations — business
+tva,4,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+tw,3,INCLUDED,Transwestern pipeline operations
+tw___citizens_agreement,1,INCLUDED,TW-Citizens agreement — business
+tw___imbalances___netting_trading,1,INCLUDED,TW imbalances trading
+tw___invoicing,1,INCLUDED,TW invoicing — business
+tw___marketing,1,INCLUDED,TW marketing — business
+tw___negotiated_rates_issues,1,INCLUDED,TW rate issues — regulatory
+tw___nwpl_budget,1,INCLUDED,TW NWPL budget — business
+tw___procedures,1,INCLUDED,TW procedures — business
+tw___socal_window_procedure,1,INCLUDED,TW SoCal procedure — business
+tw___transactional_requirements,1,INCLUDED,TW transactional requirements — business
+tw_accounts,1,INCLUDED,TW accounts — business
+tw_cas,1,INCLUDED,TW CAS — operations
+tw_commercial_group,1,INCLUDED,TW commercial group operations
+tw_fuel_sales,1,INCLUDED,TW fuel sales — business
+tw_hedges,1,INCLUDED,TW hedging operations
+tw_imbalances,1,INCLUDED,TW imbalances — operations
+tw_lft,1,INCLUDED,TW LFT operations
+tw_options_sales_program,1,INCLUDED,TW options sales — business
+tw_outages,1,INCLUDED,TW outage management
+tw_projects,1,INCLUDED,TW projects — operations
+tw_rate_matrix,1,INCLUDED,TW rate matrix — regulatory
+tw_throughput_analysis,1,INCLUDED,TW throughput analysis
+tw_weekly_report,1,INCLUDED,TW weekly reports — business
+ubs_warburg,1,INCLUDED,UBS Warburg — counterparty
+ubsw_energy,1,INCLUDED,UBS Warburg Energy — counterparty correspondence
+ubswenergy_com,1,INCLUDED,UBS Warburg Energy — counterparty
+uh,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ui,1,INCLUDED,UI operations — business
+uk_trading,1,INCLUDED,UK trading — business
+unfinaled_invoices,1,PII/LEGAL,Invoice records — financially sensitive
+uniform_business_rules,1,INCLUDED,Uniform business rules — regulatory
+unify,3,INCLUDED,Unify system business correspondence
+unions,1,INCLUDED,Unions — business/HR policy
+universal_studios,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+universities,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+university_relations,1,INCLUDED,University relations — business
+unocal,1,INCLUDED,Unocal counterparty — business
+unread_mail,1,SYSTEM,Lotus Notes unread-mail view — duplicates inbox
+untitled,1,SYSTEM,Untitled folder — unknown provenance
+untitledmartin,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+updates,1,INCLUDED,Business updates
+us_sup_ct_case,1,INCLUDED,US Supreme Court case — public policy
+usgt,1,INCLUDED,USGT operations — business
+ut,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+ut_mba,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+vacation,2,PII/LEGAL,Personal vacation records — PII
+vacations,1,PII/LEGAL,Personal vacation records — PII
+vacations_2001,1,PII/LEGAL,Personal vacation records — PII
+val,1,INCLUDED,Valuation — business
+value,1,INCLUDED,Value analysis — business
+vanderbilt,1,INCLUDED,Vanderbilt — institutional/business
+var,6,INCLUDED,VAR risk analysis — business
+vargas_becton_lamb,1,PII/LEGAL,Named individuals — PII
+vargas_becton_lamb_galvan,1,PII/LEGAL,Named individuals — PII
+vector,1,INCLUDED,Vector pipeline — business
+venezuela_colombia,1,INCLUDED,Venezuela/Colombia operations
+vepco,1,INCLUDED,VEPCO counterparty — business
+vinson___elkins,1,INCLUDED,Vinson & Elkins legal counsel — business
+virus_alerts,1,INCLUDED,IT security alerts — business
+vision,1,INCLUDED,Vision/values — business
+vision___values,1,INCLUDED,Vision and values — business
+vision_and_values,1,INCLUDED,Vision and values — business
+visions___values,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+vitro,1,INCLUDED,Vitro counterparty — business
+vng,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+volatility,1,INCLUDED,Volatility analysis — trading
+volume_management,1,INCLUDED,Volume management operations
+vp_prc,1,PII/LEGAL,VP-level PRC records — sensitive HR data
+vpp,1,INCLUDED,VPP (virtual power plant) trading
+vulcan_signs,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+waha,1,INCLUDED,Waha hub trading
+washington_office,1,INCLUDED,Washington office — public affairs
+water,1,INCLUDED,Water business operations
+weather,4,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+webmodal,1,INCLUDED,Webmodal — business
+weekly_activity_report,1,INCLUDED,Weekly activity reports
+weekly_report,1,INCLUDED,Weekly operational report
+weekly_reports___2001,1,INCLUDED,Weekly reports — business
+wellhead,1,INCLUDED,Wellhead pricing correspondence
+west,2,INCLUDED,West operations
+west_bank,1,INCLUDED,West Bank operations — business
+west_gas_origination,1,INCLUDED,West gas origination — business
+west_var,1,INCLUDED,West VAR — trading
+west_virginia,1,INCLUDED,West Virginia — operations
+western_governor_s_university,1,INCLUDED,WGU — institutional relations
+western_governors,1,INCLUDED,Western governors — public affairs
+westgas,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+westinghouse,1,INCLUDED,Westinghouse counterparty — business
+whatever,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+white__stacey,1,PII/LEGAL,Named individual folder — personal PII
+wholesale_markets,1,INCLUDED,Wholesale markets — business
+wholesale_policy_reform,1,INCLUDED,Wholesale policy reform — regulatory
+wilson__shona,1,PII/LEGAL,Named individual folder — personal PII
+wire_signer_list,1,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+wk,1,INCLUDED,Work correspondence — business
+wordsmith,1,INCLUDED,Wordsmith communications — business
+working_groups,1,INCLUDED,Working groups — business
+world_bank,1,INCLUDED,World Bank — institutional relations
+wptf,1,INCLUDED,Western Power Trading Forum
+wto,1,INCLUDED,WTO — trade policy
+y2k,2,INCLUDED,Single-user business folder — no PII markers detected; default INCLUDED
+yazoo_city,1,INCLUDED,Yazoo City operations — business
+yoder,1,PII/LEGAL,Named individual folder — personal PII
+young__randy,1,PII/LEGAL,Named individual folder — personal PII
