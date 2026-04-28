@@ -1,0 +1,53 @@
+{
+  "run_id": "c4631123-5029-430e-acb1-52835fd7ab3c",
+  "timestamp": "2026-04-28T21:12:49.125181+00:00",
+  "script_name": "combine_stratum_i",
+  "git_commit_sha": "566656a359cfcc42489c034a89a454c21a8be913",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": null,
+  "parameters": {
+    "ham_source": "data\\processed\\stratum_i\\enron_ham.csv",
+    "phish_source": "data\\processed\\stratum_i\\nazario_phishing.csv",
+    "imbalance_policy": "natural -- handled at modelling time",
+    "label_map": "{'ham': 0, 'phishing': 1}",
+    "source_map": "{'Enron Email Corpus (CMU 2015)': 'enron', 'Nazario Phishing Corpus': 'nazario'}"
+  },
+  "notes": "Canonical Stratum I combined file. Combines Enron ham (label=0) and Nazario phishing (label=1). Applies label encoding, source normalisation, body_length computation, column ordering, and duplicate message_id resolution in a single reproducible pass. Natural class imbalance (~67:1) preserved.",
+  "counts": {
+    "ham_rows_loaded": 152979,
+    "phishing_rows_loaded": 2273,
+    "cross_corpus_dupes_removed": 0,
+    "duplicate_message_ids_fixed": 12,
+    "ham_retained": 152979,
+    "phishing_retained": 2273,
+    "total_retained": 155252,
+    "phish_ham_ratio": 0.0149
+  },
+  "inputs": [
+    {
+      "path": "data\\processed\\stratum_i\\enron_ham.csv",
+      "label": "data\\processed\\stratum_i\\enron_ham.csv",
+      "type": "file",
+      "sha256": "31d3c784ed197fae77835acbc73a037d9f13ab410ba3b3a8b5709fa56989afa5",
+      "size_bytes": 264058198
+    },
+    {
+      "path": "data\\processed\\stratum_i\\nazario_phishing.csv",
+      "label": "data\\processed\\stratum_i\\nazario_phishing.csv",
+      "type": "file",
+      "sha256": "d6b30bda7d187e103fe3a676b3daed10ec884da0f95381c1cc205a8c427ad018",
+      "size_bytes": 11793307
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data\\processed\\stratum_i\\stratum_i_combined.csv",
+      "label": "data\\processed\\stratum_i\\stratum_i_combined.csv",
+      "type": "file",
+      "sha256": "66ddf8c345ec7c594fe33ff41b0bf2bc89da8f9a84f9c5afdf7ef22a29334771",
+      "size_bytes": 272491109,
+      "row_count": 155252
+    }
+  ]
+}
