@@ -1,0 +1,21 @@
+{
+  "verdict": "CLEAN \u2014 data freeze approved",
+  "parameters": {
+    "num_perm": 128,
+    "jaccard_threshold": 0.85,
+    "shingle_size": 5
+  },
+  "stratum_sizes": {
+    "I": 155250,
+    "II": 7846,
+    "III": 13356
+  },
+  "pass_1_exact_duplicates": {
+    "count": 0,
+    "pairs": []
+  },
+  "pass_2_near_duplicates": {
+    "count": 0,
+    "pairs": []
+  }
+}

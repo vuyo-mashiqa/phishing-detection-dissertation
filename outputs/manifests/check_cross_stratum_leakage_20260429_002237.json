@@ -1,0 +1,54 @@
+{
+  "run_id": "d7597730-56a4-4833-9dd6-afccb3f968b9",
+  "timestamp": "2026-04-28T22:10:39.524413+00:00",
+  "script_name": "check_cross_stratum_leakage",
+  "git_commit_sha": "d6c722dc110c1ac4904155bf476d9ff3d1b84ab5",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": null,
+  "parameters": {
+    "num_perm": 128,
+    "jaccard_threshold": 0.85,
+    "shingle_size": 5
+  },
+  "notes": "Cross-stratum leakage audit. Pass 1: exact body_sha256 matches. Pass 2: MinHash-LSH near-duplicates (Jaccard >= 0.85). Zero matches required before data freeze.",
+  "counts": {
+    "total_rows_audited": 176452,
+    "exact_cross_stratum_dupes": 0,
+    "near_dup_cross_stratum": 0,
+    "verdict": "CLEAN \u2014 data freeze approved"
+  },
+  "inputs": [
+    {
+      "path": "data\\processed\\stratum_i\\stratum_i_combined.csv",
+      "label": "data\\processed\\stratum_i\\stratum_i_combined.csv",
+      "type": "file",
+      "sha256": "6b04fff1f664276a44089587c95078a3c8a6251754d3752c396bae10435c199c",
+      "size_bytes": 272490716
+    },
+    {
+      "path": "data\\processed\\stratum_ii\\stratum_ii_combined.csv",
+      "label": "data\\processed\\stratum_ii\\stratum_ii_combined.csv",
+      "type": "file",
+      "sha256": "22800e00f37b0ca25843cde1c239ce8fc4b2ed7e838982bfab0cc7c1d680e1db",
+      "size_bytes": 15324423
+    },
+    {
+      "path": "data\\processed\\stratum_iii\\stratum_iii_combined.csv",
+      "label": "data\\processed\\stratum_iii\\stratum_iii_combined.csv",
+      "type": "file",
+      "sha256": "c8b8684dfec60c4f9aaece5c42c4dba30fbc23b92207891b4cd58d9ee8a56bea",
+      "size_bytes": 26971737
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs\\manifests\\cross_stratum_leakage_report.json",
+      "label": "outputs\\manifests\\cross_stratum_leakage_report.json",
+      "type": "file",
+      "sha256": "afad37b77105ccfa9c23499bfb1710ebd79f6f3c2614af7dd1ee1244bdbce9fa",
+      "size_bytes": 380,
+      "row_count": 20
+    }
+  ]
+}
