@@ -1,0 +1,54 @@
+{
+  "run_id": "e7138f16-5c17-4a7b-8ecf-cc2c0a177b42",
+  "timestamp": "2026-04-28T21:40:56.775164+00:00",
+  "script_name": "check_cross_stratum_leakage",
+  "git_commit_sha": "d6c722dc110c1ac4904155bf476d9ff3d1b84ab5",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": null,
+  "parameters": {
+    "num_perm": 128,
+    "jaccard_threshold": 0.85,
+    "shingle_size": 5
+  },
+  "notes": "Cross-stratum leakage audit. Pass 1: exact body_sha256 matches. Pass 2: MinHash-LSH near-duplicates (Jaccard >= 0.85). Zero matches required before data freeze.",
+  "counts": {
+    "total_rows_audited": 176456,
+    "exact_cross_stratum_dupes": 2,
+    "near_dup_cross_stratum": 2,
+    "verdict": "ISSUES FOUND \u2014 4 leakage candidates require review"
+  },
+  "inputs": [
+    {
+      "path": "data\\processed\\stratum_i\\stratum_i_combined.csv",
+      "label": "data\\processed\\stratum_i\\stratum_i_combined.csv",
+      "type": "file",
+      "sha256": "66ddf8c345ec7c594fe33ff41b0bf2bc89da8f9a84f9c5afdf7ef22a29334771",
+      "size_bytes": 272491109
+    },
+    {
+      "path": "data\\processed\\stratum_ii\\stratum_ii_combined.csv",
+      "label": "data\\processed\\stratum_ii\\stratum_ii_combined.csv",
+      "type": "file",
+      "sha256": "8ed6d5b53749777b3ac3d224b119e175bde240df60b1da04b5e506cb431cd274",
+      "size_bytes": 15324854
+    },
+    {
+      "path": "data\\processed\\stratum_iii\\stratum_iii_combined.csv",
+      "label": "data\\processed\\stratum_iii\\stratum_iii_combined.csv",
+      "type": "file",
+      "sha256": "c8b8684dfec60c4f9aaece5c42c4dba30fbc23b92207891b4cd58d9ee8a56bea",
+      "size_bytes": 26971737
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs\\manifests\\cross_stratum_leakage_report.json",
+      "label": "outputs\\manifests\\cross_stratum_leakage_report.json",
+      "type": "file",
+      "sha256": "c2f2405ece6b5057b7b741975c1a42c017baad214c1ff2a00aed259c0f34c129",
+      "size_bytes": 1226,
+      "row_count": 50
+    }
+  ]
+}
