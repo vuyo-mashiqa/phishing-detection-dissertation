@@ -1,0 +1,56 @@
+{
+  "run_id": "c2d72358-84cd-4356-bb4d-b9b4e5789c9d",
+  "timestamp": "2026-04-29T18:33:09.668744+00:00",
+  "script_name": "generate_splits",
+  "git_commit_sha": "e45ed1552fe822ca81a829305bfd436b919c4807",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": 42,
+  "parameters": {
+    "random_state": 42,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15,
+    "train_ratio": 0.7,
+    "stratify_on": "label"
+  },
+  "notes": "Deterministic stratified 70/15/15 splits for each stratum and pooled. Fixed random_state=42. Stratified on label. SHA-256 of every output file committed to splits_manifest.json.",
+  "counts": {
+    "total_rows_split": 176452,
+    "train": 123516,
+    "val": 26467,
+    "test": 26469
+  },
+  "inputs": [
+    {
+      "path": "data\\processed\\stratum_i\\stratum_i_combined.csv",
+      "label": "data\\processed\\stratum_i\\stratum_i_combined.csv",
+      "type": "file",
+      "sha256": "6b04fff1f664276a44089587c95078a3c8a6251754d3752c396bae10435c199c",
+      "size_bytes": 272490716
+    },
+    {
+      "path": "data\\processed\\stratum_ii\\stratum_ii_combined.csv",
+      "label": "data\\processed\\stratum_ii\\stratum_ii_combined.csv",
+      "type": "file",
+      "sha256": "22800e00f37b0ca25843cde1c239ce8fc4b2ed7e838982bfab0cc7c1d680e1db",
+      "size_bytes": 15324423
+    },
+    {
+      "path": "data\\processed\\stratum_iii\\stratum_iii_combined.csv",
+      "label": "data\\processed\\stratum_iii\\stratum_iii_combined.csv",
+      "type": "file",
+      "sha256": "c8b8684dfec60c4f9aaece5c42c4dba30fbc23b92207891b4cd58d9ee8a56bea",
+      "size_bytes": 26971737
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs\\manifests\\splits_manifest.json",
+      "label": "outputs\\manifests\\splits_manifest.json",
+      "type": "file",
+      "sha256": "f2a1ea6c932636a0e30bd9d6af29ca3c22010d648f39130413b83ff54416199c",
+      "size_bytes": 3112,
+      "row_count": 101
+    }
+  ]
+}

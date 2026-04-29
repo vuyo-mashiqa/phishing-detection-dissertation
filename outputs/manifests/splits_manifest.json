@@ -1,0 +1,102 @@
+{
+  "random_state": 42,
+  "split_ratios": {
+    "train": 0.7,
+    "val": 0.15,
+    "test": 0.15
+  },
+  "strata": {
+    "stratum_i": {
+      "train": {
+        "path": "data\\splits\\stratum_i\\train.csv",
+        "rows": 108675,
+        "ham": 107084,
+        "phishing": 1591,
+        "sha256": "91471d3484ee5ca9b28921fe2f400e21334cc03bc4851a52c55cbf88a84338d3"
+      },
+      "val": {
+        "path": "data\\splits\\stratum_i\\val.csv",
+        "rows": 23287,
+        "ham": 22946,
+        "phishing": 341,
+        "sha256": "bf84aeb878baf27b8489843fa0c7c82c0863e6a976ec904c19720f1744f226aa"
+      },
+      "test": {
+        "path": "data\\splits\\stratum_i\\test.csv",
+        "rows": 23288,
+        "ham": 22947,
+        "phishing": 341,
+        "sha256": "6caacbd8fd713fa5117187e19df7c98221cf8c54eec31cd6015edabd93501b74"
+      }
+    },
+    "stratum_ii": {
+      "train": {
+        "path": "data\\splits\\stratum_ii\\train.csv",
+        "rows": 5492,
+        "ham": 1934,
+        "phishing": 3558,
+        "sha256": "6dc21125ffc93992db87d2b0a61faf0dfbc59c1735a7ff31797f010eac5c08dc"
+      },
+      "val": {
+        "path": "data\\splits\\stratum_ii\\val.csv",
+        "rows": 1177,
+        "ham": 414,
+        "phishing": 763,
+        "sha256": "7de90a6c0da785f4b0e5038bb2c3a74be36bcf3703d284883e9044943b54a33e"
+      },
+      "test": {
+        "path": "data\\splits\\stratum_ii\\test.csv",
+        "rows": 1177,
+        "ham": 415,
+        "phishing": 762,
+        "sha256": "03f93fb66f2121baff4eb49934132c43baeda5eb775caa897bddf102d3db5ac1"
+      }
+    },
+    "stratum_iii": {
+      "train": {
+        "path": "data\\splits\\stratum_iii\\train.csv",
+        "rows": 9349,
+        "ham": 4620,
+        "phishing": 4729,
+        "sha256": "80e4c88a096ab492e695ace74cdeb34b8e719686ede7de4757c13b54137e520f"
+      },
+      "val": {
+        "path": "data\\splits\\stratum_iii\\val.csv",
+        "rows": 2003,
+        "ham": 990,
+        "phishing": 1013,
+        "sha256": "f96879e0c01e632de1c47828569b46f6f7b08fb322dd2ae91b54ee3cc5a57b17"
+      },
+      "test": {
+        "path": "data\\splits\\stratum_iii\\test.csv",
+        "rows": 2004,
+        "ham": 990,
+        "phishing": 1014,
+        "sha256": "cc33e7836dd6612fcaf5c1144c470003b5785dc9968d793c4a72662f01279e8c"
+      }
+    },
+    "pooled": {
+      "train": {
+        "path": "data\\splits\\pooled\\train.csv",
+        "rows": 123516,
+        "ham": 113638,
+        "phishing": 9878,
+        "sha256": "2f5c31f233bf5f2c614f23bfe0ab29d536a3d1519eb3df8618f1f8ffbdea56f1"
+      },
+      "val": {
+        "path": "data\\splits\\pooled\\val.csv",
+        "rows": 26468,
+        "ham": 24351,
+        "phishing": 2117,
+        "sha256": "f22b796755962a61e9f7ff9cbfe69159e74bfbb2e631bf5754fc86004c620c34"
+      },
+      "test": {
+        "path": "data\\splits\\pooled\\test.csv",
+        "rows": 26468,
+        "ham": 24351,
+        "phishing": 2117,
+        "sha256": "f79d50528a37027fca30ceb72ee4f12bd9717268ecc617c78f7f2cfd57d31786"
+      }
+    }
+  }
+}
