@@ -1,0 +1,74 @@
+{
+  "run_id": "50c4a9b5-7e09-41c7-82d7-9b65c6b30fd8",
+  "timestamp": "2026-04-30T21:58:55.961890+00:00",
+  "script_name": "train_classical_iii",
+  "git_commit_sha": "75405b9e07f53db2c4597005a30d13458d7217ec",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": 42,
+  "parameters": {
+    "stratum": "iii",
+    "models": [
+      "LR",
+      "SVM",
+      "RF",
+      "XGB",
+      "LGB"
+    ]
+  },
+  "notes": "Classical ML baselines on STRATUM III. class_weight=balanced (LR/SVM/RF); scale_pos_weight (XGB/LGB).",
+  "counts": {
+    "n_models": 5,
+    "n_results": 10,
+    "train_rows": 9349
+  },
+  "inputs": [
+    {
+      "path": "data\\splits\\stratum_iii\\train.csv",
+      "label": "data\\splits\\stratum_iii\\train.csv",
+      "type": "file",
+      "sha256": "80e4c88a096ab492e695ace74cdeb34b8e719686ede7de4757c13b54137e520f",
+      "size_bytes": 18937482
+    },
+    {
+      "path": "data\\splits\\stratum_iii\\val.csv",
+      "label": "data\\splits\\stratum_iii\\val.csv",
+      "type": "file",
+      "sha256": "f96879e0c01e632de1c47828569b46f6f7b08fb322dd2ae91b54ee3cc5a57b17",
+      "size_bytes": 4022707
+    },
+    {
+      "path": "data\\splits\\stratum_iii\\test.csv",
+      "label": "data\\splits\\stratum_iii\\test.csv",
+      "type": "file",
+      "sha256": "cc33e7836dd6612fcaf5c1144c470003b5785dc9968d793c4a72662f01279e8c",
+      "size_bytes": 4011728
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs\\features\\stratum_iii_pipeline.joblib",
+      "label": "outputs\\features\\stratum_iii_pipeline.joblib",
+      "type": "file",
+      "sha256": "66d16e41bcab57862a63da7b8d47d10d261d93fabb1a2ebe698656491946d10f",
+      "size_bytes": 3145369,
+      "row_count": 19661
+    },
+    {
+      "path": "outputs\\results\\classical_ml\\stratum_iii_results.csv",
+      "label": "outputs\\results\\classical_ml\\stratum_iii_results.csv",
+      "type": "file",
+      "sha256": "128263b9180643cb14ab8d5d6ff8a9d12c0815694afcec7677289abe513ca7a7",
+      "size_bytes": 968,
+      "row_count": 10
+    },
+    {
+      "path": "outputs\\results\\classical_ml\\stratum_iii_results.json",
+      "label": "outputs\\results\\classical_ml\\stratum_iii_results.json",
+      "type": "file",
+      "sha256": "0dc0edcc3daf14897575dd1126cc98d75a96dd784ba44376c4cb989d2038b46a",
+      "size_bytes": 3824,
+      "row_count": 171
+    }
+  ]
+}
