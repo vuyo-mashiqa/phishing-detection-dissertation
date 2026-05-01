@@ -1,0 +1,113 @@
+{
+  "run_id": "9dcc70bd-d957-4d80-ac63-7f64252ab1f9",
+  "timestamp": "2026-05-01T23:15:59.758325+00:00",
+  "script_name": "cross_stratum_classical",
+  "git_commit_sha": "8e159bcf0476463432d54208de144c1ca3ad7337",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": 42,
+  "parameters": {
+    "strata": [
+      "i",
+      "ii",
+      "iii"
+    ],
+    "models": [
+      "LR",
+      "SVM",
+      "RF",
+      "XGB",
+      "LGB"
+    ],
+    "n_pairs": 9
+  },
+  "notes": "9-pair cross-stratum generalisation matrix for classical ML. Models fitted on train split of train_stratum; evaluated on test split of test_stratum using train_stratum's feature pipeline.",
+  "counts": {
+    "n_pairs": 45,
+    "n_train_strata": 3,
+    "n_test_strata": 3
+  },
+  "inputs": [
+    {
+      "path": "data\\splits\\stratum_i\\test.csv",
+      "label": "data\\splits\\stratum_i\\test.csv",
+      "type": "file",
+      "sha256": "6caacbd8fd713fa5117187e19df7c98221cf8c54eec31cd6015edabd93501b74",
+      "size_bytes": 39905294
+    },
+    {
+      "path": "data\\splits\\stratum_ii\\test.csv",
+      "label": "data\\splits\\stratum_ii\\test.csv",
+      "type": "file",
+      "sha256": "03f93fb66f2121baff4eb49934132c43baeda5eb775caa897bddf102d3db5ac1",
+      "size_bytes": 2524113
+    },
+    {
+      "path": "data\\splits\\stratum_iii\\test.csv",
+      "label": "data\\splits\\stratum_iii\\test.csv",
+      "type": "file",
+      "sha256": "cc33e7836dd6612fcaf5c1144c470003b5785dc9968d793c4a72662f01279e8c",
+      "size_bytes": 4011728
+    },
+    {
+      "path": "data\\splits\\stratum_i\\test.csv",
+      "label": "data\\splits\\stratum_i\\test.csv",
+      "type": "file",
+      "sha256": "6caacbd8fd713fa5117187e19df7c98221cf8c54eec31cd6015edabd93501b74",
+      "size_bytes": 39905294
+    },
+    {
+      "path": "data\\splits\\stratum_ii\\test.csv",
+      "label": "data\\splits\\stratum_ii\\test.csv",
+      "type": "file",
+      "sha256": "03f93fb66f2121baff4eb49934132c43baeda5eb775caa897bddf102d3db5ac1",
+      "size_bytes": 2524113
+    },
+    {
+      "path": "data\\splits\\stratum_iii\\test.csv",
+      "label": "data\\splits\\stratum_iii\\test.csv",
+      "type": "file",
+      "sha256": "cc33e7836dd6612fcaf5c1144c470003b5785dc9968d793c4a72662f01279e8c",
+      "size_bytes": 4011728
+    },
+    {
+      "path": "data\\splits\\stratum_i\\test.csv",
+      "label": "data\\splits\\stratum_i\\test.csv",
+      "type": "file",
+      "sha256": "6caacbd8fd713fa5117187e19df7c98221cf8c54eec31cd6015edabd93501b74",
+      "size_bytes": 39905294
+    },
+    {
+      "path": "data\\splits\\stratum_ii\\test.csv",
+      "label": "data\\splits\\stratum_ii\\test.csv",
+      "type": "file",
+      "sha256": "03f93fb66f2121baff4eb49934132c43baeda5eb775caa897bddf102d3db5ac1",
+      "size_bytes": 2524113
+    },
+    {
+      "path": "data\\splits\\stratum_iii\\test.csv",
+      "label": "data\\splits\\stratum_iii\\test.csv",
+      "type": "file",
+      "sha256": "cc33e7836dd6612fcaf5c1144c470003b5785dc9968d793c4a72662f01279e8c",
+      "size_bytes": 4011728
+    }
+  ],
+  "outputs": [
+    {
+      "path": "outputs\\results\\classical_ml\\cross_stratum_matrix.csv",
+      "label": "outputs\\results\\classical_ml\\cross_stratum_matrix.csv",
+      "type": "file",
+      "sha256": "13095d264781a183f890ea17d4804b126da5bfb663bfafe0f62703663d0e34a4",
+      "size_bytes": 3500,
+      "row_count": 45
+    },
+    {
+      "path": "outputs\\results\\classical_ml\\cross_stratum_matrix.json",
+      "label": "outputs\\results\\classical_ml\\cross_stratum_matrix.json",
+      "type": "file",
+      "sha256": "3b158e7d27551a43c37820759332b89902f0a6d9b1c97ad62da55a8bc68e7b55",
+      "size_bytes": 14854,
+      "row_count": 676
+    }
+  ]
+}

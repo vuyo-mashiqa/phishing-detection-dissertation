@@ -2,7 +2,7 @@
 
 **Project:** Defending Against AI-Generated Phishing Emails  
 **Author:** Vuyo Mashiqa  
-**Generated:** 2026-05-01 22:36 SAST  
+**Generated:** 2026-05-02 01:35 SAST  
 **Dataset version:** v1.0-data-frozen  
 **Commit:** see `git log` for hash at time of generation  
 
@@ -89,7 +89,47 @@ _n_test=2,004  | Ham=990 (49.4%)    | Phishing=1,014 (50.6%)_
 
 Each model is trained on one stratum and evaluated on the test split of every stratum. Off-diagonal cells measure out-of-distribution generalisation — the central empirical contribution of this study. Diagonal cells reproduce the within-stratum test results above.
 
-_Results not yet available (Step 7.3 pending)._
+### LR — Logistic Regression (lbfgs, C=1.0, max_iter=500, class_weight=balanced)
+
+| Train \ Test | Test I | Test II | Test III |
+|-------------|--------|---------|----------|
+| **Train I** | F1=0.9793 / FPR=0.0000 ◀ | F1=0.4045 / FPR=0.9205 | F1=0.5719 / FPR=0.6535 |
+| **Train II** | F1=0.0824 / FPR=0.8068 | F1=0.9981 / FPR=0.0000 ◀ | F1=0.5026 / FPR=0.2343 |
+| **Train III** | F1=0.7666 / FPR=0.9959 | F1=0.7480 / FPR=0.0530 | F1=0.9895 / FPR=0.0030 ◀ |
+
+### SVM — Linear SVM (C=0.1, calibrated via Platt scaling, class_weight=balanced)
+
+| Train \ Test | Test I | Test II | Test III |
+|-------------|--------|---------|----------|
+| **Train I** | F1=0.9948 / FPR=0.0000 ◀ | F1=0.7422 / FPR=0.9494 | F1=0.7099 / FPR=0.6970 |
+| **Train II** | F1=0.0953 / FPR=0.7077 | F1=0.9991 / FPR=0.0000 ◀ | F1=0.4887 / FPR=0.2242 |
+| **Train III** | F1=0.7466 / FPR=0.9958 | F1=0.7713 / FPR=0.0554 | F1=0.9900 / FPR=0.0020 ◀ |
+
+### RF — Random Forest (100 trees, min_samples_leaf=2, class_weight=balanced)
+
+| Train \ Test | Test I | Test II | Test III |
+|-------------|--------|---------|----------|
+| **Train I** | F1=0.9528 / FPR=0.0018 ◀ | F1=0.2607 / FPR=0.8795 | F1=0.3656 / FPR=0.6747 |
+| **Train II** | F1=0.2249 / FPR=0.8462 | F1=0.9907 / FPR=0.0024 ◀ | F1=0.5482 / FPR=0.2455 |
+| **Train III** | F1=0.5079 / FPR=0.7562 | F1=0.6778 / FPR=0.1157 | F1=0.9681 / FPR=0.0202 ◀ |
+
+### XGB — XGBoost histogram (200 estimators, lr=0.1, depth=6, scale_pos_weight)
+
+| Train \ Test | Test I | Test II | Test III |
+|-------------|--------|---------|----------|
+| **Train I** | F1=0.9905 / FPR=0.0000 ◀ | F1=0.4229 / FPR=0.9663 | F1=0.5898 / FPR=0.7101 |
+| **Train II** | F1=0.3205 / FPR=0.8597 | F1=0.9944 / FPR=0.0000 ◀ | F1=0.4883 / FPR=0.3414 |
+| **Train III** | F1=0.4277 / FPR=0.9047 | F1=0.8076 / FPR=0.1783 | F1=0.9855 / FPR=0.0010 ◀ |
+
+### LGB — LightGBM histogram (200 estimators, lr=0.1, scale_pos_weight)
+
+| Train \ Test | Test I | Test II | Test III |
+|-------------|--------|---------|----------|
+| **Train I** | F1=0.9933 / FPR=0.0000 ◀ | F1=0.4058 / FPR=0.9590 | F1=0.5954 / FPR=0.7172 |
+| **Train II** | F1=0.2655 / FPR=0.8487 | F1=0.9944 / FPR=0.0024 ◀ | F1=0.5077 / FPR=0.3313 |
+| **Train III** | F1=0.4499 / FPR=0.8169 | F1=0.8292 / FPR=0.1181 | F1=0.9890 / FPR=0.0000 ◀ |
+
+> ◀ Diagonal = within-stratum (matched distribution). Off-diagonal = cross-stratum (out-of-distribution).
 
 ---
 
