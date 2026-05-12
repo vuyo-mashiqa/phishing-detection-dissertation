@@ -1,0 +1,40 @@
+{
+  "config": "stratum_ii",
+  "git_sha": "bd95e498f4759b89207fca8909232c8beaf6dc67",
+  "timestamp": "2026-05-12T22:44:56Z",
+  "n_train": 5492,
+  "n_val": 1177,
+  "n_test": 1177,
+  "n_features": 150007,
+  "n_word_features": 100000,
+  "n_char_features": 50000,
+  "n_structural_features": 7,
+  "structural_col_names": [
+    "url_count",
+    "suspicious_tld",
+    "ip_in_url",
+    "subdomain_depth",
+    "html_char_ratio",
+    "sender_mismatch",
+    "reply_to_mismatch"
+  ],
+  "tfidf_word_params": {
+    "analyzer": "word",
+    "ngram_range": "(1, 2)",
+    "sublinear_tf": "True",
+    "min_df": "2",
+    "max_features": "100000",
+    "dtype": "<class 'numpy.float32'>"
+  },
+  "tfidf_char_params": {
+    "analyzer": "char_wb",
+    "ngram_range": "(3, 5)",
+    "sublinear_tf": "True",
+    "min_df": "3",
+    "max_features": "50000",
+    "dtype": "<class 'numpy.float32'>"
+  },
+  "train_sha256": "73b52f1b731173087ab745275e08c4d7db888d61f8dc40c2d8012085371fa9bd",
+  "val_sha256": "508bb934d4f997be61aa7e4ccde7345ce9ff0c14ac830590dd499387718e4354",
+  "test_sha256": "9316859047dd1b6af3dc85dcf0086bd28de4da0fe4242b379d01d1d8ec5f367c"
+}

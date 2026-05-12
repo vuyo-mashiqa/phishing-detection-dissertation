@@ -1,0 +1,40 @@
+{
+  "config": "stratum_iii",
+  "git_sha": "bd95e498f4759b89207fca8909232c8beaf6dc67",
+  "timestamp": "2026-05-12T22:45:23Z",
+  "n_train": 9349,
+  "n_val": 2003,
+  "n_test": 2004,
+  "n_features": 150007,
+  "n_word_features": 100000,
+  "n_char_features": 50000,
+  "n_structural_features": 7,
+  "structural_col_names": [
+    "url_count",
+    "suspicious_tld",
+    "ip_in_url",
+    "subdomain_depth",
+    "html_char_ratio",
+    "sender_mismatch",
+    "reply_to_mismatch"
+  ],
+  "tfidf_word_params": {
+    "analyzer": "word",
+    "ngram_range": "(1, 2)",
+    "sublinear_tf": "True",
+    "min_df": "2",
+    "max_features": "100000",
+    "dtype": "<class 'numpy.float32'>"
+  },
+  "tfidf_char_params": {
+    "analyzer": "char_wb",
+    "ngram_range": "(3, 5)",
+    "sublinear_tf": "True",
+    "min_df": "3",
+    "max_features": "50000",
+    "dtype": "<class 'numpy.float32'>"
+  },
+  "train_sha256": "f061721bb94a82153c639b47e88c54e9d140632ce9b7aa84893f02ced53654e6",
+  "val_sha256": "3c88a9bac3c12dbb5173a92198e60636befeabbe25dad3344ea4eca01e768412",
+  "test_sha256": "388f63a635dbad863dd3375982f88ba6019dced703ef59789fe1c996fefe1283"
+}

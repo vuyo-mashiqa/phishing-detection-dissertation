@@ -1,0 +1,40 @@
+{
+  "config": "pooled",
+  "git_sha": "bd95e498f4759b89207fca8909232c8beaf6dc67",
+  "timestamp": "2026-05-12T22:50:23Z",
+  "n_train": 123516,
+  "n_val": 26468,
+  "n_test": 26468,
+  "n_features": 150007,
+  "n_word_features": 100000,
+  "n_char_features": 50000,
+  "n_structural_features": 7,
+  "structural_col_names": [
+    "url_count",
+    "suspicious_tld",
+    "ip_in_url",
+    "subdomain_depth",
+    "html_char_ratio",
+    "sender_mismatch",
+    "reply_to_mismatch"
+  ],
+  "tfidf_word_params": {
+    "analyzer": "word",
+    "ngram_range": "(1, 2)",
+    "sublinear_tf": "True",
+    "min_df": "2",
+    "max_features": "100000",
+    "dtype": "<class 'numpy.float32'>"
+  },
+  "tfidf_char_params": {
+    "analyzer": "char_wb",
+    "ngram_range": "(3, 5)",
+    "sublinear_tf": "True",
+    "min_df": "3",
+    "max_features": "50000",
+    "dtype": "<class 'numpy.float32'>"
+  },
+  "train_sha256": "26ea270d4ee2f2264aeea26be488922e5b4fdc75ee350a7657b6f691afc96e96",
+  "val_sha256": "b3162a932c64b3bc2c206495ec9e0c4994fd6e721208ee7694fb234de4294301",
+  "test_sha256": "b9ec11834c1a5f1fe908a5132cb78c26eec1afdee50ac86fb22cc0b5449dbb54"
+}
