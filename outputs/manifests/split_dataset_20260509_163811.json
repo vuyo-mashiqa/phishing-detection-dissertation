@@ -1,0 +1,167 @@
+{
+  "run_id": "f4062460-195f-4a82-942a-f895cf1f7fcd",
+  "timestamp": "2026-05-09T14:38:09.108420+00:00",
+  "script_name": "split_dataset",
+  "git_commit_sha": "bd95e498f4759b89207fca8909232c8beaf6dc67",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": 42,
+  "parameters": {
+    "train_size": 0.7,
+    "val_size": 0.15,
+    "test_size": 0.15,
+    "stratify_on": "label (binary)",
+    "generation": "independent per stratum and pooled"
+  },
+  "notes": "70/15/15 split per Methods Section 1.9. Validation set role: threshold calibration ONLY (Methods \u00a71.11.3). Validation set must not be used for any other optimisation decision.",
+  "counts": {
+    "i_train": 9349,
+    "i_val": 2003,
+    "i_test": 2004,
+    "ii_train": 5492,
+    "ii_val": 1177,
+    "ii_test": 1177,
+    "iii_train": 9349,
+    "iii_val": 2003,
+    "iii_test": 2004,
+    "pooled_train": 123516,
+    "pooled_val": 26468,
+    "pooled_test": 26468
+  },
+  "inputs": [
+    {
+      "path": "data\\processed\\features\\features_stratum_i.csv",
+      "label": "data\\processed\\features\\features_stratum_i.csv",
+      "type": "file",
+      "sha256": "67f26c48e866a83a0967a1b814d39512f691c5e3f8e6b23873f8a17da867a14a",
+      "size_bytes": 18115514
+    },
+    {
+      "path": "data\\processed\\features\\features_stratum_ii.csv",
+      "label": "data\\processed\\features\\features_stratum_ii.csv",
+      "type": "file",
+      "sha256": "81ac596efe8110dddc18ce650b2ef6491d3ae07bbc529b75607b46ecb68f15f9",
+      "size_bytes": 834460
+    },
+    {
+      "path": "data\\processed\\features\\features_stratum_iii.csv",
+      "label": "data\\processed\\features\\features_stratum_iii.csv",
+      "type": "file",
+      "sha256": "74e75ff612b3a3b912b96b1bf84b464c2364461a20a03313dccbe7e9f0a33f85",
+      "size_bytes": 1406932
+    },
+    {
+      "path": "data\\processed\\features\\features_combined.csv",
+      "label": "data\\processed\\features\\features_combined.csv",
+      "type": "file",
+      "sha256": "c40bc9d4323190d09a9a09a99919e2f7851c3304757e979c9685a51866922909",
+      "size_bytes": 20356314
+    }
+  ],
+  "outputs": [
+    {
+      "path": "data\\processed\\splits\\train_stratum_i.csv",
+      "label": "data\\processed\\splits\\train_stratum_i.csv",
+      "type": "file",
+      "sha256": "111b67827bbe7744b9f25a833a0feacbae36b07aaf6dca79d88af7ef2cc61490",
+      "size_bytes": 12682863,
+      "row_count": 108675
+    },
+    {
+      "path": "data\\processed\\splits\\val_stratum_i.csv",
+      "label": "data\\processed\\splits\\val_stratum_i.csv",
+      "type": "file",
+      "sha256": "299535caba4be97592f29d67cadf49ea2b00f6dba5d61da61ca448521bae6c4c",
+      "size_bytes": 2716943,
+      "row_count": 23287
+    },
+    {
+      "path": "data\\processed\\splits\\test_stratum_i.csv",
+      "label": "data\\processed\\splits\\test_stratum_i.csv",
+      "type": "file",
+      "sha256": "b2053b4f942542ef78dbcabd6a664ed7fa87702995c288656cb597f12361c1ef",
+      "size_bytes": 2716300,
+      "row_count": 23288
+    },
+    {
+      "path": "data\\processed\\splits\\train_stratum_ii.csv",
+      "label": "data\\processed\\splits\\train_stratum_ii.csv",
+      "type": "file",
+      "sha256": "30d252f91fa6642b5779fb9435177dd671e6f43f4089ab57608d1aa757e2904c",
+      "size_bytes": 584293,
+      "row_count": 5492
+    },
+    {
+      "path": "data\\processed\\splits\\val_stratum_ii.csv",
+      "label": "data\\processed\\splits\\val_stratum_ii.csv",
+      "type": "file",
+      "sha256": "17071a1db0a268e21de336ac4c7b37b87561e1ea94735adc20cec36223fc17e7",
+      "size_bytes": 125365,
+      "row_count": 1177
+    },
+    {
+      "path": "data\\processed\\splits\\test_stratum_ii.csv",
+      "label": "data\\processed\\splits\\test_stratum_ii.csv",
+      "type": "file",
+      "sha256": "490806b45ca830a09df6555e06e79db1221b62ce240a5c8de53e94d9ff7d7bb8",
+      "size_bytes": 125394,
+      "row_count": 1177
+    },
+    {
+      "path": "data\\processed\\splits\\train_stratum_iii.csv",
+      "label": "data\\processed\\splits\\train_stratum_iii.csv",
+      "type": "file",
+      "sha256": "41cf4f466b05a7626c4a4734a8c4488f973b76b24b3ff4ca369fb04655a080ff",
+      "size_bytes": 985041,
+      "row_count": 9349
+    },
+    {
+      "path": "data\\processed\\splits\\val_stratum_iii.csv",
+      "label": "data\\processed\\splits\\val_stratum_iii.csv",
+      "type": "file",
+      "sha256": "46289bbb70dc61cee95c36cafa40820df37bdf8fefb27712faefce20562c9a60",
+      "size_bytes": 211298,
+      "row_count": 2003
+    },
+    {
+      "path": "data\\processed\\splits\\test_stratum_iii.csv",
+      "label": "data\\processed\\splits\\test_stratum_iii.csv",
+      "type": "file",
+      "sha256": "d0ae1d1a0d44b1991d05e7f13772f33335bb657a518b7f336fc6fad7c9019882",
+      "size_bytes": 211185,
+      "row_count": 2004
+    },
+    {
+      "path": "data\\processed\\splits\\train_pooled.csv",
+      "label": "data\\processed\\splits\\train_pooled.csv",
+      "type": "file",
+      "sha256": "d4439fdeeca82ab2b1994f1b1eab7da936f29b16577b1842831710c24d0206ae",
+      "size_bytes": 14249816,
+      "row_count": 123516
+    },
+    {
+      "path": "data\\processed\\splits\\val_pooled.csv",
+      "label": "data\\processed\\splits\\val_pooled.csv",
+      "type": "file",
+      "sha256": "8eb09c1d1401cf6c7b5cda664f382a00c4929d1b2a6df0bc4e5eae96e4c05853",
+      "size_bytes": 3052586,
+      "row_count": 26468
+    },
+    {
+      "path": "data\\processed\\splits\\test_pooled.csv",
+      "label": "data\\processed\\splits\\test_pooled.csv",
+      "type": "file",
+      "sha256": "1d0e162ab2a5e22b46cbcb5f16a540e8bacda0bb9ce04f39f3960e4dc37a771a",
+      "size_bytes": 3054504,
+      "row_count": 26468
+    },
+    {
+      "path": "data\\processed\\splits\\split_report.txt",
+      "label": "data\\processed\\splits\\split_report.txt",
+      "type": "file",
+      "sha256": "da53dba50c5b35c100a4d5f5d6c4ab378e046569775122db9d4b3e6877d74b51",
+      "size_bytes": 2499,
+      "row_count": 40
+    }
+  ]
+}

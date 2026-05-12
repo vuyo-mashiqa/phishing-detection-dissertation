@@ -66,3 +66,7 @@ outputs/transformers/**/*.pt
 outputs/transformers/**/*.bin
 data/processed/token_cache/
 models/
+
+# Old diagnostic/one-off scripts
+src/data/diagnose_*.py
+src/data/extract_structural_features.py

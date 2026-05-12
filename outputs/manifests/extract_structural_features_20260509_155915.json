@@ -1,0 +1,55 @@
+{
+  "run_id": "8dfd9fd5-3f1c-407d-b007-258bcb82e808",
+  "timestamp": "2026-05-09T13:58:15.625040+00:00",
+  "script_name": "extract_structural_features",
+  "git_commit_sha": "bd95e498f4759b89207fca8909232c8beaf6dc67",
+  "git_is_clean": false,
+  "python_version": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "random_seed": null,
+  "parameters": {
+    "stratum_i_sha256": "no lowercase \u2014 matches parse_enron.py",
+    "stratum_ii_sha256": "lowercase \u2014 matches parse_csdmc2010.py",
+    "stratum_iii_sha256": "lowercase + errors=replace \u2014 matches parse_phishfuzzer.py",
+    "html_char_ratio": "tag chars / total chars from raw text/html part",
+    "reply_to_mismatch": "1 if @domain(Reply-To) != @domain(From) else 0",
+    "phishfuzzer_html_char_ratio": "0.0 \u2014 LLM text, no HTML",
+    "phishfuzzer_reply_to_mismatch": "0 \u2014 no headers in JSON schema"
+  },
+  "notes": "Companion structural feature files. SHA-256 join uses each source's original parser pipeline to ensure exact matching.",
+  "counts": {
+    "stratum_i_rows": 155250,
+    "stratum_i_unmatched": 0,
+    "stratum_ii_rows": 7846,
+    "stratum_ii_unmatched": 97,
+    "stratum_iii_rows": 13356,
+    "stratum_iii_unmatched": 0,
+    "grand_total": 176452
+  },
+  "inputs": [],
+  "outputs": [
+    {
+      "path": "data\\processed\\stratum_i\\stratum_i_structural.csv",
+      "label": "data\\processed\\stratum_i\\stratum_i_structural.csv",
+      "type": "file",
+      "sha256": "f2663ba3e1ffd9a59a34bcae4f0091e5b58947ccca27a19b9749917df7904f4f",
+      "size_bytes": 8185722,
+      "row_count": 155250
+    },
+    {
+      "path": "data\\processed\\stratum_ii\\stratum_ii_structural.csv",
+      "label": "data\\processed\\stratum_ii\\stratum_ii_structural.csv",
+      "type": "file",
+      "sha256": "29902a667e46660a53fe3c15c385e002cf19dcf0d2b1d8d6cb7e65344e291b3d",
+      "size_bytes": 274533,
+      "row_count": 7846
+    },
+    {
+      "path": "data\\processed\\stratum_iii\\stratum_iii_structural.csv",
+      "label": "data\\processed\\stratum_iii\\stratum_iii_structural.csv",
+      "type": "file",
+      "sha256": "b858b4ee312d66bf1dabd207769283c1293844d00d55619a9c9fd19612bdb0bd",
+      "size_bytes": 427438,
+      "row_count": 13356
+    }
+  ]
+}

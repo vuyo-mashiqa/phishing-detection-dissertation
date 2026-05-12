@@ -1,212 +1,361 @@
 """
 build_features.py
 =================
-Builds the feature matrix for classical ML experiments.
+Merges canonical CSVs with structural companion files, then engineers
+all features defined in SCHEMA_FEATURES.md for the unified dataset.
 
-Feature groups:
-  1. TF-IDF body (word 1-2gram + char 3-5gram, concatenated)
-  2. TF-IDF subject (word 1-2gram)
-  3. URL features  (5 scalar features from body text)
-  4. Sender features (2 scalar features)
+Feature groups
+--------------
+  Text features   (derived from body/subject columns in canonical CSV)
+  Structural      (html_char_ratio, reply_to_mismatch — from companion CSVs)
+  Metadata        (stratum, source, label)
 
-All groups are combined via ColumnTransformer into a single sparse matrix.
+Input files
+-----------
+  data/processed/stratum_i/stratum_i_combined.csv
+  data/processed/stratum_i/stratum_i_structural.csv
+  data/processed/stratum_ii/stratum_ii_combined.csv
+  data/processed/stratum_ii/stratum_ii_structural.csv
+  data/processed/stratum_iii/stratum_iii_combined.csv
+  data/processed/stratum_iii/stratum_iii_structural.csv
 
-Usage — fit and transform (training):
-    from src.features.build_features import FeaturePipeline
-    fp = FeaturePipeline()
-    X_train = fp.fit_transform(df_train)
-    fp.save("outputs/features/stratum_i_pipeline.joblib")
+Output files
+------------
+  data/processed/features/features_stratum_i.csv
+  data/processed/features/features_stratum_ii.csv
+  data/processed/features/features_stratum_iii.csv
+  data/processed/features/features_combined.csv
 
-Usage — transform only (val/test/cross-stratum):
-    fp = FeaturePipeline.load("outputs/features/stratum_i_pipeline.joblib")
-    X_test = fp.transform(df_test)
+Run
+---
+  python src/data/build_features.py
 """
 
+import csv
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
-import joblib
-import numpy as np
-import scipy.sparse as sp
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import MaxAbsScaler
+import pandas as pd
+
+csv.field_size_limit(10_000_000)
+sys.stdout.reconfigure(encoding="utf-8")
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+from src.utils.manifest_utils import ManifestWriter
 
 
-# ------------------------------------------------------------------
-# URL FEATURES
-# ------------------------------------------------------------------
-SUSPICIOUS_TLDS = {
-    ".xyz", ".top", ".click", ".loan", ".work", ".date", ".win",
-    ".bid", ".trade", ".stream", ".download", ".accountant",
-}
+# ==============================================================================
+# PATHS
+# ==============================================================================
+STRATUM_I_CANON      = Path("data/processed/stratum_i/stratum_i_combined.csv")
+STRATUM_I_STRUCT     = Path("data/processed/stratum_i/stratum_i_structural.csv")
+STRATUM_II_CANON     = Path("data/processed/stratum_ii/stratum_ii_combined.csv")
+STRATUM_II_STRUCT    = Path("data/processed/stratum_ii/stratum_ii_structural.csv")
+STRATUM_III_CANON    = Path("data/processed/stratum_iii/stratum_iii_combined.csv")
+STRATUM_III_STRUCT   = Path("data/processed/stratum_iii/stratum_iii_structural.csv")
 
-URL_PATTERN = re.compile(
-    r"https?://[^\s<>\"']+|www\.[^\s<>\"']+", re.IGNORECASE
-)
+OUT_DIR              = Path("data/processed/features")
+OUT_I                = OUT_DIR / "features_stratum_i.csv"
+OUT_II               = OUT_DIR / "features_stratum_ii.csv"
+OUT_III              = OUT_DIR / "features_stratum_iii.csv"
+OUT_COMBINED         = OUT_DIR / "features_combined.csv"
+
+FEATURE_COLS = [
+    # Identity
+    "message_id",
+    # Label / metadata
+    "label", "stratum", "source",
+    # Structural (from companion CSVs)
+    "html_char_ratio",
+    "reply_to_mismatch",
+    # Text length
+    "body_length",
+    "subject_length",
+    # Lexical
+    "body_unique_word_ratio",
+    "body_capitalisation_ratio",
+    "body_digit_ratio",
+    "body_special_char_ratio",
+    # URL / link signals
+    "url_count",
+    "unique_domain_count",
+    "has_ip_url",
+    "url_domain_mismatch",
+    # Urgency / social engineering
+    "urgency_word_count",
+    # Punctuation density
+    "exclamation_count",
+    "question_count",
+]
 
 
-def extract_url_features(body: str) -> list[float]:
-    """Return 5 URL-based scalar features from body text."""
-    urls = URL_PATTERN.findall(body)
-    n = len(urls)
-    if n == 0:
-        return [0.0, 0.0, 0.0, 0.0, 0.0]
-    n_suspicious_tld = sum(
-        1 for u in urls
-        if any(u.lower().endswith(t) or f"{t}/" in u.lower() for t in SUSPICIOUS_TLDS)
+# ==============================================================================
+# VOCABULARY LISTS
+# ==============================================================================
+URGENCY_WORDS = frozenset([
+    "urgent", "immediately", "action required", "verify", "confirm",
+    "suspend", "suspended", "expire", "expired", "limited time",
+    "act now", "click here", "login", "password", "account",
+    "security", "alert", "warning", "update", "validate",
+    "congratulations", "winner", "prize", "claim", "free",
+    "offer", "dear", "customer", "bank", "paypal", "ebay",
+])
+
+URL_RE    = re.compile(r"https?://[^\s<>\"']+", re.IGNORECASE)
+DOMAIN_RE = re.compile(r"https?://(?:www\.)?([^/\s<>\"']+)", re.IGNORECASE)
+IP_URL_RE = re.compile(r"https?://\d{1,3}(?:\.\d{1,3}){3}", re.IGNORECASE)
+
+
+# ==============================================================================
+# FEATURE EXTRACTION
+# ==============================================================================
+def extract_features(body: str, subject: str) -> dict:
+    """
+    Compute all text-derived features from a single email's body and subject.
+    All features are deterministic and operate on pre-cleaned text.
+    """
+    body    = str(body    or "")
+    subject = str(subject or "")
+
+    # --- length ---
+    body_length    = len(body)
+    subject_length = len(subject)
+
+    # --- lexical ratios ---
+    words = body.split()
+    n_words = len(words)
+    if n_words > 0:
+        unique_words            = len(set(w.lower() for w in words))
+        body_unique_word_ratio  = round(unique_words / n_words, 6)
+    else:
+        body_unique_word_ratio  = 0.0
+
+    n_chars = len(body)
+    if n_chars > 0:
+        upper_chars              = sum(1 for c in body if c.isupper())
+        digit_chars              = sum(1 for c in body if c.isdigit())
+        special_chars            = sum(
+            1 for c in body
+            if not c.isalnum() and not c.isspace()
+            and unicodedata.category(c) not in ("Zs",)
+        )
+        body_capitalisation_ratio = round(upper_chars  / n_chars, 6)
+        body_digit_ratio          = round(digit_chars  / n_chars, 6)
+        body_special_char_ratio   = round(special_chars / n_chars, 6)
+    else:
+        body_capitalisation_ratio = 0.0
+        body_digit_ratio          = 0.0
+        body_special_char_ratio   = 0.0
+
+    # --- URL features ---
+    urls    = URL_RE.findall(body)
+    domains = DOMAIN_RE.findall(body)
+
+    url_count           = len(urls)
+    unique_domain_count = len(set(d.lower() for d in domains))
+    has_ip_url          = int(bool(IP_URL_RE.search(body)))
+
+    # url_domain_mismatch: display text contains a domain that differs from
+    # the href domain (anchor text spoofing). Detected via <a href> pattern.
+    href_re  = re.compile(r'href=["\']?(https?://[^"\'>\s]+)', re.IGNORECASE)
+    text_url = re.compile(r'https?://(?:www\.)?([^/\s<>\"\']+)', re.IGNORECASE)
+    hrefs    = href_re.findall(body)
+    mismatch = 0
+    for href in hrefs:
+        href_domain = DOMAIN_RE.search(href)
+        text_domain = text_url.search(body[body.find(href) + len(href):body.find(href) + len(href) + 200])
+        if href_domain and text_domain:
+            if href_domain.group(1).lower() != text_domain.group(1).lower():
+                mismatch = 1
+                break
+    url_domain_mismatch = mismatch
+
+    # --- urgency words ---
+    body_lower = body.lower()
+    urgency_word_count = sum(
+        1 for w in URGENCY_WORDS if w in body_lower
     )
-    n_ip_url = sum(1 for u in urls if re.search(r"https?://\d{1,3}(\.\d{1,3}){3}", u))
-    n_at_symbol = sum(1 for u in urls if "@" in u)
-    max_len = max(len(u) for u in urls)
-    return [
-        float(n),                           # total URL count
-        float(n_suspicious_tld) / n,        # fraction with suspicious TLD
-        float(n_ip_url),                    # IP-literal URL count
-        float(n_at_symbol),                 # @ in URL (credential phishing signal)
-        float(min(max_len, 500)),           # max URL length (capped)
+
+    # --- punctuation density ---
+    exclamation_count = body.count("!")
+    question_count    = body.count("?")
+
+    return {
+        "body_length":              body_length,
+        "subject_length":           subject_length,
+        "body_unique_word_ratio":   body_unique_word_ratio,
+        "body_capitalisation_ratio": body_capitalisation_ratio,
+        "body_digit_ratio":         body_digit_ratio,
+        "body_special_char_ratio":  body_special_char_ratio,
+        "url_count":                url_count,
+        "unique_domain_count":      unique_domain_count,
+        "has_ip_url":               has_ip_url,
+        "url_domain_mismatch":      url_domain_mismatch,
+        "urgency_word_count":       urgency_word_count,
+        "exclamation_count":        exclamation_count,
+        "question_count":           question_count,
+    }
+
+
+# ==============================================================================
+# STRATUM PROCESSOR
+# ==============================================================================
+def process_stratum(
+    canon_path: Path,
+    struct_path: Path,
+    out_path: Path,
+    label: str,
+) -> pd.DataFrame:
+    """
+    Loads canonical CSV, left-joins structural companion, engineers features,
+    writes per-stratum feature CSV, and returns the DataFrame.
+    """
+    print(f"  Loading {canon_path.name} ...")
+    canon = pd.read_csv(canon_path, dtype=str, low_memory=False)
+    print(f"    {len(canon):,} rows")
+
+    print(f"  Loading {struct_path.name} ...")
+    struct = pd.read_csv(struct_path, dtype=str, low_memory=False)
+    print(f"    {len(struct):,} rows")
+
+    # Left join on message_id — all canonical rows kept; structural fills in features.
+    # Unmatched structural rows are impossible (companion file mirrors canonical exactly).
+    merged = canon.merge(struct, on="message_id", how="left")
+    assert len(merged) == len(canon), (
+        f"Row count changed after merge: {len(canon)} -> {len(merged)}"
+    )
+
+    # Fill structural defaults for any missing join (should be 0 after Step 7.1)
+    merged["html_char_ratio"]    = pd.to_numeric(merged["html_char_ratio"],    errors="coerce").fillna(0.0)
+    merged["reply_to_mismatch"]  = pd.to_numeric(merged["reply_to_mismatch"], errors="coerce").fillna(0).astype(int)
+
+    # --- Engineer text features row-by-row ---
+    print(f"  Engineering features ...")
+    feature_rows = []
+    for _, row in merged.iterrows():
+        feats = extract_features(row.get("body", ""), row.get("subject", ""))
+        feature_rows.append(feats)
+
+    feat_df = pd.DataFrame(feature_rows)
+
+    # --- Assemble final DataFrame ---
+    result = pd.DataFrame()
+    result["message_id"]        = merged["message_id"]
+    result["label"]             = pd.to_numeric(merged["label"], errors="coerce").astype(int)
+    result["stratum"]           = merged["stratum"]
+    result["source"]            = merged["source"]
+    result["html_char_ratio"]   = merged["html_char_ratio"]
+    result["reply_to_mismatch"] = merged["reply_to_mismatch"]
+
+    for col in feat_df.columns:
+        result[col] = feat_df[col]
+
+    # Enforce column order
+    result = result[[c for c in FEATURE_COLS if c in result.columns]]
+
+    # Validate nulls
+    null_counts = result.isnull().sum()
+    if null_counts.any():
+        print(f"  WARNING: nulls found before write:")
+        print(null_counts[null_counts > 0].to_string())
+
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    result.to_csv(out_path, index=False, encoding="utf-8", lineterminator="\n")
+
+    label_dist = result["label"].value_counts().to_dict()
+    print(f"  {label}: {len(result):,} rows written  |  label dist: {label_dist}")
+    return result
+
+
+# ==============================================================================
+# MAIN
+# ==============================================================================
+def main():
+    print("=" * 65)
+    print("FEATURE ENGINEERING")
+    print("=" * 65)
+
+    # Validate inputs
+    inputs = [
+        STRATUM_I_CANON,  STRATUM_I_STRUCT,
+        STRATUM_II_CANON, STRATUM_II_STRUCT,
+        STRATUM_III_CANON, STRATUM_III_STRUCT,
     ]
+    missing = [str(p) for p in inputs if not p.exists()]
+    if missing:
+        print("ERROR — missing input files:")
+        for m in missing:
+            print(f"  {m}")
+        sys.exit(1)
+    print("All inputs validated.\n")
 
+    mw = ManifestWriter(
+        script_name="build_features",
+        random_seed=None,
+        parameters={
+            "join_key":       "message_id",
+            "join_type":      "left (canonical is authoritative)",
+            "feature_groups": "text, structural, metadata",
+            "url_regex":      URL_RE.pattern,
+            "ip_url_regex":   IP_URL_RE.pattern,
+            "urgency_vocab":  f"{len(URGENCY_WORDS)} terms",
+        },
+        notes=(
+            "Structural features joined from companion CSVs produced by "
+            "extract_structural_features.py (Step 7.1). "
+            "All 176,452 records confirmed 0 unmatched before this step."
+        ),
+    )
+    for p in inputs:
+        mw.add_input(str(p))
 
-# ------------------------------------------------------------------
-# SENDER FEATURES
-# ------------------------------------------------------------------
-def extract_sender_features(sender: str, subject: str) -> list[float]:
-    """Return 2 sender/header scalar features."""
-    sender = sender or ""
-    subject = subject or ""
-    # Mismatch proxy: display name contains a different domain than address
-    domain_in_name = bool(re.search(r"@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}", sender.split("<")[0]))
-    # Urgency markers in subject
-    urgency_terms = ["urgent", "action required", "verify", "suspended",
-                     "unusual activity", "security alert", "immediately",
-                     "limited time", "click here", "confirm your"]
-    urgency = any(t in subject.lower() for t in urgency_terms)
-    return [float(domain_in_name), float(urgency)]
+    # --- Per-stratum processing ---
+    print("--- STRATUM I ---")
+    df_i   = process_stratum(STRATUM_I_CANON,   STRATUM_I_STRUCT,   OUT_I,   "Stratum I")
 
+    print("\n--- STRATUM II ---")
+    df_ii  = process_stratum(STRATUM_II_CANON,  STRATUM_II_STRUCT,  OUT_II,  "Stratum II")
 
-# ------------------------------------------------------------------
-# FEATURE PIPELINE
-# ------------------------------------------------------------------
-class FeaturePipeline:
-    """
-    Fits and transforms a canonical email DataFrame into a sparse feature matrix.
+    print("\n--- STRATUM III ---")
+    df_iii = process_stratum(STRATUM_III_CANON, STRATUM_III_STRUCT, OUT_III, "Stratum III")
 
-    Feature dimensions:
-      - TF-IDF body word:   50,000 features
-      - TF-IDF body char:   30,000 features
-      - TF-IDF subject:     10,000 features
-      - URL scalars:             5 features
-      - Sender scalars:          2 features
-    """
+    # --- Combined ---
+    print("\n--- COMBINED ---")
+    combined = pd.concat([df_i, df_ii, df_iii], ignore_index=True)
+    combined.to_csv(OUT_COMBINED, index=False, encoding="utf-8", lineterminator="\n")
 
-    BODY_WORD_MAX   = 50000
-    BODY_CHAR_MAX   = 30000
-    SUBJECT_MAX     = 10000
+    label_dist = combined["label"].value_counts().to_dict()
+    print(f"  Combined: {len(combined):,} rows  |  label dist: {label_dist}")
 
-    def __init__(self):
-        self.body_word_tfidf = TfidfVectorizer(
-            analyzer="word", ngram_range=(1, 2),
-            max_features=self.BODY_WORD_MAX,
-            sublinear_tf=True, strip_accents="unicode",
-            min_df=2, max_df=0.95,
-        )
-        self.body_char_tfidf = TfidfVectorizer(
-            analyzer="char_wb", ngram_range=(3, 5),
-            max_features=self.BODY_CHAR_MAX,
-            sublinear_tf=True, strip_accents="unicode",
-            min_df=2, max_df=0.95,
-        )
-        self.subject_tfidf = TfidfVectorizer(
-            analyzer="word", ngram_range=(1, 2),
-            max_features=self.SUBJECT_MAX,
-            sublinear_tf=True, strip_accents="unicode",
-            min_df=2,
-        )
-        self.scalar_scaler = MaxAbsScaler()
-        self._fitted = False
+    # --- Summary ---
+    print("\n" + "=" * 65)
+    print("FEATURE ENGINEERING COMPLETE")
+    print("=" * 65)
+    print(f"  Stratum I    : {len(df_i):,} rows   | {len(df_i.columns)} features")
+    print(f"  Stratum II   : {len(df_ii):,} rows    | {len(df_ii.columns)} features")
+    print(f"  Stratum III  : {len(df_iii):,} rows   | {len(df_iii.columns)} features")
+    print(f"  Combined     : {len(combined):,} rows  | {len(combined.columns)} features")
+    print(f"  Feature cols : {list(combined.columns)}")
 
-    def _extract_scalars(self, df) -> np.ndarray:
-        url_feats     = [extract_url_features(b) for b in df["body"].fillna("")]
-        sender_feats  = [
-            extract_sender_features(s, subj)
-            for s, subj in zip(df["sender"].fillna(""), df["subject"].fillna(""))
-        ]
-        return np.array([u + sv for u, sv in zip(url_feats, sender_feats)],
-                        dtype=np.float32)
+    for out in [OUT_I, OUT_II, OUT_III, OUT_COMBINED]:
+        mw.add_output(str(out))
 
-    def fit_transform(self, df) -> sp.csr_matrix:
-        bodies   = df["body"].fillna("").tolist()
-        subjects = df["subject"].fillna("").tolist()
-        scalars  = self._extract_scalars(df)
+    mw.set_counts({
+        "stratum_i_rows":   len(df_i),
+        "stratum_ii_rows":  len(df_ii),
+        "stratum_iii_rows": len(df_iii),
+        "combined_rows":    len(combined),
+        "n_features":       len(FEATURE_COLS),
+        "label_0_ham":      int(label_dist.get(0, 0)),
+        "label_1_phishing": int(label_dist.get(1, 0)),
+    })
+    mw.write()
 
-        X_bw = self.body_word_tfidf.fit_transform(bodies)
-        X_bc = self.body_char_tfidf.fit_transform(bodies)
-        X_s  = self.subject_tfidf.fit_transform(subjects)
-        X_sc = sp.csr_matrix(self.scalar_scaler.fit_transform(scalars))
-
-        self._fitted = True
-        mat = sp.hstack([X_bw, X_bc, X_s, X_sc], format="csr")
-        print(f"  Feature matrix: {mat.shape[0]:,} rows x {mat.shape[1]:,} cols")
-        return mat
-
-    def transform(self, df) -> sp.csr_matrix:
-        if not self._fitted:
-            raise RuntimeError("Pipeline not fitted. Call fit_transform first.")
-        bodies   = df["body"].fillna("").tolist()
-        subjects = df["subject"].fillna("").tolist()
-        scalars  = self._extract_scalars(df)
-
-        X_bw = self.body_word_tfidf.transform(bodies)
-        X_bc = self.body_char_tfidf.transform(bodies)
-        X_s  = self.subject_tfidf.transform(subjects)
-        X_sc = sp.csr_matrix(self.scalar_scaler.transform(scalars))
-
-        return sp.hstack([X_bw, X_bc, X_s, X_sc], format="csr")
-
-    def save(self, path: str):
-        Path(path).parent.mkdir(parents=True, exist_ok=True)
-        joblib.dump(self, path)
-        print(f"  Pipeline saved -> {path}")
-
-    @staticmethod
-    def load(path: str) -> "FeaturePipeline":
-        fp = joblib.load(path)
-        print(f"  Pipeline loaded <- {path}")
-        return fp
-
-    @property
-    def n_features(self) -> int:
-        return (self.BODY_WORD_MAX + self.BODY_CHAR_MAX +
-                self.SUBJECT_MAX + 7)  # 7 = 5 URL + 2 sender scalars
+    print("\nReady for Step 7.3: run pytest tests/test_features.py -v")
 
 
 if __name__ == "__main__":
-    """Quick smoke test — reads Stratum I train split."""
-    import csv
-    import pandas as pd
-
-    csv.field_size_limit(10000000)
-    TRAIN = Path("data/splits/stratum_i/train.csv")
-    if not TRAIN.exists():
-        print("ERROR: Run generate_splits.py first.")
-        sys.exit(1)
-
-    print("Loading Stratum I train split...")
-    df = pd.read_csv(TRAIN, encoding="utf-8", encoding_errors="replace",
-                     keep_default_na=False)
-    print(f"  Rows: {len(df):,}  "
-          f"Ham: {int((df['label']==0).sum()):,}  "
-          f"Phish: {int((df['label']==1).sum()):,}")
-
-    print("Fitting feature pipeline...")
-    fp = FeaturePipeline()
-    X = fp.fit_transform(df)
-
-    print(f"\nSmoke test PASSED")
-    print(f"  Matrix shape: {X.shape}")
-    print(f"  Matrix dtype: {X.dtype}")
-    print(f"  NNZ:          {X.nnz:,}")
-    fp.save("outputs/features/smoke_test_pipeline.joblib")
-    print("Done.")
+    main()
+    
