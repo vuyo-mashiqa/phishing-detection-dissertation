@@ -612,8 +612,7 @@ def main():
     print("=" * 60)
 
     t_total = time.time()
-    # for config in CONFIGS:
-    for config in ["stratum_ii", "stratum_iii"]:
+    for config in CONFIGS:
         print(f"\n[CONFIG: {config.upper()}]")
         for model_key in MODELS:
             train_and_evaluate(config, model_key)
