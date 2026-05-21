@@ -277,6 +277,10 @@ def _train_one_seed(config: str, model_key: str, seed: int,
     Weights of best epoch held in memory; not written to disk here.
     """
     _set_seed(seed)
+    if model_key == "deberta":
+        torch.set_default_dtype(torch.float32)
+        if DEVICE.type == "cuda":
+            torch.backends.cuda.matmul.allow_tf32 = False
     model_name = MODELS[model_key]
 
     model = AutoModelForSequenceClassification.from_pretrained(
@@ -327,7 +331,11 @@ def _train_one_seed(config: str, model_key: str, seed: int,
             outputs = model(**kwargs)
             logits  = outputs.logits[:, 1] if outputs.logits.shape[1] == 2 \
                       else outputs.logits.view(-1)
-            loss    = criterion(logits, labels) / GRAD_ACCUM
+            loss = criterion(logits, labels) / GRAD_ACCUM
+            if torch.isnan(loss) or torch.isinf(loss):
+                print(f"    [seed={seed}] WARNING: nan/inf loss at step {step}, skipping batch")
+                optimizer.zero_grad()
+                continue
             loss.backward()
             epoch_loss += loss.item() * GRAD_ACCUM
 
@@ -363,6 +371,11 @@ def _train_one_seed(config: str, model_key: str, seed: int,
                 break
 
     # Load best weights for evaluation
+    if best_state is None:
+        raise RuntimeError(
+            f"No valid epoch completed for seed={seed} config={config} model={model_key}. "
+            f"All epochs produced nan loss. Check learning rate and input data."
+        )
     model.load_state_dict(best_state)
 
     # Test evaluation
