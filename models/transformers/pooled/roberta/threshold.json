@@ -1,0 +1,7 @@
+{
+  "threshold": 0.18181818181818182,
+  "config": "pooled",
+  "model": "roberta",
+  "best_seed": 456,
+  "best_val_f1": 0.9917041953069448
+}

@@ -1,0 +1,39 @@
+{
+  "config": "pooled",
+  "model_key": "deberta",
+  "model_name": "microsoft/deberta-v3-base",
+  "git_sha": "1372668740ef713ef3a1f2551ef3736937530bc9",
+  "timestamp": "2026-05-22T04:50:43Z",
+  "device": "cuda",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "best_seed": 123,
+  "best_epoch": 4,
+  "best_val_f1": 0.9917120530428605,
+  "t_star": 0.38383838383838387,
+  "n_train": 123516,
+  "n_val": 26468,
+  "n_test": 26468,
+  "hyperparameters": {
+    "max_length": 512,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "effective_batch": 32,
+    "epochs": 5,
+    "patience": 2,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "focal_alpha": 0.25,
+    "focal_gamma": 2.0,
+    "loss": "FocalLoss(BCEWithLogitsLoss-based)"
+  },
+  "split_sha256": {
+    "train": "d4439fdeeca82ab2b1994f1b1eab7da936f29b16577b1842831710c24d0206ae",
+    "val": "8eb09c1d1401cf6c7b5cda664f382a00c4929d1b2a6df0bc4e5eae96e4c05853",
+    "test": "1d0e162ab2a5e22b46cbcb5f16a540e8bacda0bb9ce04f39f3960e4dc37a771a"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "threshold": 0.3535353535353536,
+  "config": "pooled",
+  "model": "distilbert",
+  "best_seed": 456,
+  "best_val_f1": 0.9862819299905392
+}

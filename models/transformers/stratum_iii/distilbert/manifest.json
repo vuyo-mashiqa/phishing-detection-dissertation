@@ -1,0 +1,39 @@
+{
+  "config": "stratum_iii",
+  "model_key": "distilbert",
+  "model_name": "distilbert-base-uncased",
+  "git_sha": "1372668740ef713ef3a1f2551ef3736937530bc9",
+  "timestamp": "2026-05-21T14:33:03Z",
+  "device": "cuda",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "best_seed": 123,
+  "best_epoch": 3,
+  "best_val_f1": 0.9950738916256158,
+  "t_star": 0.38383838383838387,
+  "n_train": 9349,
+  "n_val": 2003,
+  "n_test": 2004,
+  "hyperparameters": {
+    "max_length": 512,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "effective_batch": 32,
+    "epochs": 5,
+    "patience": 2,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "focal_alpha": 0.25,
+    "focal_gamma": 2.0,
+    "loss": "FocalLoss(BCEWithLogitsLoss-based)"
+  },
+  "split_sha256": {
+    "train": "41cf4f466b05a7626c4a4734a8c4488f973b76b24b3ff4ca369fb04655a080ff",
+    "val": "46289bbb70dc61cee95c36cafa40820df37bdf8fefb27712faefce20562c9a60",
+    "test": "d0ae1d1a0d44b1991d05e7f13772f33335bb657a518b7f336fc6fad7c9019882"
+  }
+}

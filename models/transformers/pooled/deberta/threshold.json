@@ -1,0 +1,7 @@
+{
+  "threshold": 0.38383838383838387,
+  "config": "pooled",
+  "model": "deberta",
+  "best_seed": 123,
+  "best_val_f1": 0.9917120530428605
+}

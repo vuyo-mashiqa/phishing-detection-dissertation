@@ -1,0 +1,7 @@
+{
+  "threshold": 0.787878787878788,
+  "config": "stratum_i",
+  "model": "distilbert",
+  "best_seed": 42,
+  "best_val_f1": 0.9821428571428571
+}

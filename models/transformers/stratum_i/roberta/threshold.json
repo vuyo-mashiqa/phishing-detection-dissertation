@@ -1,0 +1,7 @@
+{
+  "threshold": 0.4444444444444445,
+  "config": "stratum_i",
+  "model": "roberta",
+  "best_seed": 123,
+  "best_val_f1": 0.9911504424778761
+}

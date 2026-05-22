@@ -1,0 +1,39 @@
+{
+  "config": "stratum_i",
+  "model_key": "deberta",
+  "model_name": "microsoft/deberta-v3-base",
+  "git_sha": "1372668740ef713ef3a1f2551ef3736937530bc9",
+  "timestamp": "2026-05-21T13:37:19Z",
+  "device": "cuda",
+  "seeds": [
+    42,
+    123,
+    456
+  ],
+  "best_seed": 456,
+  "best_epoch": 5,
+  "best_val_f1": 0.983751846381093,
+  "t_star": 0.42424242424242425,
+  "n_train": 108675,
+  "n_val": 23287,
+  "n_test": 23288,
+  "hyperparameters": {
+    "max_length": 512,
+    "batch_size": 16,
+    "grad_accum": 2,
+    "effective_batch": 32,
+    "epochs": 5,
+    "patience": 2,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "focal_alpha": 0.25,
+    "focal_gamma": 2.0,
+    "loss": "FocalLoss(BCEWithLogitsLoss-based)"
+  },
+  "split_sha256": {
+    "train": "111b67827bbe7744b9f25a833a0feacbae36b07aaf6dca79d88af7ef2cc61490",
+    "val": "299535caba4be97592f29d67cadf49ea2b00f6dba5d61da61ca448521bae6c4c",
+    "test": "b2053b4f942542ef78dbcabd6a664ed7fa87702995c288656cb597f12361c1ef"
+  }
+}

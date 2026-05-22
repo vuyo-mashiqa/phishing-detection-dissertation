@@ -70,7 +70,8 @@ models/
 # Old diagnostic/one-off scripts
 src/data/diagnose_*.py
 src/data/extract_structural_features.py
-
-# Old diagnostic/one-off scripts
-src/data/diagnose_*.py
-src/data/extract_structural_features.py
+# Model weight files — too large for GitHub, stored separately
+*.safetensors
+*.bin
+*.pt
+*.pth

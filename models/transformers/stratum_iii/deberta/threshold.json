@@ -1,0 +1,7 @@
+{
+  "threshold": 0.37373737373737376,
+  "config": "stratum_iii",
+  "model": "deberta",
+  "best_seed": 456,
+  "best_val_f1": 0.9985214391325776
+}
