@@ -283,8 +283,9 @@ def _train_one_seed(config: str, model_key: str, seed: int,
             torch.backends.cuda.matmul.allow_tf32 = False
     model_name = MODELS[model_key]
 
+    # Load in fp32 for all models; DeBERTa especially requires this on A100.
     model = AutoModelForSequenceClassification.from_pretrained(
-        model_name, num_labels=2
+        model_name, num_labels=2, torch_dtype=torch.float32
     ).to(DEVICE)
 
     train_ds     = EmailDataset(train_texts, train_labels, tokenizer)
