@@ -1,0 +1,62 @@
+{
+  "step": "step2_prepare_datasets",
+  "git_sha": "2d5d4669dde0610b3000e8afee61d0c452def046",
+  "timestamp": "2026-05-23T21:10:03Z",
+  "max_email_chars": 1800,
+  "files": {
+    "train_pooled": {
+      "source_csv": "train_pooled.csv",
+      "jsonl_file": "train_pooled.jsonl",
+      "n_rows": 123516,
+      "n_phishing": 9878,
+      "n_ham": 113638,
+      "n_missing": 0,
+      "sha256": "e1382405a96d2cbbc34256c98a01879f583483251740b9bac94e472168312679"
+    },
+    "val_pooled": {
+      "source_csv": "val_pooled.csv",
+      "jsonl_file": "val_pooled.jsonl",
+      "n_rows": 26468,
+      "n_phishing": 2117,
+      "n_ham": 24351,
+      "n_missing": 0,
+      "sha256": "b0bf09872c53d5be687dac0f134e9bfc8cb9909b8a8769a49205cb0f6c08f2ed"
+    },
+    "test_pooled": {
+      "source_csv": "test_pooled.csv",
+      "jsonl_file": "test_pooled.jsonl",
+      "n_rows": 26468,
+      "n_phishing": 2117,
+      "n_ham": 24351,
+      "n_missing": 0,
+      "sha256": "c8ee32f19937e9616738c503d7d54dd4054381c7515b6dba4d3c8e80614c3cad"
+    },
+    "test_stratum_i": {
+      "source_csv": "test_stratum_i.csv",
+      "jsonl_file": "test_stratum_i.jsonl",
+      "n_rows": 23288,
+      "n_phishing": 341,
+      "n_ham": 22947,
+      "n_missing": 0,
+      "sha256": "a59ef9c945fe1e53f474388078f44f16ecee68304977816261ee1a1fc1469cf6"
+    },
+    "test_stratum_ii": {
+      "source_csv": "test_stratum_ii.csv",
+      "jsonl_file": "test_stratum_ii.jsonl",
+      "n_rows": 1177,
+      "n_phishing": 762,
+      "n_ham": 415,
+      "n_missing": 0,
+      "sha256": "c45842520a38a0d1d947eb5558a31d39e5ae40d5ec8f99562fcf5c657b8b1af4"
+    },
+    "test_stratum_iii": {
+      "source_csv": "test_stratum_iii.csv",
+      "jsonl_file": "test_stratum_iii.jsonl",
+      "n_rows": 2004,
+      "n_phishing": 1014,
+      "n_ham": 990,
+      "n_missing": 0,
+      "sha256": "51c38dc6074f15c7a0b6618caa2d1fa2c8cb05093b463f93825dcd9cef9d314e"
+    }
+  }
+}

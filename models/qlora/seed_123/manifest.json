@@ -1,0 +1,36 @@
+{
+  "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "seed": 123,
+  "git_sha": "2d5d4669dde0610b3000e8afee61d0c452def046",
+  "timestamp": "2026-05-25T08:29:57Z",
+  "hyperparameters": {
+    "lora_r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "lora_targets": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ],
+    "max_seq_len": 512,
+    "batch_size": 4,
+    "grad_accum": 8,
+    "effective_batch": 32,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_frac": 0.1,
+    "max_epochs": 5,
+    "patience": 2,
+    "focal_alpha": 0.25,
+    "focal_gamma": 2.0
+  },
+  "best_val_f1": 0.998974,
+  "best_t_star": 0.1616,
+  "epochs_trained": 5,
+  "train_jsonl_sha256": "e1382405a96d2cbbc34256c98a01879f583483251740b9bac94e472168312679",
+  "val_jsonl_sha256": "b0bf09872c53d5be687dac0f134e9bfc8cb9909b8a8769a49205cb0f6c08f2ed"
+}
