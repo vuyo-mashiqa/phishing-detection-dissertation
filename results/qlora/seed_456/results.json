@@ -1,0 +1,78 @@
+{
+  "model": "qlora_llama3_8b",
+  "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "seed": 456,
+  "t_star": 0.08080808080808081,
+  "git_sha": "8168f56116d2ed60d32d7201b6a0aecdad9d4dfc",
+  "timestamp": "2026-05-26T10:09:24Z",
+  "test_results": {
+    "pooled": {
+      "eval_type": "matched",
+      "n_samples": 26468,
+      "n_phishing": 2117,
+      "threshold": 0.08080808080808081,
+      "f1_macro": 0.9389858667425185,
+      "precision": 0.8122800156433321,
+      "recall": 0.9811053377420879,
+      "roc_auc": 0.998191531127765,
+      "pr_auc": 0.9837689290206185,
+      "balanced_accuracy": 0.9806968107954002,
+      "mcc": 0.8827868028120377,
+      "fpr_at_95tpr": 0.005584986242864769,
+      "youdens_j": 0.9613936215908004
+    },
+    "stratum_i": {
+      "eval_type": "cross",
+      "n_samples": 23288,
+      "n_phishing": 341,
+      "threshold": 0.08080808080808081,
+      "f1_macro": 0.8833236659290502,
+      "precision": 0.634469696969697,
+      "recall": 0.9824046920821115,
+      "roc_auc": 0.9984337873056197,
+      "pr_auc": 0.9848715765117888,
+      "balanced_accuracy": 0.9869970032947273,
+      "mcc": 0.7859471467818347,
+      "fpr_at_95tpr": 8.715736261820717e-05,
+      "youdens_j": 0.9789183975773832
+    },
+    "stratum_ii": {
+      "eval_type": "cross",
+      "n_samples": 1177,
+      "n_phishing": 762,
+      "threshold": 0.08080808080808081,
+      "f1_macro": 0.9888703973372166,
+      "precision": 0.996031746031746,
+      "recall": 0.9881889763779528,
+      "roc_auc": 0.999430794042311,
+      "pr_auc": 0.9996929544819058,
+      "balanced_accuracy": 0.9904800303576511,
+      "mcc": 0.9778019837541505,
+      "fpr_at_95tpr": 0.0024096385542168677,
+      "youdens_j": 0.9835847326313126
+    },
+    "stratum_iii": {
+      "eval_type": "cross",
+      "n_samples": 2004,
+      "n_phishing": 1014,
+      "threshold": 0.08080808080808081,
+      "f1_macro": 0.8691555105656079,
+      "precision": 0.8038585209003215,
+      "recall": 0.9861932938856016,
+      "roc_auc": 0.9791046560277329,
+      "pr_auc": 0.9765272416777566,
+      "balanced_accuracy": 0.8698643237104775,
+      "mcc": 0.7622405106238951,
+      "fpr_at_95tpr": 0.08080808080808081,
+      "youdens_j": 0.8774311158926543
+    }
+  },
+  "latency": {
+    "latency_p50_ms": 74.27400350570679,
+    "latency_p95_ms": 78.11334375292063,
+    "latency_p99_ms": 80.57819154113531,
+    "emails_per_sec": 13.46,
+    "privacy_tier": "tier_i",
+    "n_latency_samples": 500
+  }
+}

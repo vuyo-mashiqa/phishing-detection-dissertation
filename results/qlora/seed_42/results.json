@@ -1,0 +1,78 @@
+{
+  "model": "qlora_llama3_8b",
+  "model_id": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "seed": 42,
+  "t_star": 0.5454545454545455,
+  "git_sha": "8168f56116d2ed60d32d7201b6a0aecdad9d4dfc",
+  "timestamp": "2026-05-26T09:22:46Z",
+  "test_results": {
+    "pooled": {
+      "eval_type": "matched",
+      "n_samples": 26468,
+      "n_phishing": 2117,
+      "threshold": 0.5454545454545455,
+      "f1_macro": 0.96222117929583,
+      "precision": 0.9181609195402299,
+      "recall": 0.9433160132262636,
+      "roc_auc": 0.9983518963826685,
+      "pr_auc": 0.9830534930430131,
+      "balanced_accuracy": 0.9680031259100805,
+      "mcc": 0.9245435500149701,
+      "fpr_at_95tpr": 0.008952404418709705,
+      "youdens_j": 0.9619072676032099
+    },
+    "stratum_i": {
+      "eval_type": "cross",
+      "n_samples": 23288,
+      "n_phishing": 341,
+      "threshold": 0.5454545454545455,
+      "f1_macro": 0.9281049867917808,
+      "precision": 0.7643020594965675,
+      "recall": 0.9794721407624634,
+      "roc_auc": 0.9992658717455127,
+      "pr_auc": 0.981839136450976,
+      "balanced_accuracy": 0.9874917682938129,
+      "mcc": 0.8630661944566027,
+      "fpr_at_95tpr": 0.0012202030766549005,
+      "youdens_j": 0.9816458351624239
+    },
+    "stratum_ii": {
+      "eval_type": "cross",
+      "n_samples": 1177,
+      "n_phishing": 762,
+      "threshold": 0.5454545454545455,
+      "f1_macro": 0.9466801291476791,
+      "precision": 1.0,
+      "recall": 0.9225721784776902,
+      "roc_auc": 0.9991272175315435,
+      "pr_auc": 0.9995401482379469,
+      "balanced_accuracy": 0.9612860892388451,
+      "mcc": 0.8987420346627323,
+      "fpr_at_95tpr": 0.0,
+      "youdens_j": 0.9831546659077254
+    },
+    "stratum_iii": {
+      "eval_type": "cross",
+      "n_samples": 2004,
+      "n_phishing": 1014,
+      "threshold": 0.5454545454545455,
+      "f1_macro": 0.9396164131675286,
+      "precision": 0.9433962264150944,
+      "recall": 0.9368836291913215,
+      "roc_auc": 0.9867840137070907,
+      "pr_auc": 0.9852433996772392,
+      "balanced_accuracy": 0.939653935807782,
+      "mcc": 0.8792557586044659,
+      "fpr_at_95tpr": 0.06464646464646465,
+      "youdens_j": 0.8909270216962525
+    }
+  },
+  "latency": {
+    "latency_p50_ms": 76.1990612372756,
+    "latency_p95_ms": 82.20008499920368,
+    "latency_p99_ms": 84.80541218072176,
+    "emails_per_sec": 13.12,
+    "privacy_tier": "tier_i",
+    "n_latency_samples": 500
+  }
+}
