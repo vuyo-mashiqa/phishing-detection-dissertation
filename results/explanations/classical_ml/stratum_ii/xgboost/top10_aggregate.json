@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 4099,
+    "feature_name": "64",
+    "mean_abs_shap": 0.013649458826780193
+  },
+  {
+    "rank": 2,
+    "feature_idx": 11274,
+    "feature_name": "articles",
+    "mean_abs_shap": 0.01090329413566729
+  },
+  {
+    "rank": 3,
+    "feature_idx": 6260,
+    "feature_name": "address and",
+    "mean_abs_shap": 0.010040850155167242
+  },
+  {
+    "rank": 4,
+    "feature_idx": 5284,
+    "feature_name": "about",
+    "mean_abs_shap": 0.004842193906456274
+  },
+  {
+    "rank": 5,
+    "feature_idx": 13989,
+    "feature_name": "beautiful",
+    "mean_abs_shap": 0.002765851944163464
+  },
+  {
+    "rank": 6,
+    "feature_idx": 10447,
+    "feature_name": "applets",
+    "mean_abs_shap": 0.0026952682290226283
+  },
+  {
+    "rank": 7,
+    "feature_idx": 5325,
+    "feature_name": "about our",
+    "mean_abs_shap": 0.0020111464709043504
+  },
+  {
+    "rank": 8,
+    "feature_idx": 10943,
+    "feature_name": "are making",
+    "mean_abs_shap": 0.001857204843647778
+  },
+  {
+    "rank": 9,
+    "feature_idx": 11772,
+    "feature_name": "asking there",
+    "mean_abs_shap": 0.0017553866386413666
+  },
+  {
+    "rank": 10,
+    "feature_idx": 5103,
+    "feature_name": "aanmerking komt",
+    "mean_abs_shap": 0.0013475494310259818
+  }
+]

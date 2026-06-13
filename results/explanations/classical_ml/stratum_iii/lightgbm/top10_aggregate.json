@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 5015,
+    "feature_name": "advancing",
+    "mean_abs_shap": 0.15706733473205461
+  },
+  {
+    "rank": 2,
+    "feature_idx": 8716,
+    "feature_name": "and verify",
+    "mean_abs_shap": 0.08357953328740814
+  },
+  {
+    "rank": 3,
+    "feature_idx": 994,
+    "feature_name": "192",
+    "mean_abs_shap": 0.08154494450049483
+  },
+  {
+    "rank": 4,
+    "feature_idx": 8591,
+    "feature_name": "and their",
+    "mean_abs_shap": 0.07547390196124082
+  },
+  {
+    "rank": 5,
+    "feature_idx": 10943,
+    "feature_name": "aspects",
+    "mean_abs_shap": 0.07291281991822664
+  },
+  {
+    "rank": 6,
+    "feature_idx": 5847,
+    "feature_name": "all stored",
+    "mean_abs_shap": 0.07098906094562214
+  },
+  {
+    "rank": 7,
+    "feature_idx": 10072,
+    "feature_name": "are",
+    "mean_abs_shap": 0.05329220743566728
+  },
+  {
+    "rank": 8,
+    "feature_idx": 5955,
+    "feature_name": "allowing",
+    "mean_abs_shap": 0.05006153384748883
+  },
+  {
+    "rank": 9,
+    "feature_idx": 11837,
+    "feature_name": "author",
+    "mean_abs_shap": 0.03831011732010195
+  },
+  {
+    "rank": 10,
+    "feature_idx": 9080,
+    "feature_name": "any important",
+    "mean_abs_shap": 0.037973469556644816
+  }
+]

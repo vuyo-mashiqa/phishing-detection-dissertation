@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 150003,
+    "feature_name": "subject_length",
+    "mean_abs_shap": 0.9891945486005135
+  },
+  {
+    "rank": 2,
+    "feature_idx": 150005,
+    "feature_name": "body_capitalisation_ratio",
+    "mean_abs_shap": 0.48400680178961375
+  },
+  {
+    "rank": 3,
+    "feature_idx": 150004,
+    "feature_name": "body_unique_word_ratio",
+    "mean_abs_shap": 0.11602724655381655
+  },
+  {
+    "rank": 4,
+    "feature_idx": 101354,
+    "feature_name": "char:: ac",
+    "mean_abs_shap": 0.005600028847368382
+  },
+  {
+    "rank": 5,
+    "feature_idx": 3385,
+    "feature_name": "account access",
+    "mean_abs_shap": 0.005063414552999001
+  },
+  {
+    "rank": 6,
+    "feature_idx": 101998,
+    "feature_name": "char:: cl",
+    "mean_abs_shap": 0.004493150081924176
+  },
+  {
+    "rank": 7,
+    "feature_idx": 150002,
+    "feature_name": "body_length",
+    "mean_abs_shap": 0.004389503029778701
+  },
+  {
+    "rank": 8,
+    "feature_idx": 105303,
+    "feature_name": "char:: ur",
+    "mean_abs_shap": 0.004303776710602625
+  },
+  {
+    "rank": 9,
+    "feature_idx": 51459,
+    "feature_name": "matter",
+    "mean_abs_shap": 0.004249047795223839
+  },
+  {
+    "rank": 10,
+    "feature_idx": 111710,
+    "feature_name": "char::actio",
+    "mean_abs_shap": 0.004065359261177416
+  }
+]

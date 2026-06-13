@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 106362,
+    "feature_name": "char:: wro",
+    "mean_abs_shap": 0.0064199069810310875
+  },
+  {
+    "rank": 2,
+    "feature_idx": 144978,
+    "feature_name": "char::tly",
+    "mean_abs_shap": 0.0046079536045060395
+  },
+  {
+    "rank": 3,
+    "feature_idx": 106360,
+    "feature_name": "char:: wri",
+    "mean_abs_shap": 0.004489888838730981
+  },
+  {
+    "rank": 4,
+    "feature_idx": 105697,
+    "feature_name": "char:: the",
+    "mean_abs_shap": 0.0044389205835791675
+  },
+  {
+    "rank": 5,
+    "feature_idx": 144979,
+    "feature_name": "char::tly ",
+    "mean_abs_shap": 0.004076981368442068
+  },
+  {
+    "rank": 6,
+    "feature_idx": 144017,
+    "feature_name": "char::tati",
+    "mean_abs_shap": 0.002734741177258837
+  },
+  {
+    "rank": 7,
+    "feature_idx": 105701,
+    "feature_name": "char:: then",
+    "mean_abs_shap": 0.00270143149427051
+  },
+  {
+    "rank": 8,
+    "feature_idx": 120560,
+    "feature_name": "char::end",
+    "mean_abs_shap": 0.002656427842250564
+  },
+  {
+    "rank": 9,
+    "feature_idx": 130338,
+    "feature_name": "char::lowi",
+    "mean_abs_shap": 0.002629720063812279
+  },
+  {
+    "rank": 10,
+    "feature_idx": 103228,
+    "feature_name": "char:: hos",
+    "mean_abs_shap": 0.002286453388801311
+  }
+]

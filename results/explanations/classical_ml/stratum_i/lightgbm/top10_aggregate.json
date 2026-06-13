@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 11441,
+    "feature_name": "approval",
+    "mean_abs_shap": 0.7894971509705129
+  },
+  {
+    "rank": 2,
+    "feature_idx": 14996,
+    "feature_name": "been",
+    "mean_abs_shap": 0.7883452631319162
+  },
+  {
+    "rank": 3,
+    "feature_idx": 12800,
+    "feature_name": "association",
+    "mean_abs_shap": 0.11235036432881002
+  },
+  {
+    "rank": 4,
+    "feature_idx": 11761,
+    "feature_name": "are fine",
+    "mean_abs_shap": 0.10051202945902941
+  },
+  {
+    "rank": 5,
+    "feature_idx": 9053,
+    "feature_name": "ancillary schedules",
+    "mean_abs_shap": 0.08819171543952112
+  },
+  {
+    "rank": 6,
+    "feature_idx": 13232,
+    "feature_name": "attaching",
+    "mean_abs_shap": 0.0543060879691687
+  },
+  {
+    "rank": 7,
+    "feature_idx": 11401,
+    "feature_name": "appreciated",
+    "mean_abs_shap": 0.053025950137525736
+  },
+  {
+    "rank": 8,
+    "feature_idx": 12602,
+    "feature_name": "asked that",
+    "mean_abs_shap": 0.0313332420310379
+  },
+  {
+    "rank": 9,
+    "feature_idx": 13608,
+    "feature_name": "average liq",
+    "mean_abs_shap": 0.02580586499113563
+  },
+  {
+    "rank": 10,
+    "feature_idx": 10502,
+    "feature_name": "and then",
+    "mean_abs_shap": 0.023979699074104608
+  }
+]

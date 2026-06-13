@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 150003,
+    "feature_name": "subject_length",
+    "mean_abs_shap": 0.009564292931447265
+  },
+  {
+    "rank": 2,
+    "feature_idx": 102753,
+    "feature_name": "char:: fol",
+    "mean_abs_shap": 0.0084552232206802
+  },
+  {
+    "rank": 3,
+    "feature_idx": 105036,
+    "feature_name": "char:: than",
+    "mean_abs_shap": 0.0075491502623589975
+  },
+  {
+    "rank": 4,
+    "feature_idx": 105041,
+    "feature_name": "char:: thei",
+    "mean_abs_shap": 0.005921349032344914
+  },
+  {
+    "rank": 5,
+    "feature_idx": 103193,
+    "feature_name": "char:: imme",
+    "mean_abs_shap": 0.005188253299781064
+  },
+  {
+    "rank": 6,
+    "feature_idx": 102011,
+    "feature_name": "char:: clo",
+    "mean_abs_shap": 0.0040695884321051345
+  },
+  {
+    "rank": 7,
+    "feature_idx": 144231,
+    "feature_name": "char::te. ",
+    "mean_abs_shap": 0.003332226747369568
+  },
+  {
+    "rank": 8,
+    "feature_idx": 131989,
+    "feature_name": "char::nce",
+    "mean_abs_shap": 0.002911282610473283
+  },
+  {
+    "rank": 9,
+    "feature_idx": 105037,
+    "feature_name": "char:: that",
+    "mean_abs_shap": 0.002902514356721914
+  },
+  {
+    "rank": 10,
+    "feature_idx": 130152,
+    "feature_name": "char::lued ",
+    "mean_abs_shap": 0.002838562291003472
+  }
+]

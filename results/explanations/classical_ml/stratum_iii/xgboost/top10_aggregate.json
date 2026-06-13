@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 9080,
+    "feature_name": "any important",
+    "mean_abs_shap": 0.01267727156065391
+  },
+  {
+    "rank": 2,
+    "feature_idx": 6244,
+    "feature_name": "am",
+    "mean_abs_shap": 0.008490408805757684
+  },
+  {
+    "rank": 3,
+    "feature_idx": 8716,
+    "feature_name": "and verify",
+    "mean_abs_shap": 0.007312122572176202
+  },
+  {
+    "rank": 4,
+    "feature_idx": 9177,
+    "feature_name": "any service",
+    "mean_abs_shap": 0.005944964680699661
+  },
+  {
+    "rank": 5,
+    "feature_idx": 11552,
+    "feature_name": "attempted to",
+    "mean_abs_shap": 0.005807008955255198
+  },
+  {
+    "rank": 6,
+    "feature_idx": 994,
+    "feature_name": "192",
+    "mean_abs_shap": 0.005555254824738981
+  },
+  {
+    "rank": 7,
+    "feature_idx": 12482,
+    "feature_name": "banking services",
+    "mean_abs_shap": 0.004486611072570062
+  },
+  {
+    "rank": 8,
+    "feature_idx": 8243,
+    "feature_name": "and recent",
+    "mean_abs_shap": 0.00439353363275528
+  },
+  {
+    "rank": 9,
+    "feature_idx": 5015,
+    "feature_name": "advancing",
+    "mean_abs_shap": 0.003817684291750227
+  },
+  {
+    "rank": 10,
+    "feature_idx": 4746,
+    "feature_name": "addresses the",
+    "mean_abs_shap": 0.00375518761575222
+  }
+]

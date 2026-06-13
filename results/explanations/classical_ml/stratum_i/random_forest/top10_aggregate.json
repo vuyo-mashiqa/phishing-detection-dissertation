@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 150005,
+    "feature_name": "body_capitalisation_ratio",
+    "mean_abs_shap": 0.004540017411680888
+  },
+  {
+    "rank": 2,
+    "feature_idx": 150004,
+    "feature_name": "body_unique_word_ratio",
+    "mean_abs_shap": 0.0012967956665790549
+  },
+  {
+    "rank": 3,
+    "feature_idx": 150003,
+    "feature_name": "subject_length",
+    "mean_abs_shap": 0.0010942889016164357
+  },
+  {
+    "rank": 4,
+    "feature_idx": 138935,
+    "feature_name": "char::phon",
+    "mean_abs_shap": 0.0009935058970120716
+  },
+  {
+    "rank": 5,
+    "feature_idx": 114010,
+    "feature_name": "char::ace",
+    "mean_abs_shap": 0.0009506633566404279
+  },
+  {
+    "rank": 6,
+    "feature_idx": 103593,
+    "feature_name": "char:: hr",
+    "mean_abs_shap": 0.0009034309480417329
+  },
+  {
+    "rank": 7,
+    "feature_idx": 29894,
+    "feature_name": "ect",
+    "mean_abs_shap": 0.0008786833546217507
+  },
+  {
+    "rank": 8,
+    "feature_idx": 115413,
+    "feature_name": "char::ans",
+    "mean_abs_shap": 0.0008060784332594642
+  },
+  {
+    "rank": 9,
+    "feature_idx": 113993,
+    "feature_name": "char::acce",
+    "mean_abs_shap": 0.000796711527463813
+  },
+  {
+    "rank": 10,
+    "feature_idx": 126728,
+    "feature_name": "char::hre",
+    "mean_abs_shap": 0.0006619573176609457
+  }
+]

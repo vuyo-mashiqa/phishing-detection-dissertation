@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 5284,
+    "feature_name": "about",
+    "mean_abs_shap": 0.08689145253449643
+  },
+  {
+    "rank": 2,
+    "feature_idx": 4099,
+    "feature_name": "64",
+    "mean_abs_shap": 0.07898136133067245
+  },
+  {
+    "rank": 3,
+    "feature_idx": 5050,
+    "feature_name": "a9 2025",
+    "mean_abs_shap": 0.04196724353298545
+  },
+  {
+    "rank": 4,
+    "feature_idx": 8174,
+    "feature_name": "among the",
+    "mean_abs_shap": 0.028177733727134592
+  },
+  {
+    "rank": 5,
+    "feature_idx": 13380,
+    "feature_name": "bank",
+    "mean_abs_shap": 0.02590323464199875
+  },
+  {
+    "rank": 6,
+    "feature_idx": 8278,
+    "feature_name": "an der",
+    "mean_abs_shap": 0.02064559806250018
+  },
+  {
+    "rank": 7,
+    "feature_idx": 6259,
+    "feature_name": "address allocation",
+    "mean_abs_shap": 0.01652591505438089
+  },
+  {
+    "rank": 8,
+    "feature_idx": 13931,
+    "feature_name": "be using",
+    "mean_abs_shap": 0.015498167956918532
+  },
+  {
+    "rank": 9,
+    "feature_idx": 2416,
+    "feature_name": "221 101",
+    "mean_abs_shap": 0.015259232177138165
+  },
+  {
+    "rank": 10,
+    "feature_idx": 11274,
+    "feature_name": "articles",
+    "mean_abs_shap": 0.014696778712496233
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 150004,
+    "feature_name": "body_unique_word_ratio",
+    "mean_abs_shap": 9.93473099198294
+  },
+  {
+    "rank": 2,
+    "feature_idx": 150000,
+    "feature_name": "html_char_ratio",
+    "mean_abs_shap": 5.441549503391791
+  },
+  {
+    "rank": 3,
+    "feature_idx": 150005,
+    "feature_name": "body_capitalisation_ratio",
+    "mean_abs_shap": 2.1605330396879103
+  },
+  {
+    "rank": 4,
+    "feature_idx": 150006,
+    "feature_name": "body_digit_ratio",
+    "mean_abs_shap": 0.7903906212051612
+  },
+  {
+    "rank": 5,
+    "feature_idx": 150002,
+    "feature_name": "body_length",
+    "mean_abs_shap": 0.31851069054775033
+  },
+  {
+    "rank": 6,
+    "feature_idx": 100500,
+    "feature_name": "char:: - ",
+    "mean_abs_shap": 0.04895063557242859
+  },
+  {
+    "rank": 7,
+    "feature_idx": 150003,
+    "feature_name": "subject_length",
+    "mean_abs_shap": 0.045644122433406716
+  },
+  {
+    "rank": 8,
+    "feature_idx": 29894,
+    "feature_name": "ect",
+    "mean_abs_shap": 0.04412451277693413
+  },
+  {
+    "rank": 9,
+    "feature_idx": 107376,
+    "feature_name": "char::****",
+    "mean_abs_shap": 0.03352317431012712
+  },
+  {
+    "rank": 10,
+    "feature_idx": 107374,
+    "feature_name": "char::***",
+    "mean_abs_shap": 0.03241524302581096
+  }
+]

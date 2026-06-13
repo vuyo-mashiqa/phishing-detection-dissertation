@@ -1,0 +1,62 @@
+[
+  {
+    "rank": 1,
+    "feature_idx": 11441,
+    "feature_name": "approval",
+    "mean_abs_shap": 0.04754066277228276
+  },
+  {
+    "rank": 2,
+    "feature_idx": 0,
+    "feature_name": "00",
+    "mean_abs_shap": 0.04647594634771375
+  },
+  {
+    "rank": 3,
+    "feature_idx": 12800,
+    "feature_name": "association",
+    "mean_abs_shap": 0.015928697132617343
+  },
+  {
+    "rank": 4,
+    "feature_idx": 11761,
+    "feature_name": "are fine",
+    "mean_abs_shap": 0.008042069382555746
+  },
+  {
+    "rank": 5,
+    "feature_idx": 7145,
+    "feature_name": "after the",
+    "mean_abs_shap": 0.006734509850814915
+  },
+  {
+    "rank": 6,
+    "feature_idx": 13232,
+    "feature_name": "attaching",
+    "mean_abs_shap": 0.005689742802158013
+  },
+  {
+    "rank": 7,
+    "feature_idx": 7159,
+    "feature_name": "afternoon",
+    "mean_abs_shap": 0.005218391794562409
+  },
+  {
+    "rank": 8,
+    "feature_idx": 14929,
+    "feature_name": "because it",
+    "mean_abs_shap": 0.005121233362853528
+  },
+  {
+    "rank": 9,
+    "feature_idx": 12602,
+    "feature_name": "asked that",
+    "mean_abs_shap": 0.004517019027993047
+  },
+  {
+    "rank": 10,
+    "feature_idx": 7417,
+    "feature_name": "agreement thanks",
+    "mean_abs_shap": 0.0035413582754135436
+  }
+]
