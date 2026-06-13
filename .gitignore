@@ -78,3 +78,4 @@ src/data/extract_structural_features.py
 # QLoRA adapter weights -- deposited to HuggingFace Hub (Methods §1.12)
 models/qlora/**/adapter_model.safetensors
 models/qlora/**/adapter_model.bin
+results/explanations/classical_ml/**/shap_values_sample.npz
