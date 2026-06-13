@@ -1,0 +1,32 @@
+{
+  "model_key": "claude35",
+  "model_id": "claude-sonnet-4-5-20250929",
+  "variant": "cot",
+  "shot": "four_shot",
+  "eval_stratum": "stratum_ii",
+  "git_sha": "7455869522aa794ed80a95e95d28b04ea2502d34",
+  "timestamp": "2026-06-07T14:54:44Z",
+  "t_star": 0.0,
+  "metrics": {
+    "threshold": 0.0,
+    "f1_macro": 0.3929860752965446,
+    "precision": 0.6474086661002549,
+    "recall": 1.0,
+    "roc_auc": 0.5766151219049426,
+    "pr_auc": 0.6857958029776088,
+    "balanced_accuracy": 0.5,
+    "mcc": 0.0,
+    "fpr_at_95tpr": 1.0,
+    "youdens_j": 0.15727476836479776
+  },
+  "latency": {
+    "latency_p50_ms": 8789.36,
+    "latency_p95_ms": 11312.546,
+    "latency_p99_ms": 15131.153600000001,
+    "emails_per_sec": 0.114,
+    "privacy_tier": "tier_ii",
+    "total_tokens": 1153384,
+    "n_unknown": 15,
+    "n_logprob_soft": 15
+  }
+}

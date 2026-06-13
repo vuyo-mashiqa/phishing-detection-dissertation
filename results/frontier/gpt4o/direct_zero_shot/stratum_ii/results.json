@@ -1,0 +1,32 @@
+{
+  "model_key": "gpt4o",
+  "model_id": "gpt-4o-mini",
+  "variant": "direct",
+  "shot": "zero_shot",
+  "eval_stratum": "stratum_ii",
+  "git_sha": "7455869522aa794ed80a95e95d28b04ea2502d34",
+  "timestamp": "2026-05-27T18:22:01Z",
+  "t_star": 0.010101010101010102,
+  "metrics": {
+    "threshold": 0.010101010101010102,
+    "f1_macro": 0.9155314025801119,
+    "precision": 0.9061371841155235,
+    "recall": 0.9881889763779528,
+    "roc_auc": 0.9001185845745185,
+    "pr_auc": 0.9030813354775478,
+    "balanced_accuracy": 0.9001185845745185,
+    "mcc": 0.8392313372263086,
+    "fpr_at_95tpr": 0.18795180722891566,
+    "youdens_j": 0.8002371691490371
+  },
+  "latency": {
+    "latency_p50_ms": 826.95,
+    "latency_p95_ms": 2365.1800000000003,
+    "latency_p99_ms": 6412.810400000003,
+    "emails_per_sec": 1.209,
+    "privacy_tier": "tier_ii",
+    "total_tokens": 379214,
+    "n_unknown": 0,
+    "n_logprob_soft": 0
+  }
+}

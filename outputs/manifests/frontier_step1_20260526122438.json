@@ -1,0 +1,32 @@
+{
+  "step": "frontier_step1_prepare",
+  "git_sha": "7455869522aa794ed80a95e95d28b04ea2502d34",
+  "timestamp": "2026-05-26T12:24:30Z",
+  "max_body_chars": 3000,
+  "files": {
+    "stratum_i": {
+      "jsonl_file": "test_stratum_i_redacted.jsonl",
+      "n_rows": 23288,
+      "n_phishing": 341,
+      "n_ham": 22947,
+      "n_missing": 0,
+      "sha256": "8e9686b8a2c4f8fa1c2c2e6a0e9573f38436c3a45eab6f9a5f79844d116715ae"
+    },
+    "stratum_ii": {
+      "jsonl_file": "test_stratum_ii_redacted.jsonl",
+      "n_rows": 1177,
+      "n_phishing": 762,
+      "n_ham": 415,
+      "n_missing": 0,
+      "sha256": "c74b83f2c93dd63a131bb34520bf910f5312d790edb43ece3744628c091b1384"
+    },
+    "stratum_iii": {
+      "jsonl_file": "test_stratum_iii_redacted.jsonl",
+      "n_rows": 2004,
+      "n_phishing": 1014,
+      "n_ham": 990,
+      "n_missing": 0,
+      "sha256": "87cfdf320fe5609781cd605f37e3a8cb270eb7a3b49dec55df4557e2b54a0fa3"
+    }
+  }
+}
