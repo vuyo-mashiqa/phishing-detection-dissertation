@@ -1,0 +1,9 @@
+{
+  "familywise_alpha": 0.05,
+  "total_tests": 36,
+  "bonferroni_alpha": 0.001389,
+  "significant_mcnemar": 13,
+  "significant_wilcoxon": 0,
+  "significant_mannwhitney": 6,
+  "total_significant": 19
+}

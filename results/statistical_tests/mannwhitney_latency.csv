@@ -1,0 +1,7 @@
+family_a,family_b,median_latency_a,median_latency_b,mannwhitney_u,p_value,rank_biserial_r,cohens_d,alpha_bonferroni,significant
+classical_ml,transformer,0.501,4.255,1280.0,0.001638,0.3333,0.3187,0.008333,True
+classical_ml,qlora,0.501,76.199,0.0,0.0,1.0,-5.7774,0.008333,True
+classical_ml,frontier,0.501,3505.057,0.0,0.0,1.0,-2.0024,0.008333,True
+transformer,qlora,4.255,76.199,0.0,0.0,1.0,-26.1933,0.008333,True
+transformer,frontier,4.255,3505.057,0.0,0.0,1.0,-2.0041,0.008333,True
+qlora,frontier,76.199,3505.057,0.0,0.0,1.0,-1.9737,0.008333,True

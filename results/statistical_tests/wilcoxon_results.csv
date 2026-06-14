@@ -1,0 +1,13 @@
+comparison,mean_auc,std_auc,wilcoxon_stat,p_value,cohens_d,alpha_bonferroni,significant
+qlora_seed_variance_stratum_i,0.9985,0.0006,2.5,0.7893,,0.004167,False
+qlora_seed_variance_stratum_ii,0.9995,0.0003,2.5,0.7893,,0.004167,False
+qlora_seed_variance_stratum_iii,0.9827,0.0032,2.5,0.7893,,0.004167,False
+transformer_distilbert_vs_roberta_stratum_i,0.858,0.2235,0.0,0.0625,-0.5401,0.004167,False
+transformer_distilbert_vs_deberta_stratum_i,0.826,0.2313,3.0,0.3125,-0.2546,0.004167,False
+transformer_roberta_vs_deberta_stratum_i,0.8906,0.1565,0.0,0.0625,0.3736,0.004167,False
+transformer_distilbert_vs_roberta_stratum_ii,0.9561,0.0809,1.0,0.125,-0.1103,0.004167,False
+transformer_distilbert_vs_deberta_stratum_ii,0.961,0.0742,1.0,0.125,-0.241,0.004167,False
+transformer_roberta_vs_deberta_stratum_ii,0.966,0.0622,0.0,0.0625,-0.1419,0.004167,False
+transformer_distilbert_vs_roberta_stratum_iii,0.9546,0.0645,0.0,0.0625,-0.1598,0.004167,False
+transformer_distilbert_vs_deberta_stratum_iii,0.9528,0.0657,5.0,0.625,-0.1077,0.004167,False
+transformer_roberta_vs_deberta_stratum_iii,0.9585,0.0635,5.0,0.625,0.0505,0.004167,False
