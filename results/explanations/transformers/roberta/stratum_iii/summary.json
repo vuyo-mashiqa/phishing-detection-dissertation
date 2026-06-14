@@ -1,0 +1,90 @@
+{
+  "model": "roberta",
+  "stratum": "stratum_iii",
+  "checkpoint": "C:\\Projects\\phishing-detection-dissertation\\models\\transformers\\pooled\\roberta\\best_model",
+  "n_examples": 50,
+  "n_correct": 49,
+  "n_incorrect": 1,
+  "top20_tokens_by_cumulative_attribution": [
+    {
+      "token": "Ġdetailed",
+      "cumulative_attribution": 69.2115
+    },
+    {
+      "token": "Ġinformation",
+      "cumulative_attribution": 18.1303
+    },
+    {
+      "token": "Ġ**",
+      "cumulative_attribution": 17.0608
+    },
+    {
+      "token": "Ġor",
+      "cumulative_attribution": 15.6723
+    },
+    {
+      "token": "Ġmore",
+      "cumulative_attribution": 13.0324
+    },
+    {
+      "token": "ĠRequired",
+      "cumulative_attribution": 12.5358
+    },
+    {
+      "token": ".",
+      "cumulative_attribution": 10.4083
+    },
+    {
+      "token": "SE",
+      "cumulative_attribution": 9.8996
+    },
+    {
+      "token": "net",
+      "cumulative_attribution": 8.1215
+    },
+    {
+      "token": "ĠAccount",
+      "cumulative_attribution": 8.1148
+    },
+    {
+      "token": "ĠExp",
+      "cumulative_attribution": 7.5592
+    },
+    {
+      "token": "</s>",
+      "cumulative_attribution": 7.4789
+    },
+    {
+      "token": "ĠFor",
+      "cumulative_attribution": 7.2163
+    },
+    {
+      "token": "Action",
+      "cumulative_attribution": 6.8827
+    },
+    {
+      "token": "ĠNVIDIA",
+      "cumulative_attribution": 5.9074
+    },
+    {
+      "token": "ĠImportant",
+      "cumulative_attribution": 5.895
+    },
+    {
+      "token": "ĠClient",
+      "cumulative_attribution": 5.4021
+    },
+    {
+      "token": "ainted",
+      "cumulative_attribution": 5.0022
+    },
+    {
+      "token": "ĠDear",
+      "cumulative_attribution": 4.9844
+    },
+    {
+      "token": "Ġto",
+      "cumulative_attribution": 4.8911
+    }
+  ]
+}

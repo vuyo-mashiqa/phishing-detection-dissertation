@@ -1,0 +1,90 @@
+{
+  "model": "distilbert",
+  "stratum": "stratum_i",
+  "checkpoint": "C:\\Projects\\phishing-detection-dissertation\\models\\transformers\\pooled\\distilbert\\best_model",
+  "n_examples": 50,
+  "n_correct": 36,
+  "n_incorrect": 14,
+  "top20_tokens_by_cumulative_attribution": [
+    {
+      "token": "##pal",
+      "cumulative_attribution": 50.5442
+    },
+    {
+      "token": "[SEP]",
+      "cumulative_attribution": 46.7629
+    },
+    {
+      "token": "confirm",
+      "cumulative_attribution": 34.5837
+    },
+    {
+      "token": "wallet",
+      "cumulative_attribution": 28.2
+    },
+    {
+      "token": "pay",
+      "cumulative_attribution": 27.9528
+    },
+    {
+      "token": "sr",
+      "cumulative_attribution": 24.163
+    },
+    {
+      "token": "01",
+      "cumulative_attribution": 20.2589
+    },
+    {
+      "token": "info",
+      "cumulative_attribution": 20.0083
+    },
+    {
+      "token": "tax",
+      "cumulative_attribution": 18.3674
+    },
+    {
+      "token": "##nl",
+      "cumulative_attribution": 18.2162
+    },
+    {
+      "token": "#",
+      "cumulative_attribution": 18.1258
+    },
+    {
+      "token": "account",
+      "cumulative_attribution": 17.0066
+    },
+    {
+      "token": "you",
+      "cumulative_attribution": 16.0769
+    },
+    {
+      "token": "am",
+      "cumulative_attribution": 15.5945
+    },
+    {
+      "token": "payment",
+      "cumulative_attribution": 15.5017
+    },
+    {
+      "token": "harder",
+      "cumulative_attribution": 15.4719
+    },
+    {
+      "token": "##y",
+      "cumulative_attribution": 15.3499
+    },
+    {
+      "token": "credit",
+      "cumulative_attribution": 15.3271
+    },
+    {
+      "token": "future",
+      "cumulative_attribution": 15.0509
+    },
+    {
+      "token": "brute",
+      "cumulative_attribution": 14.9846
+    }
+  ]
+}

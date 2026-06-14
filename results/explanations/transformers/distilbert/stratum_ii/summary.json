@@ -1,0 +1,90 @@
+{
+  "model": "distilbert",
+  "stratum": "stratum_ii",
+  "checkpoint": "C:\\Projects\\phishing-detection-dissertation\\models\\transformers\\pooled\\distilbert\\best_model",
+  "n_examples": 50,
+  "n_correct": 41,
+  "n_incorrect": 9,
+  "top20_tokens_by_cumulative_attribution": [
+    {
+      "token": "[SEP]",
+      "cumulative_attribution": 122.0225
+    },
+    {
+      "token": "_",
+      "cumulative_attribution": 20.4478
+    },
+    {
+      "token": "##ibe",
+      "cumulative_attribution": 20.1601
+    },
+    {
+      "token": "emails",
+      "cumulative_attribution": 17.3581
+    },
+    {
+      "token": "##shing",
+      "cumulative_attribution": 16.7565
+    },
+    {
+      "token": "grill",
+      "cumulative_attribution": 13.815
+    },
+    {
+      "token": "@",
+      "cumulative_attribution": 13.688
+    },
+    {
+      "token": "rituals",
+      "cumulative_attribution": 13.4979
+    },
+    {
+      "token": "addiction",
+      "cumulative_attribution": 13.3295
+    },
+    {
+      "token": "phi",
+      "cumulative_attribution": 12.212
+    },
+    {
+      "token": "##ße",
+      "cumulative_attribution": 12.1352
+    },
+    {
+      "token": ">",
+      "cumulative_attribution": 11.8348
+    },
+    {
+      "token": "click",
+      "cumulative_attribution": 11.3433
+    },
+    {
+      "token": "pittsburgh",
+      "cumulative_attribution": 11.2993
+    },
+    {
+      "token": "[UNK]",
+      "cumulative_attribution": 11.2337
+    },
+    {
+      "token": "template",
+      "cumulative_attribution": 10.8345
+    },
+    {
+      "token": "allocation",
+      "cumulative_attribution": 10.7933
+    },
+    {
+      "token": "compensation",
+      "cumulative_attribution": 10.5429
+    },
+    {
+      "token": "token",
+      "cumulative_attribution": 10.467
+    },
+    {
+      "token": "qualify",
+      "cumulative_attribution": 10.4433
+    }
+  ]
+}

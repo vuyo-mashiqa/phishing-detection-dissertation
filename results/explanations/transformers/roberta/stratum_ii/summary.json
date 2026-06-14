@@ -1,0 +1,90 @@
+{
+  "model": "roberta",
+  "stratum": "stratum_ii",
+  "checkpoint": "C:\\Projects\\phishing-detection-dissertation\\models\\transformers\\pooled\\roberta\\best_model",
+  "n_examples": 50,
+  "n_correct": 38,
+  "n_incorrect": 12,
+  "top20_tokens_by_cumulative_attribution": [
+    {
+      "token": "ĠExamples",
+      "cumulative_attribution": 29.0912
+    },
+    {
+      "token": "ab",
+      "cumulative_attribution": 25.5762
+    },
+    {
+      "token": "Ġunsub",
+      "cumulative_attribution": 22.9093
+    },
+    {
+      "token": "ĠProdu",
+      "cumulative_attribution": 18.6144
+    },
+    {
+      "token": "</s>",
+      "cumulative_attribution": 18.565
+    },
+    {
+      "token": "Į",
+      "cumulative_attribution": 18.1185
+    },
+    {
+      "token": "ï¿½ï¿½",
+      "cumulative_attribution": 17.0984
+    },
+    {
+      "token": "scribe",
+      "cumulative_attribution": 13.3172
+    },
+    {
+      "token": "rer",
+      "cumulative_attribution": 12.8216
+    },
+    {
+      "token": "SE",
+      "cumulative_attribution": 12.2121
+    },
+    {
+      "token": "us",
+      "cumulative_attribution": 12.1621
+    },
+    {
+      "token": "ishing",
+      "cumulative_attribution": 11.6141
+    },
+    {
+      "token": ".",
+      "cumulative_attribution": 8.7439
+    },
+    {
+      "token": "ĠSpa",
+      "cumulative_attribution": 8.2307
+    },
+    {
+      "token": "Ġconvenience",
+      "cumulative_attribution": 8.2158
+    },
+    {
+      "token": "Ġles",
+      "cumulative_attribution": 8.1489
+    },
+    {
+      "token": "ĠPlus",
+      "cumulative_attribution": 8.0298
+    },
+    {
+      "token": "Ġ/",
+      "cumulative_attribution": 7.8926
+    },
+    {
+      "token": "h",
+      "cumulative_attribution": 7.5507
+    },
+    {
+      "token": "8",
+      "cumulative_attribution": 7.3707
+    }
+  ]
+}

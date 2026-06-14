@@ -1,0 +1,90 @@
+{
+  "model": "deberta",
+  "stratum": "stratum_ii",
+  "checkpoint": "C:\\Projects\\phishing-detection-dissertation\\models\\transformers\\pooled\\deberta\\best_model",
+  "n_examples": 50,
+  "n_correct": 42,
+  "n_incorrect": 8,
+  "top20_tokens_by_cumulative_attribution": [
+    {
+      "token": "[SEP]",
+      "cumulative_attribution": 301.4122
+    },
+    {
+      "token": "[CLS]",
+      "cumulative_attribution": 128.4405
+    },
+    {
+      "token": "▁Express",
+      "cumulative_attribution": 51.4319
+    },
+    {
+      "token": "▁Card",
+      "cumulative_attribution": 46.8583
+    },
+    {
+      "token": "▁ot",
+      "cumulative_attribution": 39.0562
+    },
+    {
+      "token": "▁Upgrade",
+      "cumulative_attribution": 35.9176
+    },
+    {
+      "token": "▁você",
+      "cumulative_attribution": 34.7454
+    },
+    {
+      "token": "▁Centurion",
+      "cumulative_attribution": 34.4409
+    },
+    {
+      "token": "▁Mensa",
+      "cumulative_attribution": 33.7278
+    },
+    {
+      "token": "USD",
+      "cumulative_attribution": 31.5771
+    },
+    {
+      "token": "cle",
+      "cumulative_attribution": 29.2753
+    },
+    {
+      "token": "▁",
+      "cumulative_attribution": 27.6255
+    },
+    {
+      "token": "▁Monthly",
+      "cumulative_attribution": 25.6113
+    },
+    {
+      "token": "▁American",
+      "cumulative_attribution": 25.2271
+    },
+    {
+      "token": "▁Cost",
+      "cumulative_attribution": 25.078
+    },
+    {
+      "token": "mail",
+      "cumulative_attribution": 24.0288
+    },
+    {
+      "token": "▁Protection",
+      "cumulative_attribution": 23.7681
+    },
+    {
+      "token": "▁text",
+      "cumulative_attribution": 22.7809
+    },
+    {
+      "token": "▁Parchment",
+      "cumulative_attribution": 22.4118
+    },
+    {
+      "token": "▁Vehicle",
+      "cumulative_attribution": 22.1418
+    }
+  ]
+}

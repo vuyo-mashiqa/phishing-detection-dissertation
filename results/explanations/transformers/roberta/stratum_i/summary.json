@@ -1,0 +1,90 @@
+{
+  "model": "roberta",
+  "stratum": "stratum_i",
+  "checkpoint": "C:\\Projects\\phishing-detection-dissertation\\models\\transformers\\pooled\\roberta\\best_model",
+  "n_examples": 50,
+  "n_correct": 47,
+  "n_incorrect": 3,
+  "top20_tokens_by_cumulative_attribution": [
+    {
+      "token": "ĠEnergy",
+      "cumulative_attribution": 81.2734
+    },
+    {
+      "token": "ĠBill",
+      "cumulative_attribution": 19.1332
+    },
+    {
+      "token": "Ġtraining",
+      "cumulative_attribution": 17.8118
+    },
+    {
+      "token": "ended",
+      "cumulative_attribution": 17.0527
+    },
+    {
+      "token": "ĠMath",
+      "cumulative_attribution": 15.628
+    },
+    {
+      "token": "Ġnext",
+      "cumulative_attribution": 15.3565
+    },
+    {
+      "token": "ĠThanks",
+      "cumulative_attribution": 14.2648
+    },
+    {
+      "token": "ĠAtt",
+      "cumulative_attribution": 11.3925
+    },
+    {
+      "token": "</s>",
+      "cumulative_attribution": 11.2091
+    },
+    {
+      "token": "ĠPayPal",
+      "cumulative_attribution": 10.8262
+    },
+    {
+      "token": "Ġ(",
+      "cumulative_attribution": 10.6021
+    },
+    {
+      "token": "ĠSubject",
+      "cumulative_attribution": 7.3563
+    },
+    {
+      "token": "ĠCredit",
+      "cumulative_attribution": 6.8937
+    },
+    {
+      "token": "Ġaccount",
+      "cumulative_attribution": 6.5488
+    },
+    {
+      "token": "Ġ-",
+      "cumulative_attribution": 6.5449
+    },
+    {
+      "token": "713",
+      "cumulative_attribution": 6.4132
+    },
+    {
+      "token": ".",
+      "cumulative_attribution": 5.878
+    },
+    {
+      "token": "Ġon",
+      "cumulative_attribution": 5.0632
+    },
+    {
+      "token": "Ġprocess",
+      "cumulative_attribution": 4.1411
+    },
+    {
+      "token": ",",
+      "cumulative_attribution": 3.6329
+    }
+  ]
+}

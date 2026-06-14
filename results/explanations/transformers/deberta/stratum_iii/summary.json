@@ -1,0 +1,89 @@
+{
+  "model": "deberta",
+  "stratum": "stratum_iii",
+  "n_examples": 50,
+  "n_correct": 25,
+  "n_incorrect": 25,
+  "top20_tokens_by_cumulative_attribution": [
+    {
+      "token": "[SEP]",
+      "cumulative_attribution": 881.5814
+    },
+    {
+      "token": "[CLS]",
+      "cumulative_attribution": 450.7247
+    },
+    {
+      "token": "▁Norton",
+      "cumulative_attribution": 212.8189
+    },
+    {
+      "token": "▁Urgent",
+      "cumulative_attribution": 155.0339
+    },
+    {
+      "token": "Lock",
+      "cumulative_attribution": 124.8136
+    },
+    {
+      "token": "▁Threat",
+      "cumulative_attribution": 114.8639
+    },
+    {
+      "token": "▁Notification",
+      "cumulative_attribution": 87.3024
+    },
+    {
+      "token": "-",
+      "cumulative_attribution": 86.5877
+    },
+    {
+      "token": "Life",
+      "cumulative_attribution": 84.5386
+    },
+    {
+      "token": "zor",
+      "cumulative_attribution": 77.4604
+    },
+    {
+      "token": "▁Update",
+      "cumulative_attribution": 72.2281
+    },
+    {
+      "token": "▁wallet",
+      "cumulative_attribution": 64.1822
+    },
+    {
+      "token": "Monkey",
+      "cumulative_attribution": 61.8251
+    },
+    {
+      "token": "▁governance",
+      "cumulative_attribution": 61.2216
+    },
+    {
+      "token": "▁platform",
+      "cumulative_attribution": 61.0184
+    },
+    {
+      "token": "Version",
+      "cumulative_attribution": 59.3363
+    },
+    {
+      "token": "▁Definitions",
+      "cumulative_attribution": 58.412
+    },
+    {
+      "token": "▁Google",
+      "cumulative_attribution": 56.1385
+    },
+    {
+      "token": "▁frameworks",
+      "cumulative_attribution": 54.9661
+    },
+    {
+      "token": "▁Pinterest",
+      "cumulative_attribution": 52.8432
+    }
+  ]
+}

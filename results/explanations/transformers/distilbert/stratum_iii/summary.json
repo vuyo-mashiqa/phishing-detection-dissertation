@@ -1,0 +1,90 @@
+{
+  "model": "distilbert",
+  "stratum": "stratum_iii",
+  "checkpoint": "C:\\Projects\\phishing-detection-dissertation\\models\\transformers\\pooled\\distilbert\\best_model",
+  "n_examples": 50,
+  "n_correct": 48,
+  "n_incorrect": 2,
+  "top20_tokens_by_cumulative_attribution": [
+    {
+      "token": "[SEP]",
+      "cumulative_attribution": 59.9982
+    },
+    {
+      "token": "account",
+      "cumulative_attribution": 10.9706
+    },
+    {
+      "token": "[CLS]",
+      "cumulative_attribution": 10.6103
+    },
+    {
+      "token": "dear",
+      "cumulative_attribution": 8.0628
+    },
+    {
+      "token": "@",
+      "cumulative_attribution": 7.8675
+    },
+    {
+      "token": "identity",
+      "cumulative_attribution": 7.0738
+    },
+    {
+      "token": "payment",
+      "cumulative_attribution": 6.8384
+    },
+    {
+      "token": "microsoft",
+      "cumulative_attribution": 6.6601
+    },
+    {
+      "token": "verify",
+      "cumulative_attribution": 6.3896
+    },
+    {
+      "token": "202",
+      "cumulative_attribution": 6.311
+    },
+    {
+      "token": "portal",
+      "cumulative_attribution": 5.6296
+    },
+    {
+      "token": "upgrade",
+      "cumulative_attribution": 5.4275
+    },
+    {
+      "token": "update",
+      "cumulative_attribution": 5.0653
+    },
+    {
+      "token": "com",
+      "cumulative_attribution": 5.0274
+    },
+    {
+      "token": "premium",
+      "cumulative_attribution": 4.4505
+    },
+    {
+      "token": "spa",
+      "cumulative_attribution": 4.021
+    },
+    {
+      "token": "subscription",
+      "cumulative_attribution": 3.7807
+    },
+    {
+      "token": "ensure",
+      "cumulative_attribution": 3.6192
+    },
+    {
+      "token": "verification",
+      "cumulative_attribution": 3.5458
+    },
+    {
+      "token": "php",
+      "cumulative_attribution": 3.4931
+    }
+  ]
+}

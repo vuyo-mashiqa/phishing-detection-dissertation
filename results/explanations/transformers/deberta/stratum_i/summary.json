@@ -1,0 +1,90 @@
+{
+  "model": "deberta",
+  "stratum": "stratum_i",
+  "checkpoint": "C:\\Projects\\phishing-detection-dissertation\\models\\transformers\\pooled\\deberta\\best_model",
+  "n_examples": 50,
+  "n_correct": 38,
+  "n_incorrect": 12,
+  "top20_tokens_by_cumulative_attribution": [
+    {
+      "token": "▁pin",
+      "cumulative_attribution": 295.805
+    },
+    {
+      "token": "[SEP]",
+      "cumulative_attribution": 277.4916
+    },
+    {
+      "token": "▁cip",
+      "cumulative_attribution": 192.7979
+    },
+    {
+      "token": "[CLS]",
+      "cumulative_attribution": 130.1361
+    },
+    {
+      "token": "▁out",
+      "cumulative_attribution": 114.3624
+    },
+    {
+      "token": "▁Get",
+      "cumulative_attribution": 109.4236
+    },
+    {
+      "token": "▁read",
+      "cumulative_attribution": 108.749
+    },
+    {
+      "token": "co",
+      "cumulative_attribution": 103.9847
+    },
+    {
+      "token": "▁your",
+      "cumulative_attribution": 69.8057
+    },
+    {
+      "token": "▁Account",
+      "cumulative_attribution": 21.7957
+    },
+    {
+      "token": "▁Verify",
+      "cumulative_attribution": 18.6486
+    },
+    {
+      "token": "html",
+      "cumulative_attribution": 14.9442
+    },
+    {
+      "token": "biz",
+      "cumulative_attribution": 13.2441
+    },
+    {
+      "token": "▁Security",
+      "cumulative_attribution": 11.7686
+    },
+    {
+      "token": "000000",
+      "cumulative_attribution": 11.5054
+    },
+    {
+      "token": "▁PayPal",
+      "cumulative_attribution": 11.0677
+    },
+    {
+      "token": "▁2002",
+      "cumulative_attribution": 10.7527
+    },
+    {
+      "token": "▁Webmaster",
+      "cumulative_attribution": 8.6817
+    },
+    {
+      "token": "▁FW",
+      "cumulative_attribution": 8.5951
+    },
+    {
+      "token": "Internet",
+      "cumulative_attribution": 7.8811
+    }
+  ]
+}
