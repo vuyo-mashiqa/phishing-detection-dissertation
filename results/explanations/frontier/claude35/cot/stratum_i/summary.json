@@ -1,0 +1,20 @@
+{
+  "model": "claude35",
+  "variant": "cot",
+  "stratum": "stratum_i",
+  "n_examples": 50,
+  "codebook_frequencies": {
+    "urgency": 3,
+    "spoofed_sender": 9,
+    "call_to_action": 4,
+    "credential_harvesting": 2,
+    "authority_invocation": 4
+  },
+  "cohens_kappa": 0.15,
+  "kappa_sample_size": 19,
+  "fidelity": {
+    "n_checked": 23,
+    "n_aligned": 8,
+    "alignment_rate": 0.348
+  }
+}

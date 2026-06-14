@@ -1,0 +1,20 @@
+{
+  "model": "gpt4o",
+  "variant": "feature_grounded",
+  "stratum": "stratum_iii",
+  "n_examples": 50,
+  "codebook_frequencies": {
+    "urgency": 28,
+    "spoofed_sender": 6,
+    "call_to_action": 37,
+    "credential_harvesting": 25,
+    "authority_invocation": 38
+  },
+  "cohens_kappa": 0.651,
+  "kappa_sample_size": 20,
+  "fidelity": {
+    "n_checked": 10,
+    "n_aligned": 0,
+    "alignment_rate": 0.0
+  }
+}
